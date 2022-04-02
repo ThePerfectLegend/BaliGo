@@ -17,14 +17,14 @@ struct Go: View {
     var link: String {
         switch route.routeApp {
         case .googleMaps:
-            if location.locationForDistance != nil {
-                return String("https://www.google.com/maps/dir/?api=1&origin=\(location.locationForDistance!.coordinate.latitude),\(location.locationForDistance!.coordinate.longitude)&destination=\(coordinate.coordinate.latitude),\(coordinate.coordinate.longitude)")
+            if location.userLocation != nil {
+                return String("https://www.google.com/maps/dir/?api=1&origin=\(location.userLocation!.coordinate.latitude),\(location.userLocation!.coordinate.longitude)&destination=\(coordinate.coordinate.latitude),\(coordinate.coordinate.longitude)")
             } else {
                 return "https://www.google.com/maps/dir/?api=1&destination=\(coordinate.coordinate.latitude),\(coordinate.coordinate.longitude)"
             }
         case .appleMaps:
-            if location.locationForDistance != nil {
-                return String("http://maps.apple.com/?saddr=\(location.locationForDistance!.coordinate.latitude),\(location.locationForDistance!.coordinate.longitude)&daddr=\(coordinate.coordinate.latitude),\(coordinate.coordinate.longitude)")
+            if location.userLocation != nil {
+                return String("http://maps.apple.com/?saddr=\(location.userLocation!.coordinate.latitude),\(location.userLocation!.coordinate.longitude)&daddr=\(coordinate.coordinate.latitude),\(coordinate.coordinate.longitude)")
             } else {
                 return "http://maps.apple.com/?daddr=\(coordinate.coordinate.latitude),\(coordinate.coordinate.longitude)"
             }

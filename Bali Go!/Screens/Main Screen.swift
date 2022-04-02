@@ -24,7 +24,7 @@ struct Main_Screen: View {
             .navigationBarTitle(Text("Путешествия"), displayMode: .large)
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        .onAppear {location.getLocation()}
+        .onAppear {location.fetchingLocation()}
     }
     
     

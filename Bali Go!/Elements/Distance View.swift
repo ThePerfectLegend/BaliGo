@@ -25,13 +25,12 @@ struct Distance_View: View {
     let lenghtUnits: [UnitLength] = [.meters, .kilometers]
     
     var calculatedDistance: String {
-        if let userLocation = location.locationForDistance {
+        if let userLocation = location.userLocation {
             let value = userLocation.distance(from: modelData.landmarks[landmarkIndex].location)
         if value > 999 {
             let result = convertDistance(distance: value, from: .meters, to: .kilometers, numbers: 1)
             return result
-        }
-        else {
+        } else {
             let result = convertDistance(distance: value, from: .meters, to: .meters, numbers: 0)
             return result
         }
@@ -49,7 +48,7 @@ struct Distance_View: View {
     }
     
     var showDistance: Bool {
-        if location.locationForDistance != nil {
+        if location.userLocation != nil {
             return true
         } else {
             return false

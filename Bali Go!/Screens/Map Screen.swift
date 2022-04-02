@@ -21,7 +21,7 @@ struct Map_Screen: View {
     var body: some View {
         NavigationView {
             MapViewInSwiftUI(landmarksForDisplay: modelData.landmarks, safeAreas: [.top])
-                .onAppear {location.start()}
+                .onAppear {location.authorizationToUseLocation()}
             }
         }
     }

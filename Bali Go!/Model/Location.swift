@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-class LocationFetcher: NSObject, CLLocationManagerDelegate, ObservableObject {
+final class LocationFetcher: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     lazy var manager: CLLocationManager = {
         [unowned self] in

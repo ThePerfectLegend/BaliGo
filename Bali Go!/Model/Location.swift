@@ -10,7 +10,6 @@ import CoreLocation
 final class LocationFetcher: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     lazy var manager: CLLocationManager = {
-        [unowned self] in
         var _locationManager = CLLocationManager()
         _locationManager.delegate = self
         _locationManager.distanceFilter = 25
@@ -44,5 +43,4 @@ final class LocationFetcher: NSObject, CLLocationManagerDelegate, ObservableObje
         userLocation = manager.location
         showUserLocation = true
     }
-    
 }

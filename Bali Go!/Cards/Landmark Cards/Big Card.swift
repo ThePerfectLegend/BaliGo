@@ -9,12 +9,7 @@ import SwiftUI
 
 struct Big_Card: View {
     
-    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
-    
-    var landmarkIndex: Int {
-        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
-    }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -28,7 +23,7 @@ struct Big_Card: View {
                     .font(.headline)
                     .lineLimit(1)
                 Text(landmark.type)
-                    .font(.subheadline)
+                    .font(.callout)
                     .fontWeight(.semibold)
                     .foregroundColor(.secondary)
                     .lineLimit(1)
@@ -37,51 +32,3 @@ struct Big_Card: View {
         .frame(width: 220)
     }
 }
-
-
-
-
-//
-//struct Big_Card: View {
-//
-//    @EnvironmentObject var modelData: ModelData
-//    var landmark: Landmark
-//
-//    var landmarkIndex: Int {
-//        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
-//    }
-//
-//    var body: some View {
-//        ZStack {
-//                VStack {
-//
-//                    Spacer()
-//
-//                    VStack(alignment: .leading) {
-//                        Text(landmark.name)
-//                            .font(.headline)
-//                        Text(landmark.type)
-//                            .font(.footnote)
-//                        }
-//                        .padding(.top, 4)
-//                        .padding(.bottom, 8)
-//                        .padding(.leading, 20)
-//                        .frame(maxWidth: .infinity, alignment: .leading)
-//                    .background(
-//                        VisualEffectBlurView(blurStyle: .systemUltraThinMaterial)
-//                    )
-//                }
-//
-//                .frame(width: 272, height: 272)
-//                .background(
-//                    Image(landmark.imagesNames[0])
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fill)
-//                )
-//                .mask(
-//                    RoundedRectangle(cornerRadius: 12, style: .continuous)
-//                )
-//            }
-//
-//    }
-//}

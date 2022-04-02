@@ -10,28 +10,23 @@ import SwiftUI
 struct Liked_Card: View {
     
     @EnvironmentObject var modelData: ModelData
-    
-    var landmark: Landmark
-    
     var landmarkIndex: Int {
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
+    
+    var landmark: Landmark
     
     var body: some View {
         HStack(spacing: 4) {
             ZStack {
                 VStack {
                     HStack {
-                        
                         Spacer()
-                        
                         Like_Button(engage: $modelData.landmarks[landmarkIndex])
                             .padding(8.0)
                             .font(.title2)
                     }
-                    
                     Spacer()
-    
                 }
                 .frame(width: 120, height: 120)
                 .background(
@@ -41,18 +36,18 @@ struct Liked_Card: View {
                 .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
             }
             .padding(.trailing, 8)
-            
             VStack(alignment: .leading, spacing: 4) {
                 Text(landmark.name)
-                    .font(.title3)
-                    .fontWeight(.semibold)
+                    .font(.headline)
+                    .lineLimit(1)
                 Text(landmark.type)
-                    .font(.subheadline)
+                    .font(.callout)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.secondary)
+                    .lineLimit(1)
                 Distance_View(ladnmark: landmark, showMark: true)
                     .font(.subheadline)
-
                 Spacer(minLength: 4)
-
                 Divider()
             }
         }
@@ -60,60 +55,3 @@ struct Liked_Card: View {
         .contentShape(Rectangle())
     }
 }
-
-struct Liked_Card_Previews: PreviewProvider {
-    static var previews: some View {
-        Liked_Card(landmark: landscapes[2])
-            .environmentObject(ModelData())
-    }
-}
-
-
-//HStack(alignment: .top) {
-//ZStack {
-//        VStack {
-//            
-//            HStack {
-//                
-//                Spacer()
-//                
-//                Like_Button(isLiked: $modelData.landmarks[landmarkIndex].isLiked,
-//                            landmark: landmark)
-//                    .padding(8.0)
-//                    .font(.title)
-//            }
-//            
-//            Spacer()
-//            
-//
-//        }
-//        .frame(width: 120, height: 120)
-//        .background(
-//            Image(landmark.imagesNames[0])
-//                .resizable()
-//                .aspectRatio(contentMode: .fill)
-//        )
-//        .mask(
-//            RoundedRectangle(cornerRadius: 10, style: .continuous)
-//        )
-//    }
-//    VStack(alignment: .leading, spacing: 4) {
-//        Text(landmark.name)
-//            .font(.title2)
-//            .fontWeight(.semibold)
-//        Text(landmark.type)
-//            .font(.subheadline)
-//            .foregroundColor(.secondary)
-//
-//            Text("\(landmark.visibleAddress) (\(String(landmark.distance)) km)")
-//                .font(.subheadline)
-//                .fontWeight(.regular)
-//
-//        Divider()
-//            .alignmentGuide(VerticalAlignment.bottom)
-//    }
-//    
-//}
-//.frame(height: 120)
-//}
-//}

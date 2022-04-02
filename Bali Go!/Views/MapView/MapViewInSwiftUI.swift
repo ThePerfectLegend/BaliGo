@@ -46,7 +46,7 @@ struct MapViewInSwiftUI: View {
             VStack{
                 Spacer()
                 if showDeteil == true {
-                    Map_Landmark_Detail(landmark: isSelected!, showDeteil: $showDeteil) }
+                    Map_Landmark_Detail(showDeteil: $showDeteil, landmark: isSelected!) }
             
             }
                 

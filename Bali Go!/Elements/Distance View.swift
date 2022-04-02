@@ -10,30 +10,24 @@ import Foundation
 
 struct Distance_View: View {
     
+    @EnvironmentObject var location: LocationFetcher
+    
     var ladnmark: Landmark
     var showMark: Bool
-    
-    @EnvironmentObject var location: LocationFetcher
-    @EnvironmentObject var modelData: ModelData
-    
-    var landmarkIndex: Int {
-        modelData.landmarks.firstIndex(where: { $0.id == ladnmark.id })!
-    }
-    
     
     let measurementFormatter = MeasurementFormatter()
     let lenghtUnits: [UnitLength] = [.meters, .kilometers]
     
     var calculatedDistance: String {
         if let userLocation = location.userLocation {
-            let value = userLocation.distance(from: modelData.landmarks[landmarkIndex].location)
-        if value > 999 {
-            let result = convertDistance(distance: value, from: .meters, to: .kilometers, numbers: 1)
-            return result
-        } else {
-            let result = convertDistance(distance: value, from: .meters, to: .meters, numbers: 0)
-            return result
-        }
+            let _distance = userLocation.distance(from: ladnmark.location)
+            if _distance < 1000 {
+                return convertDistance(distance: _distance, from: .meters, to: .meters, numbers: 0)
+            } else if _distance >= 1000 && _distance <= 100000 {
+                return convertDistance(distance: _distance, from: .meters, to: .kilometers, numbers: 1)
+            } else {
+                return convertDistance(distance: _distance, from: .meters, to: .kilometers, numbers: 0)
+            }
         } else {
             return ""
         }
@@ -55,9 +49,6 @@ struct Distance_View: View {
         }
     }
     
-
-
-
     var body: some View {
         HStack {
             if showDistance {
@@ -72,4 +63,3 @@ struct Distance_View: View {
         }
     }
 }
-

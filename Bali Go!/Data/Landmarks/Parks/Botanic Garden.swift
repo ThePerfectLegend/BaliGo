@@ -25,5 +25,3 @@ var botanicGarden = Landmark(
     internalRate: 0,
     internalSubRate: 0.94
 )
-
-//Jalan Kebun Raya, Batunya, Baturiti, Candikuning, Baturiti, Candikuning, Kec. Baturiti, Kabupaten Tabanan, Bali 82191

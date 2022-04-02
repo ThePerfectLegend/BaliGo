@@ -8,52 +8,33 @@
 import SwiftUI
 
 struct Category_Card: View {
-    
-    @EnvironmentObject var modelData: ModelData
-    
+        
     var landmark: Landmark
-    
-    var landmarkIndex: Int {
-        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
-    }
     
     var body: some View {
         HStack(spacing: 4) {
-            ZStack {
-                VStack {
-                }
+            Image(landmark.imagesNames[0])
+                .resizable()
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 120, height: 120)
-                .background(
-                    Image(landmark.imagesNames[0])
-                        .resizable()
-                        .aspectRatio(contentMode: .fill))
-                        .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
-            }
-            .padding(.trailing, 8)
-            
+                .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                .padding(.trailing, 8)
             VStack(alignment: .leading, spacing: 4) {
                 Text(landmark.name)
-                    .font(.title3)
-                    .fontWeight(.semibold)
+                    .font(.headline)
+                    .lineLimit(1)
                 Text(landmark.type)
-                    .font(.subheadline)
+                    .font(.callout)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.secondary)
+                    .lineLimit(1)
                 Distance_View(ladnmark: landmark, showMark: true)
                     .font(.subheadline)
-
                 Spacer(minLength: 4)
-
                 Divider()
             }
         }
         .frame(height: 120)
         .contentShape(Rectangle())
-    }
-}
-
-struct Category_Card_Previews: PreviewProvider {
-    static var previews: some View {
-        Category_Card(landmark: landscapes[4])
-            .environmentObject(ModelData())
-            .environmentObject(LocationFetcher())
     }
 }

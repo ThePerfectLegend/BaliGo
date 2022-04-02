@@ -1,4 +1,4 @@
-# BaliGo-
+# BaliGo!
 
 Travel guide about landmarks on the island with photos and information for visiting with possibility of ordering a tour.
 Available in App Store https://apps.apple.com/app/bali-go/id1580667720

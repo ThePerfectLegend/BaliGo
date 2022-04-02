@@ -3,7 +3,6 @@
 //  Bali Go!
 //
 //  Created by Nizami Tagiyev on 05.06.2021.
-//  add some comment
 
 import Foundation
 import CoreLocation

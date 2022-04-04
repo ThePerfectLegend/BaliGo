@@ -3,7 +3,7 @@
 //  Bali Go!
 //
 //  Created by Nizami Tagiyev on 28.01.2022.
-//
+//  This part of code need to rework
 
 import Foundation
 import CloudKit
@@ -118,16 +118,12 @@ class EventModel: ObservableObject {
                 }
             }
         }
-        
         addOperation(operation: queryOperation)
-        
     }
     
     func addOperation(operation: CKDatabaseOperation) {
         CKContainer.default().publicCloudDatabase.add(operation)
     }
-    
-    
     
     private func getCloudKitStatus() {
         CKContainer.default().accountStatus { [weak self] returnStatus, returnError in
@@ -150,7 +146,6 @@ class EventModel: ObservableObject {
         }
     }
     
-    /// перейти на стандартные ошибки клауда
     enum CloudKitError: LocalizedError {
         case iCloudAccountNotFound
         case iCloudAccountNotDetermine
@@ -158,47 +153,4 @@ class EventModel: ObservableObject {
         case iCloudAccountUnknown
         case iCloudAccountTemporarilyUnavailable
     }
-    
-    
 }
-
-
-extension Date {
-    
-    // Convert local time to UTC (or GMT)
-    func toGlobalTime() -> Date {
-        let timezone = TimeZone.current
-        let seconds = -TimeInterval(timezone.secondsFromGMT(for: self))
-        return Date(timeInterval: seconds, since: self)
-    }
-    
-    // Convert UTC (or GMT) to local time
-    func toLocalTime() -> Date {
-        let timezone = TimeZone.current
-        let seconds = TimeInterval(timezone.secondsFromGMT(for: self))
-        return Date(timeInterval: seconds, since: self)
-    }
-}
-
-
-
-
-//        let predecate = NSPredicate(value: true)
-//        let predecate = NSPredicate(format: "eventStartDate > %@", argumentArray: [selectedDate.toLocalTime()])
-//        let query = CKQuery(recordType: Event.recordType, predicate: predecate)
-//        let queryOperation = CKQueryOperation(query: query)
-
-
-//private func requestPermission() {
-//
-//    CloudKitUtility.requestApplicationPermission { [weak self] completion in
-//        DispatchQueue.main.async {
-//            switch completion {
-//            case .success(let success):
-//                self?.permissionStatus = success
-//            case .failure(let error):
-//                self?.permissionStatusError = error.localizedDescription
-//            }
-//        }
-//    }
-//}

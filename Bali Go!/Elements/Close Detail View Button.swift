@@ -22,11 +22,5 @@ struct Close_Detail_View_Button: View {
     }
 }
 
-struct Close_Detail_View_Button_Previews: PreviewProvider {
-    static var previews: some View {
-        Close_Detail_View_Button()
-    }
-}
-
 
 

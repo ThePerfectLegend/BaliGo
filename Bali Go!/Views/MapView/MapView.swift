@@ -26,7 +26,7 @@ struct MapView: UIViewRepresentable {
     /// тип карты
     @EnvironmentObject var mapTypes: RouteModel
     var checkingMapType: MKMapType {
-        switch mapTypes.mapOptions {
+        switch mapTypes.mapType {
         case .standard:
             return .standard
         case .satelliteFlyover:

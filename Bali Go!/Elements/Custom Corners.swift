@@ -22,7 +22,6 @@ struct Custom_Corners: Shape {
         
         return Path(path.cgPath)
     }
-    
 }
 
 

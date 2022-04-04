@@ -22,6 +22,6 @@ struct Like_Button: View {
                         .foregroundColor(engage.isLiked ? Color.baliGo : Color.white)
                 }
                 .mask(Image(systemName: "heart.fill"))
-        }
+                }
     }
 }

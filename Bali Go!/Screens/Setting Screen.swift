@@ -6,22 +6,20 @@
 ////
 
 import SwiftUI
-import StoreKit
 import LinkPresentation
+import StoreKit
 
 struct Setting_Screen: View {
     
     @EnvironmentObject var route: RouteModel
-    
-    ///  попробовать дабавить переменную каторая смотрит какая вью открыта и подставляет правильный тип вью навигации?
-    
+        
     var body: some View {
         NavigationView {
             Form {
                 Section(header: Text("Карта и навигация")) {
-                    Picker("Тип карты", selection: $route.mapOptions) {
-                        ForEach(RouteModel.MapOptions.allCases) { maps in
-                            if maps != route.mapOptions {
+                    Picker("Тип карты", selection: $route.mapType) {
+                        ForEach(RouteModel.MapType.allCases) { maps in
+                            if maps != route.mapType {
                                 Text(maps.rawValue)
                                     .navigationBarTitle("Тип карты", displayMode: .inline)
                             } else { Text(maps.rawValue) }
@@ -43,7 +41,6 @@ struct Setting_Screen: View {
                         writeReview()
                     }
                     
-                    
                     Button("Поделиться Bali Go!") {
                         showAppShareSheet()
                     }
@@ -51,7 +48,7 @@ struct Setting_Screen: View {
             }
             .navigationBarTitle("Настройки", displayMode: .large)
             .onChange(of: route.routeApp) { _ in route.routeAppSave() }
-            .onChange(of: route.mapOptions) { _ in route.mapOptionsSave() }
+            .onChange(of: route.mapType) { _ in route.mapOptionsSave() }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

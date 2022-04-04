@@ -22,14 +22,12 @@ struct Small_Cards_Category_View: View {
                     Text(categoryName)
                         .font(.title3)
                         .fontWeight(.semibold)
-                
                     Spacer()
-                
                     All_Buttom(array: items, category: categoryName)
                 }
             }
             .padding(.horizontal, 18)
-            
+
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
                     ForEach(items) { landmark in

@@ -11,7 +11,7 @@ import MapKit
 final class RouteModel: ObservableObject {
 
     @Published var routeApp: RouteApp
-    @Published var mapOptions: MapOptions
+    @Published var mapType: MapType
     
     enum RouteApp: String, Codable, CaseIterable, Identifiable, Hashable {
         case appleMaps = "Apple Maps"
@@ -20,14 +20,13 @@ final class RouteModel: ObservableObject {
         var id: RouteApp {self}
     }
     
-    enum MapOptions: String, Codable, CaseIterable, Identifiable, Hashable {
+    enum MapType: String, Codable, CaseIterable, Identifiable, Hashable {
         case standard = "Схема"
         case satelliteFlyover = "Спутник"
         
-        var id: MapOptions {self}
+        var id: MapType {self}
     }
     
-
     init() {
         /// загружаем приложение для навигации
         if let routeAppData = UserDefaults.standard.data(forKey: "routeApp") {
@@ -37,18 +36,14 @@ final class RouteModel: ObservableObject {
             } else { self.routeApp = .appleMaps }
         } else { self.routeApp = .appleMaps }
 
-        
-        
         /// загружаем тип отображаемой карты
         if let mapOptionData = UserDefaults.standard.data(forKey: "mapOptions") {
-            if let decoded = try? JSONDecoder().decode(MapOptions.self, from: mapOptionData) {
-                self.mapOptions = decoded
+            if let decoded = try? JSONDecoder().decode(MapType.self, from: mapOptionData) {
+                self.mapType = decoded
                 print("MapOptions loaded from UserDefaults")
-            } else { self.mapOptions = .standard }
-        } else { self.mapOptions = .standard }
-
+            } else { self.mapType = .standard }
+        } else { self.mapType = .standard }
     }
-    
     
     func routeAppSave() {
         if let encoded = try? JSONEncoder().encode(routeApp) {
@@ -58,12 +53,11 @@ final class RouteModel: ObservableObject {
     }
     
     func mapOptionsSave() {
-        if let encoded = try? JSONEncoder().encode(mapOptions) {
+        if let encoded = try? JSONEncoder().encode(mapType) {
             UserDefaults.standard.set(encoded, forKey: "mapOptions")
             print("Map type changed and saved")
         }
     }
-
 }
 
 

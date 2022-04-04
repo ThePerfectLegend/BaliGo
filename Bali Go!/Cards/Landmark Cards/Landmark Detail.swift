@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import MapKit
-
 
 struct Landmark_Detail: View {
     
@@ -130,13 +128,5 @@ struct FullMapView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarTitle(landmark.name)
-    }
-}
-
-///Назад по свайпу
-extension UINavigationController {
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        interactivePopGestureRecognizer?.delegate = nil
     }
 }

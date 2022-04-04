@@ -34,9 +34,3 @@ struct Detail_Map_View: View {
         .navigationBarTitle(landmark.name)
     }
 }
-
-struct Detail_Map_View_Previews: PreviewProvider {
-    static var previews: some View {
-        Detail_Map_View(landmark: landscapes[3])
-    }
-}

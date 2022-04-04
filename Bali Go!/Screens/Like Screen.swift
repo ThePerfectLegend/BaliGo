@@ -37,7 +37,6 @@ struct Like_Screen: View {
                                 ListView(likedLandmarks: filteredLandmarks)
                             case false:
                                 MapViewInSwiftUI(landmarksForDisplay: filteredLandmarks, safeAreas: [])
-
                             }
                         }
                 }
@@ -72,18 +71,11 @@ struct Like_Screen: View {
             if showButton == true {
             Button(action: {
                     list.toggle()
-                
             }) {
                 if list == true {
-                    Text("\(Image(systemName: "map.fill"))")
-                        .foregroundColor(Color.baliGo)
-                        .fontWeight(.semibold)
-                        .font(.headline)
+                    Image(systemName: "map.fill")
                 } else {
-                    Text("\(Image(systemName: "list.bullet"))")
-                        .foregroundColor(Color.baliGo)
-                        .fontWeight(.semibold)
-                        .font(.headline)
+                    Image(systemName: "list.bullet")
                 }
             }
             .padding(16)
@@ -93,8 +85,6 @@ struct Like_Screen: View {
         }
         
     }
-
-
 
     struct ListView: View {
 
@@ -116,13 +106,3 @@ struct Like_Screen: View {
         }
     }
 }
-
-
-
-struct Like_Screen_Previews: PreviewProvider {
-    static var previews: some View {
-        Like_Screen()
-            .environmentObject(ModelData())
-    }
-}
-

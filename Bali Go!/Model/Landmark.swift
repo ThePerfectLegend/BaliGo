@@ -68,7 +68,7 @@ struct Landmark: Codable, Identifiable, Hashable {
     }
     
     
-    var internalRate: Double  /// 1  или 0, логика используется для отображения элемента на вью с большими картами
+    var internalRate: Double 
     var internalSubRate: Double 
     var isVisited: Bool = false
     

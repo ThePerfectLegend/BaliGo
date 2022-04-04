@@ -122,9 +122,15 @@
 		A8A8C5B02618F9E500C5724A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A8C5AF2618F9E500C5724A /* Assets.xcassets */; };
 		A8A8C5B32618F9E500C5724A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A8C5B22618F9E500C5724A /* Preview Assets.xcassets */; };
 		A8AC0FB027B61B0C000647FC /* Event_Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0FAF27B61B0C000647FC /* Event_Detail.swift */; };
-		A8B3C7E3267B3FB8002F1250 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3C7E2267B3FB8002F1250 /* Annotation.swift */; };
 		A8B87E222732685400E0D9B9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E212732685400E0D9B9 /* Route.swift */; };
 		A8B87E2627326E7B00E0D9B9 /* Setting Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */; };
+		A8BD4F0827FB2E5B0022A269 /* UsableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F0727FB2E5B0022A269 /* UsableData.swift */; };
+		A8BD4F0B27FB30270022A269 /* DifferenceBetweenArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F0A27FB30270022A269 /* DifferenceBetweenArrays.swift */; };
+		A8BD4F0D27FB30730022A269 /* SortingArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F0C27FB30730022A269 /* SortingArray.swift */; };
+		A8BD4F0F27FB30B70022A269 /* RandomSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F0E27FB30B70022A269 /* RandomSelection.swift */; };
+		A8BD4F1127FB326F0022A269 /* TimeConventer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F1027FB326F0022A269 /* TimeConventer.swift */; };
+		A8BD4F1327FB33BB0022A269 /* BigCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F1227FB33BB0022A269 /* BigCardView.swift */; };
+		A8BD4F1527FB370A0022A269 /* BackWithGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F1427FB370A0022A269 /* BackWithGesture.swift */; };
 		A8BD99DD265D16F100E3209C /* Penglipuran Village.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD99DC265D16F100E3209C /* Penglipuran Village.swift */; };
 		A8C1911126806A7B00FB800C /* Custom Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1911026806A7B00FB800C /* Custom Corners.swift */; };
 		A8C40E0927A3C1B100CC2FAE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C40E0827A3C1B100CC2FAE /* Event.swift */; };
@@ -271,9 +277,15 @@
 		A8A8C5B22618F9E500C5724A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8A8C5B42618F9E500C5724A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AC0FAF27B61B0C000647FC /* Event_Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_Detail.swift; sourceTree = "<group>"; };
-		A8B3C7E2267B3FB8002F1250 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		A8B87E212732685400E0D9B9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting Screen.swift"; sourceTree = "<group>"; };
+		A8BD4F0727FB2E5B0022A269 /* UsableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsableData.swift; sourceTree = "<group>"; };
+		A8BD4F0A27FB30270022A269 /* DifferenceBetweenArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceBetweenArrays.swift; sourceTree = "<group>"; };
+		A8BD4F0C27FB30730022A269 /* SortingArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingArray.swift; sourceTree = "<group>"; };
+		A8BD4F0E27FB30B70022A269 /* RandomSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSelection.swift; sourceTree = "<group>"; };
+		A8BD4F1027FB326F0022A269 /* TimeConventer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConventer.swift; sourceTree = "<group>"; };
+		A8BD4F1227FB33BB0022A269 /* BigCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCardView.swift; sourceTree = "<group>"; };
+		A8BD4F1427FB370A0022A269 /* BackWithGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackWithGesture.swift; sourceTree = "<group>"; };
 		A8BD99DC265D16F100E3209C /* Penglipuran Village.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Penglipuran Village.swift"; sourceTree = "<group>"; };
 		A8C1911026806A7B00FB800C /* Custom Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Corners.swift"; sourceTree = "<group>"; };
 		A8C40E0827A3C1B100CC2FAE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -543,13 +555,15 @@
 				A8A8C5AD2618F9E200C5724A /* ContentView.swift */,
 				A8B87E242732688500E0D9B9 /* Data */,
 				A8B46DE7261F7D890056EA61 /* Model */,
+				A8BD4F0627FB2A030022A269 /* ViewModel */,
 				A8EE0F142644F2DE000F0E94 /* Screens */,
 				A8EE0F162644F2E8000F0E94 /* Views */,
 				A86F8663261DBAE300461617 /* Cards */,
 				A8D85FCB261DC122003C8C39 /* Elements */,
 				A850882C266B772B00F4E1AA /* _temp */,
-				A8A8C5AF2618F9E500C5724A /* Assets.xcassets */,
+				A8BD4F0927FB2F800022A269 /* Extensions */,
 				A8A8C5B42618F9E500C5724A /* Info.plist */,
+				A8A8C5AF2618F9E500C5724A /* Assets.xcassets */,
 				A8EBDCB9274FB809001C895C /* Launch Screen.storyboard */,
 				A8A8C5B12618F9E500C5724A /* Preview Content */,
 			);
@@ -567,13 +581,9 @@
 		A8B46DE7261F7D890056EA61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A8508829266B747100F4E1AA /* Location.swift */,
 				A8A043A02625F6C300066DF1 /* Landmark.swift */,
-				A82897E0262C5C90000041FC /* Model.swift */,
 				A84E4B712727D591003870C0 /* Tour.swift */,
-				A8B87E212732685400E0D9B9 /* Route.swift */,
 				A8C40E0827A3C1B100CC2FAE /* Event.swift */,
-				A8C40E0A27A3D7B100CC2FAE /* EventModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -593,11 +603,35 @@
 		A8B87E242732688500E0D9B9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A8BD4F0727FB2E5B0022A269 /* UsableData.swift */,
 				A86816C527AA3E7400C390E8 /* Events */,
 				A84E4B732727D880003870C0 /* Tours */,
 				A8B46DE8261F7D970056EA61 /* Landmarks */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		A8BD4F0627FB2A030022A269 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8B87E212732685400E0D9B9 /* Route.swift */,
+				A8508829266B747100F4E1AA /* Location.swift */,
+				A82897E0262C5C90000041FC /* Model.swift */,
+				A8C40E0A27A3D7B100CC2FAE /* EventModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8BD4F0927FB2F800022A269 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8BD4F0A27FB30270022A269 /* DifferenceBetweenArrays.swift */,
+				A8BD4F0C27FB30730022A269 /* SortingArray.swift */,
+				A8BD4F0E27FB30B70022A269 /* RandomSelection.swift */,
+				A8BD4F1027FB326F0022A269 /* TimeConventer.swift */,
+				A8BD4F1427FB370A0022A269 /* BackWithGesture.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A8D70E112766E4CA0064DABD /* Frameworks */ = {
@@ -619,7 +653,6 @@
 				A8D063FD26633D28004FDED2 /* All Buttom.swift */,
 				A858C2362664E6DB00F92409 /* Color.swift */,
 				A86ED853266F090E0070173F /* Distance View.swift */,
-				A8B3C7E2267B3FB8002F1250 /* Annotation.swift */,
 				A8C1911026806A7B00FB800C /* Custom Corners.swift */,
 				A89BB52F276AE24F000F89A6 /* Landmark Description Sheet.swift */,
 				A87361C9278BE8DF0018DF3A /* Blur.swift */,
@@ -665,6 +698,7 @@
 				A842BAD9265223AB003C9063 /* Small Cards Category View.swift */,
 				A842BADC26522EF4003C9063 /* Category Home.swift */,
 				A879CEFA272BDF0B0033887B /* Tours in Landmark.swift */,
+				A8BD4F1227FB33BB0022A269 /* BigCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -756,6 +790,7 @@
 				A8187F8126B7D40200DCCC36 /* Lempuyang.swift in Sources */,
 				A8187F8426B7E05E00DCCC36 /* Jatiluwih.swift in Sources */,
 				A8EE95C7277589ED00A6FB7B /* helicopterBukit.swift in Sources */,
+				A8BD4F0D27FB30730022A269 /* SortingArray.swift in Sources */,
 				A8A5E7E727524D89004121F0 /* velobike11564.swift in Sources */,
 				A8568B8626BB99D0007FA868 /* Virgin.swift in Sources */,
 				A83B7974276DC0DF008EE9FE /* northTour647.swift in Sources */,
@@ -789,6 +824,7 @@
 				A8AC0FB027B61B0C000647FC /* Event_Detail.swift in Sources */,
 				A8A5E7EB27524F39004121F0 /* magicNorth729.swift in Sources */,
 				A84F5B5E2651537E00A70FE5 /* Suwat.swift in Sources */,
+				A8BD4F1527FB370A0022A269 /* BackWithGesture.swift in Sources */,
 				A8460BE4264CD62700F3E9AC /* Tegalanan Rice Terrace.swift in Sources */,
 				A858C2372664E6DB00F92409 /* Color.swift in Sources */,
 				A8460BF2264CE25E00F3E9AC /* Aling-Aling.swift in Sources */,
@@ -802,6 +838,7 @@
 				A8C1911126806A7B00FB800C /* Custom Corners.swift in Sources */,
 				A8B87E2627326E7B00E0D9B9 /* Setting Screen.swift in Sources */,
 				A83B7980276DC660008EE9FE /* ubudTourBirdPark690.swift in Sources */,
+				A8BD4F0F27FB30B70022A269 /* RandomSelection.swift in Sources */,
 				A83E6361267F13F100C2BCEE /* Map Landmark Detail.swift in Sources */,
 				A865C824265549A900ABA633 /* Like Screen.swift in Sources */,
 				A8460BEB264CDD1E00F3E9AC /* Garuda Wisnu.swift in Sources */,
@@ -811,6 +848,7 @@
 				A86816C427AA3E4A00C390E8 /* Event Screen.swift in Sources */,
 				A8568B8F26BBBB89007FA868 /* Canggu.swift in Sources */,
 				A8460BE0264CD1C100F3E9AC /* Uluwatu Temple.swift in Sources */,
+				A8BD4F0B27FB30270022A269 /* DifferenceBetweenArrays.swift in Sources */,
 				A8568B8926BBA149007FA868 /* Jemeluk.swift in Sources */,
 				A8568B7D26BB87E8007FA868 /* Pandawa.swift in Sources */,
 				A8568B8C26BBB56A007FA868 /* Legian.swift in Sources */,
@@ -863,13 +901,16 @@
 				A83B7984276DC8EE008EE9FE /* kintamaniTourHideCanyon687.swift in Sources */,
 				A8460BEF264CDFE700F3E9AC /* Botanic Garden.swift in Sources */,
 				A864C4B4266B49550005EC81 /* Category Card.swift in Sources */,
+				A8BD4F1127FB326F0022A269 /* TimeConventer.swift in Sources */,
 				A86ED854266F090E0070173F /* Distance View.swift in Sources */,
+				A8BD4F0827FB2E5B0022A269 /* UsableData.swift in Sources */,
 				A81B655D2759FA8900C383A8 /* Sawangan.swift in Sources */,
 				A89BFAAF2643D41800FDA4C6 /* Goa Gajah.swift in Sources */,
 				A87100B12754C51100C5C253 /* LD.swift in Sources */,
 				A8CAA349262DD2760098ECDE /* Close Detail View Button.swift in Sources */,
 				A89873F126DCD99600E78ECD /* Detail Map View.swift in Sources */,
 				A82A2C4C2727B10000E3C6DF /* Tour Card.swift in Sources */,
+				A8BD4F1327FB33BB0022A269 /* BigCardView.swift in Sources */,
 				A8E9873826380150009401BF /* Small Card.swift in Sources */,
 				A83AE56A2792C9690017AEDE /* Share Link.swift in Sources */,
 				A86A281026B8E613003E56C8 /* Kuta.swift in Sources */,
@@ -880,7 +921,6 @@
 				A846565527746E5A006F3FB4 /* ubud10492.swift in Sources */,
 				A8460BE7264CD93200F3E9AC /* Agung.swift in Sources */,
 				A83B797E276DC5C5008EE9FE /* instagramTour693.swift in Sources */,
-				A8B3C7E3267B3FB8002F1250 /* Annotation.swift in Sources */,
 				A8FBC1D2263AEAA800D26935 /* ExpandableText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

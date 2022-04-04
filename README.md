@@ -10,7 +10,7 @@ Available in App Store https://apps.apple.com/app/bali-go/id1580667720
 ## Used Technologies
 
 * An architecture MVVM
-* The interface is developed on SwiftUI. The map is implemented on the MapKit with UIViewRepresentable wrapper for integrate view into your SwiftUI view hierarchy
+* The interface is developed on SwiftUI. The map is implemented on the MapKit with UIViewRepresentable wrapper for integrate view into SwiftUI view hierarchy
 * Saving data in UserDefaults
 * Networking with iCloud. Asynchronous data loading
 

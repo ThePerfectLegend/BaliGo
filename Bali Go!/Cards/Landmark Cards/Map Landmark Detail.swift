@@ -28,8 +28,6 @@ struct Map_Landmark_Detail: View {
                             .lineLimit(2)
                         Text(landmark.type)
                             .font(.callout)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.secondary)
                             .lineLimit(1)
                         Distance_View(ladnmark: landmark, showMark: true)
                             .font(.subheadline)

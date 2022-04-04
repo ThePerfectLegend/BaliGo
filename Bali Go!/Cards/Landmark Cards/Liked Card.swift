@@ -42,8 +42,6 @@ struct Liked_Card: View {
                     .lineLimit(1)
                 Text(landmark.type)
                     .font(.callout)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.secondary)
                     .lineLimit(1)
                 Distance_View(ladnmark: landmark, showMark: true)
                     .font(.subheadline)

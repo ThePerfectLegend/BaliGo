@@ -18,7 +18,7 @@ struct ExpandableText: View {
         if !truncated {
             return ""
         } else {
-            return self.expanded ? "" : "...еще"
+            return self.expanded ? "" : " ...еще"
         }
     }
     

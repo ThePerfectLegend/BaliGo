@@ -97,6 +97,7 @@
 		A87361CA278BE8DF0018DF3A /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87361C9278BE8DF0018DF3A /* Blur.swift */; };
 		A87361CC278BEDBC0018DF3A /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87361CB278BEDBC0018DF3A /* Buttons.swift */; };
 		A879CEFB272BDF0B0033887B /* Tours in Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879CEFA272BDF0B0033887B /* Tours in Landmark.swift */; };
+		A881ADE82809BE7B0051851E /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881ADE72809BE7B0051851E /* HapticManager.swift */; };
 		A89873F126DCD99600E78ECD /* Detail Map View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89873F026DCD99600E78ECD /* Detail Map View.swift */; };
 		A89B9AB526C39EE90022642F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9AB426C39EE90022642F /* MapView.swift */; };
 		A89B9AB926C39F570022642F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9AB826C39F570022642F /* MapViewModel.swift */; };
@@ -250,6 +251,7 @@
 		A87361C9278BE8DF0018DF3A /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 		A87361CB278BEDBC0018DF3A /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		A879CEFA272BDF0B0033887B /* Tours in Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tours in Landmark.swift"; sourceTree = "<group>"; };
+		A881ADE72809BE7B0051851E /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		A89873F026DCD99600E78ECD /* Detail Map View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Detail Map View.swift"; sourceTree = "<group>"; };
 		A89B9AB426C39EE90022642F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A89B9AB826C39F570022642F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
@@ -510,6 +512,14 @@
 			path = _Events;
 			sourceTree = "<group>";
 		};
+		A881ADE62809BDF40051851E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A881ADE72809BE7B0051851E /* HapticManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		A89B9AB326C39D270022642F /* MapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +573,7 @@
 				A8F4F48627B0F6A200EBDD86 /* Bali Go!.entitlements */,
 				A8A8C5AB2618F9E200C5724A /* Bali_Go_App.swift */,
 				A8A8C5AD2618F9E200C5724A /* ContentView.swift */,
+				A881ADE62809BDF40051851E /* Managers */,
 				A8B87E242732688500E0D9B9 /* Data */,
 				A8B46DE7261F7D890056EA61 /* Model */,
 				A8BD4F0627FB2A030022A269 /* ViewModel */,
@@ -897,6 +908,7 @@
 				A83B7982276DC85E008EE9FE /* beachTour793.swift in Sources */,
 				A879CEFB272BDF0B0033887B /* Tours in Landmark.swift in Sources */,
 				A8A5E7E927524DB6004121F0 /* waterfallsAndTerrases10198.swift in Sources */,
+				A881ADE82809BE7B0051851E /* HapticManager.swift in Sources */,
 				A86A281326B8EAE3003E56C8 /* Seminyak.swift in Sources */,
 				A8BD99DD265D16F100E3209C /* Penglipuran Village.swift in Sources */,
 				A8DB7D3F265BB6B100112296 /* Taman Ayun.swift in Sources */,

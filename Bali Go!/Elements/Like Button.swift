@@ -16,6 +16,7 @@ struct Like_Button: View {
             Button(action: {
                 engage.isLiked.toggle()
                 modelData.save(object: engage)
+                HapticManager.instance.notification(type: engage.isLiked ? .success : .warning)
             }) {
                 ZStack {
                     Text("\(Image(systemName: engage.isLiked ? "heart.fill" : "heart"))")

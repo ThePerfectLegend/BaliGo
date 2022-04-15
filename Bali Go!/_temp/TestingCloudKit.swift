@@ -1,22 +1,22 @@
+////
+////  TestingCloudKit.swift
+////  Bali Go!
+////
+////  Created by Nizami Tagiyev on 07.02.2022.
+////
 //
-//  TestingCloudKit.swift
-//  Bali Go!
+//import SwiftUI
 //
-//  Created by Nizami Tagiyev on 07.02.2022.
+//struct TestingCloudKit: View {
+//    
+//    @EnvironmentObject var eventModel: EventModel
 //
-
-import SwiftUI
-
-struct TestingCloudKit: View {
-    
-    @EnvironmentObject var eventModel: EventModel
-
-    
-    var body: some View {
-        VStack {
-            Text(eventModel.isSignedToiCloud.description)
-        }
-    }
-}
-
-
+//    
+//    var body: some View {
+//        VStack {
+//            Text(eventModel.isSignedToiCloud.description)
+//        }
+//    }
+//}
+//
+//

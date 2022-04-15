@@ -22,9 +22,9 @@ struct ContentView: View {
         
             TabView {
                 
-                Event_Screen()
-                    .tabItem {Label("Афиша", systemImage: "doc.text.image")}
-                    .tag("Billboard")
+//                Event_Screen()
+//                    .tabItem {Label("Афиша", systemImage: "doc.text.image")}
+//                    .tag("Billboard")
                 
                 Main_Screen()
                     .tabItem {Label("Путешествия", systemImage: "square.grid.2x2.fill")}

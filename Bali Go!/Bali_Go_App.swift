@@ -15,7 +15,7 @@ struct Bali_Go_App: App {
     @StateObject private var modelData = ModelData()
     @StateObject private var location = LocationFetcher()
     @StateObject private var route = RouteModel()
-    @StateObject private var eventModel = EventModel()
+//    @StateObject private var eventModel = EventModel()
 
     var body: some Scene {
         WindowGroup {
@@ -23,7 +23,7 @@ struct Bali_Go_App: App {
                 .environmentObject(modelData)
                 .environmentObject(location)
                 .environmentObject(route)
-                .environmentObject(eventModel)
+//                .environmentObject(eventModel)
 
         }
     }

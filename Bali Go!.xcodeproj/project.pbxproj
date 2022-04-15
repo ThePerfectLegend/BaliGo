@@ -493,11 +493,21 @@
 		A86F8663261DBAE300461617 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				A86816C027AA3CAF00C390E8 /* Event Cards */,
 				A8EAFBEF2747784A00ADFC8B /* Landmark Cards */,
 				A86816BF27AA3C9300C390E8 /* Tour Cards */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		A881ADE52809B8AE0051851E /* _Events */ = {
+			isa = PBXGroup;
+			children = (
+				A8C40E0A27A3D7B100CC2FAE /* EventModel.swift */,
+				A8C40E0827A3C1B100CC2FAE /* Event.swift */,
+				A86816C327AA3E4A00C390E8 /* Event Screen.swift */,
+				A86816C027AA3CAF00C390E8 /* Event Cards */,
+			);
+			path = _Events;
 			sourceTree = "<group>";
 		};
 		A89B9AB326C39D270022642F /* MapView */ = {
@@ -562,8 +572,9 @@
 				A8D85FCB261DC122003C8C39 /* Elements */,
 				A850882C266B772B00F4E1AA /* _temp */,
 				A8BD4F0927FB2F800022A269 /* Extensions */,
-				A8A8C5B42618F9E500C5724A /* Info.plist */,
+				A881ADE52809B8AE0051851E /* _Events */,
 				A8A8C5AF2618F9E500C5724A /* Assets.xcassets */,
+				A8A8C5B42618F9E500C5724A /* Info.plist */,
 				A8EBDCB9274FB809001C895C /* Launch Screen.storyboard */,
 				A8A8C5B12618F9E500C5724A /* Preview Content */,
 			);
@@ -583,7 +594,6 @@
 			children = (
 				A8A043A02625F6C300066DF1 /* Landmark.swift */,
 				A84E4B712727D591003870C0 /* Tour.swift */,
-				A8C40E0827A3C1B100CC2FAE /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -617,7 +627,6 @@
 				A8B87E212732685400E0D9B9 /* Route.swift */,
 				A8508829266B747100F4E1AA /* Location.swift */,
 				A82897E0262C5C90000041FC /* Model.swift */,
-				A8C40E0A27A3D7B100CC2FAE /* EventModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -686,7 +695,6 @@
 				A865C823265549A900ABA633 /* Like Screen.swift */,
 				A865C826265549BF00ABA633 /* Map Screen.swift */,
 				A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */,
-				A86816C327AA3E4A00C390E8 /* Event Screen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";

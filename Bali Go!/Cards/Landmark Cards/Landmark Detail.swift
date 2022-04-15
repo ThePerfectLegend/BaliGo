@@ -46,8 +46,9 @@ struct Landmark_Detail: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                         HStack {
                             Text(landmark.type)
-                                .font(.body)
+                                .font(.callout)
                                 .fontWeight(.medium)
+                                .foregroundColor(.secondary)
                             Spacer()
                             Distance_View(ladnmark: landmark, showMark: true)
                                 .font(.subheadline)

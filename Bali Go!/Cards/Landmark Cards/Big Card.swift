@@ -24,6 +24,8 @@ struct Big_Card: View {
                     .lineLimit(1)
                 Text(landmark.type)
                     .font(.callout)
+                    .fontWeight(.medium)
+                    .foregroundColor(.secondary)
                     .lineLimit(1)
             }
         }

@@ -42,9 +42,11 @@ struct Liked_Card: View {
                     .lineLimit(1)
                 Text(landmark.type)
                     .font(.callout)
+                    .fontWeight(.medium)
+                    .foregroundColor(.secondary)
                     .lineLimit(1)
                 Distance_View(ladnmark: landmark, showMark: true)
-                    .font(.subheadline)
+                    .font(.callout)
                 Spacer(minLength: 4)
                 Divider()
             }

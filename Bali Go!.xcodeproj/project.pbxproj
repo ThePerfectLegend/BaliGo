@@ -67,6 +67,11 @@
 		A84F5B5E2651537E00A70FE5 /* Suwat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F5B5D2651537E00A70FE5 /* Suwat.swift */; };
 		A84F5B61265158E100A70FE5 /* Tibumana.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F5B60265158E100A70FE5 /* Tibumana.swift */; };
 		A850882A266B747100F4E1AA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8508829266B747100F4E1AA /* Location.swift */; };
+		A85138B3280ADF2E002B3540 /* ActivityMainCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138B2280ADF2E002B3540 /* ActivityMainCard.swift */; };
+		A85138B5280ADF4C002B3540 /* ActivitySecondaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138B4280ADF4C002B3540 /* ActivitySecondaryCard.swift */; };
+		A85138B7280ADF5D002B3540 /* ActivityDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138B6280ADF5D002B3540 /* ActivityDetailCard.swift */; };
+		A85138B9280AE0C0002B3540 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138B8280AE0C0002B3540 /* Activity.swift */; };
+		A85138BB280AE100002B3540 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138BA280AE100002B3540 /* ActivityViewModel.swift */; };
 		A8568B7326BB7AE5007FA868 /* LekeLeke.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568B7226BB7AE5007FA868 /* LekeLeke.swift */; };
 		A8568B7726BB8078007FA868 /* Jimbaran.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568B7626BB8078007FA868 /* Jimbaran.swift */; };
 		A8568B7A26BB84C4007FA868 /* Melasti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568B7926BB84C4007FA868 /* Melasti.swift */; };
@@ -221,6 +226,11 @@
 		A84F5B5D2651537E00A70FE5 /* Suwat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suwat.swift; sourceTree = "<group>"; };
 		A84F5B60265158E100A70FE5 /* Tibumana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tibumana.swift; sourceTree = "<group>"; };
 		A8508829266B747100F4E1AA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A85138B2280ADF2E002B3540 /* ActivityMainCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMainCard.swift; sourceTree = "<group>"; };
+		A85138B4280ADF4C002B3540 /* ActivitySecondaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySecondaryCard.swift; sourceTree = "<group>"; };
+		A85138B6280ADF5D002B3540 /* ActivityDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailCard.swift; sourceTree = "<group>"; };
+		A85138B8280AE0C0002B3540 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		A85138BA280AE100002B3540 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 		A8568B7226BB7AE5007FA868 /* LekeLeke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LekeLeke.swift; sourceTree = "<group>"; };
 		A8568B7626BB8078007FA868 /* Jimbaran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jimbaran.swift; sourceTree = "<group>"; };
 		A8568B7926BB84C4007FA868 /* Melasti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melasti.swift; sourceTree = "<group>"; };
@@ -467,12 +477,15 @@
 			path = _temp;
 			sourceTree = "<group>";
 		};
-		A86816BF27AA3C9300C390E8 /* Tour Cards */ = {
+		A86816BF27AA3C9300C390E8 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
 				A82A2C4B2727B10000E3C6DF /* Tour Card.swift */,
+				A85138B2280ADF2E002B3540 /* ActivityMainCard.swift */,
+				A85138B4280ADF4C002B3540 /* ActivitySecondaryCard.swift */,
+				A85138B6280ADF5D002B3540 /* ActivityDetailCard.swift */,
 			);
-			path = "Tour Cards";
+			path = Activities;
 			sourceTree = "<group>";
 		};
 		A86816C027AA3CAF00C390E8 /* Event Cards */ = {
@@ -495,8 +508,8 @@
 		A86F8663261DBAE300461617 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				A8EAFBEF2747784A00ADFC8B /* Landmark Cards */,
-				A86816BF27AA3C9300C390E8 /* Tour Cards */,
+				A8EAFBEF2747784A00ADFC8B /* Landmarks */,
+				A86816BF27AA3C9300C390E8 /* Activities */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -605,6 +618,7 @@
 			children = (
 				A8A043A02625F6C300066DF1 /* Landmark.swift */,
 				A84E4B712727D591003870C0 /* Tour.swift */,
+				A85138B8280AE0C0002B3540 /* Activity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -638,6 +652,7 @@
 				A8B87E212732685400E0D9B9 /* Route.swift */,
 				A8508829266B747100F4E1AA /* Location.swift */,
 				A82897E0262C5C90000041FC /* Model.swift */,
+				A85138BA280AE100002B3540 /* ActivityViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -685,7 +700,7 @@
 			path = Elements;
 			sourceTree = "<group>";
 		};
-		A8EAFBEF2747784A00ADFC8B /* Landmark Cards */ = {
+		A8EAFBEF2747784A00ADFC8B /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
 				A8E987342637F798009401BF /* Big Card.swift */,
@@ -695,7 +710,7 @@
 				A864C4B3266B49550005EC81 /* Category Card.swift */,
 				A83E6360267F13F100C2BCEE /* Map Landmark Detail.swift */,
 			);
-			path = "Landmark Cards";
+			path = Landmarks;
 			sourceTree = "<group>";
 		};
 		A8EE0F142644F2DE000F0E94 /* Screens */ = {
@@ -814,6 +829,7 @@
 				A8568B8626BB99D0007FA868 /* Virgin.swift in Sources */,
 				A83B7974276DC0DF008EE9FE /* northTour647.swift in Sources */,
 				A8568B7726BB8078007FA868 /* Jimbaran.swift in Sources */,
+				A85138B7280ADF5D002B3540 /* ActivityDetailCard.swift in Sources */,
 				A8A5E7E12752398B004121F0 /* divingBlueLagoon1024.swift in Sources */,
 				A8A5E7DB27522A90004121F0 /* baturSunrise19639.swift in Sources */,
 				A8D0640126634075004FDED2 /* All Category Screen.swift in Sources */,
@@ -831,6 +847,7 @@
 				A803F8C42619E15400F699D8 /* Like Button.swift in Sources */,
 				A81B65552759F10900C383A8 /* Nyang Nyang.swift in Sources */,
 				A842BADD26522EF4003C9063 /* Category Home.swift in Sources */,
+				A85138BB280AE100002B3540 /* ActivityViewModel.swift in Sources */,
 				A8A5E7DF27523685004121F0 /* Blue Lagoon.swift in Sources */,
 				A81B65572759F48300C383A8 /* Nunggalan.swift in Sources */,
 				A81B655B2759F8B100C383A8 /* Karma Kandara.swift in Sources */,
@@ -861,6 +878,7 @@
 				A83E6361267F13F100C2BCEE /* Map Landmark Detail.swift in Sources */,
 				A865C824265549A900ABA633 /* Like Screen.swift in Sources */,
 				A8460BEB264CDD1E00F3E9AC /* Garuda Wisnu.swift in Sources */,
+				A85138B5280ADF4C002B3540 /* ActivitySecondaryCard.swift in Sources */,
 				A8EEFEEB27ABA48600FA189C /* ClearBackgroundView.swift in Sources */,
 				A87361CA278BE8DF0018DF3A /* Blur.swift in Sources */,
 				A846564F27745FFC006F3FB4 /* oneDayBest7699.swift in Sources */,
@@ -876,6 +894,7 @@
 				A86816C227AA3CD800C390E8 /* Event_Main.swift in Sources */,
 				A81B655F2759FC1400C383A8 /* Lipah.swift in Sources */,
 				A8EE95CB27758B1500A6FB7B /* helicopterVulcano.swift in Sources */,
+				A85138B3280ADF2E002B3540 /* ActivityMainCard.swift in Sources */,
 				A864126B2662243800F288DF /* Ubud Monkey Forest.swift in Sources */,
 				A8460BDD264CCCC000F3E9AC /* Tirta Gangga.swift in Sources */,
 				A86A281626B8F1B3003E56C8 /* Sangeh.swift in Sources */,
@@ -907,6 +926,7 @@
 				A8340CDD26BA4B3700B8FC6B /* Sekumpul.swift in Sources */,
 				A83B7982276DC85E008EE9FE /* beachTour793.swift in Sources */,
 				A879CEFB272BDF0B0033887B /* Tours in Landmark.swift in Sources */,
+				A85138B9280AE0C0002B3540 /* Activity.swift in Sources */,
 				A8A5E7E927524DB6004121F0 /* waterfallsAndTerrases10198.swift in Sources */,
 				A881ADE82809BE7B0051851E /* HapticManager.swift in Sources */,
 				A86A281326B8EAE3003E56C8 /* Seminyak.swift in Sources */,

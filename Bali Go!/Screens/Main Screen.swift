@@ -17,7 +17,7 @@ struct Main_Screen: View {
         NavigationView {
             VStack{
                 ScrollView(showsIndicators: true) {
-                    Big_Cards_View(landmarks: modelData.selectedLandmarks)
+                    ActivityMainCard()
                     Category_Home()
                 }
             }

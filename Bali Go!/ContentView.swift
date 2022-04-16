@@ -42,6 +42,10 @@ struct ContentView: View {
                     .tabItem {Label("Настройки", systemImage: "gear" )}
                     .tag("Settings")
                 
+                ActivityMainCard()
+                    .tabItem {Label("Developing", systemImage: "bonjour" )}
+                    .tag("Developing")
+                
                 
             }
             .accentColor(.baliGo)

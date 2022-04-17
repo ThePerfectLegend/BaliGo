@@ -11,14 +11,14 @@ import StoreKit
 
 struct Setting_Screen: View {
     
-    @EnvironmentObject var route: RouteModel
+    @EnvironmentObject var route: UserPreferencesViewModel
         
     var body: some View {
         NavigationView {
             Form {
                 Section(header: Text("Карта и навигация")) {
                     Picker("Тип карты", selection: $route.mapType) {
-                        ForEach(RouteModel.MapType.allCases) { maps in
+                        ForEach(UserPreferencesViewModel.MapType.allCases) { maps in
                             if maps != route.mapType {
                                 Text(maps.rawValue)
                                     .navigationBarTitle("Тип карты", displayMode: .inline)
@@ -27,7 +27,7 @@ struct Setting_Screen: View {
                     }
                                         
                     Picker("Строить маршрут в", selection: $route.routeApp) {
-                        ForEach(RouteModel.RouteApp.allCases) { apps in
+                        ForEach(UserPreferencesViewModel.RouteApp.allCases) { apps in
                             if apps != route.routeApp {
                                 Text(apps.rawValue)
                                     .navigationBarTitle("Маршрут", displayMode: .inline)

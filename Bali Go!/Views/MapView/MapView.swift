@@ -24,7 +24,7 @@ struct MapView: UIViewRepresentable {
     var userInteraction: Bool
     
     /// тип карты
-    @EnvironmentObject var mapTypes: RouteModel
+    @EnvironmentObject var mapTypes: UserPreferencesViewModel
     var checkingMapType: MKMapType {
         switch mapTypes.mapType {
         case .standard:

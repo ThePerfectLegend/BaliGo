@@ -11,7 +11,7 @@ import UIKit
 struct ContentView: View {
     
     @EnvironmentObject var location: LocationFetcher
-    @EnvironmentObject var route: RouteModel
+    @EnvironmentObject var route: UserPreferencesViewModel
     
     @State var animate = false
     @State var endSplash = false

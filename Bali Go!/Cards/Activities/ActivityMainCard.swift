@@ -8,31 +8,32 @@
 import SwiftUI
 
 struct ActivityMainCard: View {
+    
+    var activity: Activity = climbingToBaturVolcano
+    
     var body: some View {
         VStack {
-            Image("agung924")
+            Image(activity.image)
                 .resizable()
                 .frame(width: 335, height: 160) // 240
                 .aspectRatio(contentMode: .fit)
                 .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
             
-            VStack(alignment: .leading, spacing: 4) {
-                Text("Name of the Activity, very long name of this Activity")
+            VStack(alignment: .leading, spacing: 2) {
+                Text(activity.name)
                     .font(.headline)
                     .lineLimit(2)
-                Text("Type of Activity")
-                    .font(.callout)
-                    .fontWeight(.medium)
-                    .foregroundColor(.secondary)
-                    .lineLimit(1)
-                Text("Value proposition or nah?")
-                    .font(.subheadline)
-//                Text("Option #2, more?")
-//                    .font(.subheadline)
-                HStack {
-                    Text("RaitingView")
+                HStack(alignment: .bottom) {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(activity.type)
+                            .font(.callout)
+                            .fontWeight(.medium)
+                            .foregroundColor(.secondary)
+                            .lineLimit(1)
+                        ActivityRaitingView(activity: activity)
+                    }
                     Spacer()
-                    Text("PriceView")
+                    ActivityPriceView(activity: activity)
                 }
             }
             .frame(width: 335)
@@ -41,9 +42,79 @@ struct ActivityMainCard: View {
 
         }
         .frame(width: 335)
-        .padding(.horizontal)
     }
 }
+
+
+
+struct ActivityRaitingView: View {
+    
+    var activity: Activity
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("\(activity.numberOfReviews) отзывов")
+                .font(.subheadline)
+            HStack {
+                ZStack {
+                    starsView
+                        .overlay(overlayView.mask(starsView))
+                }
+                Text(String(format: "%.1f", activity.rating))
+                    .font(.subheadline)
+            }
+        }
+    }
+    
+    private var overlayView: some View {
+        GeometryReader { geometry in
+            ZStack(alignment: .leading) {
+                Rectangle()
+                    .foregroundColor(.yellow)
+                    .frame(width: CGFloat(activity.rating) / 5 * geometry.size.width)
+            }
+        }
+        .allowsHitTesting(false)
+    }
+    
+    private var starsView: some View {
+        HStack(spacing: 0) {
+            ForEach(1..<6) { index in
+                Image(systemName: "star.fill")
+                    .font(.subheadline)
+                    .foregroundColor(Color.gray)
+            }
+        }
+    }
+
+}
+
+
+struct ActivityPriceView: View {
+    
+    @EnvironmentObject var vm: UserPreferencesViewModel
+    var activity: Activity
+    
+    var price: Double = 2979
+    
+    //            Text("\(String(format: "%.1f", price)) ₽")
+    
+    var body: some View {
+        VStack(alignment: .trailing) {
+            Text("От")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+            Text("2 979 ₽")
+                .font(.title3)
+                .fontWeight(.semibold)
+                .foregroundColor(.baliGo)
+            Text("За человека")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+        }
+    }
+}
+
 
 
 /*

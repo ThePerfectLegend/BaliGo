@@ -128,7 +128,7 @@
 		A8A8C5B02618F9E500C5724A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A8C5AF2618F9E500C5724A /* Assets.xcassets */; };
 		A8A8C5B32618F9E500C5724A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A8C5B22618F9E500C5724A /* Preview Assets.xcassets */; };
 		A8AC0FB027B61B0C000647FC /* Event_Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0FAF27B61B0C000647FC /* Event_Detail.swift */; };
-		A8B87E222732685400E0D9B9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E212732685400E0D9B9 /* Route.swift */; };
+		A8B87E222732685400E0D9B9 /* UserPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */; };
 		A8B87E2627326E7B00E0D9B9 /* Setting Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */; };
 		A8BD4F0827FB2E5B0022A269 /* UsableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F0727FB2E5B0022A269 /* UsableData.swift */; };
 		A8BD4F0B27FB30270022A269 /* DifferenceBetweenArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F0A27FB30270022A269 /* DifferenceBetweenArrays.swift */; };
@@ -148,6 +148,7 @@
 		A8DA675326569D8800ECBDFA /* Gunung Kawi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA675226569D8800ECBDFA /* Gunung Kawi.swift */; };
 		A8DA675926569E4700ECBDFA /* Tirta Empul.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA675826569E4700ECBDFA /* Tirta Empul.swift */; };
 		A8DB7D3F265BB6B100112296 /* Taman Ayun.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB7D3E265BB6B100112296 /* Taman Ayun.swift */; };
+		A8E29572280C596B00106F31 /* climbingToBaturVolcano.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E29571280C596B00106F31 /* climbingToBaturVolcano.swift */; };
 		A8E987352637F798009401BF /* Big Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E987342637F798009401BF /* Big Card.swift */; };
 		A8E9873826380150009401BF /* Small Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9873726380150009401BF /* Small Card.swift */; };
 		A8E9873B263806F0009401BF /* Landmark Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9873A263806F0009401BF /* Landmark Detail.swift */; };
@@ -289,7 +290,7 @@
 		A8A8C5B22618F9E500C5724A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8A8C5B42618F9E500C5724A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AC0FAF27B61B0C000647FC /* Event_Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_Detail.swift; sourceTree = "<group>"; };
-		A8B87E212732685400E0D9B9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewModel.swift; sourceTree = "<group>"; };
 		A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting Screen.swift"; sourceTree = "<group>"; };
 		A8BD4F0727FB2E5B0022A269 /* UsableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsableData.swift; sourceTree = "<group>"; };
 		A8BD4F0A27FB30270022A269 /* DifferenceBetweenArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceBetweenArrays.swift; sourceTree = "<group>"; };
@@ -309,6 +310,7 @@
 		A8DA675226569D8800ECBDFA /* Gunung Kawi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gunung Kawi.swift"; sourceTree = "<group>"; };
 		A8DA675826569E4700ECBDFA /* Tirta Empul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tirta Empul.swift"; sourceTree = "<group>"; };
 		A8DB7D3E265BB6B100112296 /* Taman Ayun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Taman Ayun.swift"; sourceTree = "<group>"; };
+		A8E29571280C596B00106F31 /* climbingToBaturVolcano.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climbingToBaturVolcano.swift; sourceTree = "<group>"; };
 		A8E987342637F798009401BF /* Big Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Big Card.swift"; sourceTree = "<group>"; };
 		A8E9873726380150009401BF /* Small Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Small Card.swift"; sourceTree = "<group>"; };
 		A8E9873A263806F0009401BF /* Landmark Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Landmark Detail.swift"; sourceTree = "<group>"; usesTabs = 0; };
@@ -642,6 +644,7 @@
 				A86816C527AA3E7400C390E8 /* Events */,
 				A84E4B732727D880003870C0 /* Tours */,
 				A8B46DE8261F7D970056EA61 /* Landmarks */,
+				A8E29571280C596B00106F31 /* climbingToBaturVolcano.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -649,7 +652,7 @@
 		A8BD4F0627FB2A030022A269 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A8B87E212732685400E0D9B9 /* Route.swift */,
+				A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */,
 				A8508829266B747100F4E1AA /* Location.swift */,
 				A82897E0262C5C90000041FC /* Model.swift */,
 				A85138BA280AE100002B3540 /* ActivityViewModel.swift */,
@@ -911,6 +914,7 @@
 				A8568B8326BB9057007FA868 /* Sanur.swift in Sources */,
 				A8A5E7ED27524FBF004121F0 /* waterfall969.swift in Sources */,
 				A8187F7526B7B6F600DCCC36 /* Tanah Lot.swift in Sources */,
+				A8E29572280C596B00106F31 /* climbingToBaturVolcano.swift in Sources */,
 				A8A5E7E327523DF0004121F0 /* ejoingDay20059.swift in Sources */,
 				A8A5E7D627522393004121F0 /* baturTrunyan1025.swift in Sources */,
 				A8DA675926569E4700ECBDFA /* Tirta Empul.swift in Sources */,
@@ -922,7 +926,7 @@
 				A8DA675326569D8800ECBDFA /* Gunung Kawi.swift in Sources */,
 				A83B7978276DC34D008EE9FE /* eastTour.swift in Sources */,
 				A8187F7E26B7CCCD00DCCC36 /* Besakih.swift in Sources */,
-				A8B87E222732685400E0D9B9 /* Route.swift in Sources */,
+				A8B87E222732685400E0D9B9 /* UserPreferencesViewModel.swift in Sources */,
 				A8340CDD26BA4B3700B8FC6B /* Sekumpul.swift in Sources */,
 				A83B7982276DC85E008EE9FE /* beachTour793.swift in Sources */,
 				A879CEFB272BDF0B0033887B /* Tours in Landmark.swift in Sources */,

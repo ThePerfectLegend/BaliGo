@@ -1,5 +1,5 @@
 //
-//  Route.swift
+//  UserPreferencesViewModel.swift
 //  Bali Go!
 //
 //  Created by Nizami Tagiyev on 03.11.2021.
@@ -8,14 +8,15 @@
 import Foundation
 import MapKit
 
-final class RouteModel: ObservableObject {
+final class UserPreferencesViewModel: ObservableObject {
 
     @Published var routeApp: RouteApp
     @Published var mapType: MapType
+    @Published var currency: Currency = .RUB
     
     enum RouteApp: String, Codable, CaseIterable, Identifiable, Hashable {
-        case appleMaps = "Apple Maps"
-        case googleMaps = "Google Maps"
+        case appleMaps = "Apple Карты"
+        case googleMaps = "Google Карты"
         
         var id: RouteApp {self}
     }
@@ -25,6 +26,14 @@ final class RouteModel: ObservableObject {
         case satelliteFlyover = "Спутник"
         
         var id: MapType {self}
+    }
+    
+    enum Currency: String, Codable, CaseIterable, Identifiable, Hashable {
+        case RUB = "₽"
+        case USD = "$"
+        case IDR = "Rp"
+        
+        var id: Currency {self}
     }
     
     init() {

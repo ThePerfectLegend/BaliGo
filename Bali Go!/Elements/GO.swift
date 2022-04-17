@@ -10,7 +10,7 @@ import MapKit
 
 struct Go: View {
     @EnvironmentObject var location: LocationFetcher
-    @EnvironmentObject var route: RouteModel
+    @EnvironmentObject var route: UserPreferencesViewModel
     
     var coordinate: CLLocation
     

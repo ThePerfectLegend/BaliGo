@@ -7,6 +7,14 @@
 
 import Foundation
 
-struct Activity {
-    //Codable, Identifiable, Hashable
+struct Activity: Codable, Identifiable, Hashable  {
+    
+    let id: Int
+    let name: String
+    let type: String
+    let numberOfReviews: Int
+    let rating: Double
+    var isLiked: Bool = false
+    let price: [UserPreferencesViewModel.Currency : Double]
+    let image: String
 }

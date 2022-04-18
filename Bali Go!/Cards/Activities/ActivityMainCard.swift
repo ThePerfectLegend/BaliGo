@@ -52,7 +52,7 @@ struct ActivityRaitingView: View {
     var activity: Activity
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 2) {
             Text("\(activity.numberOfReviews) отзывов")
                 .font(.subheadline)
             HStack {

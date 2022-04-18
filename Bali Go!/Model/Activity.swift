@@ -17,4 +17,5 @@ struct Activity: Codable, Identifiable, Hashable  {
     var isLiked: Bool = false
     let price: [UserPreferencesViewModel.Currency : Double]
     let image: String
+    let description: String
 }

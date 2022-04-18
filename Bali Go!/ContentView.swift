@@ -42,7 +42,7 @@ struct ContentView: View {
                     .tabItem {Label("Настройки", systemImage: "gear" )}
                     .tag("Settings")
                 
-                ActivityMainCard()
+                ActivityDetailCard()
                     .tabItem {Label("Developing", systemImage: "bonjour" )}
                     .tag("Developing")
                 

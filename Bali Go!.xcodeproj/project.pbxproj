@@ -62,6 +62,7 @@
 		A846565127746225006F3FB4 /* unusualPlaces11469.swift in Sources */ = {isa = PBXBuildFile; fileRef = A846565027746225006F3FB4 /* unusualPlaces11469.swift */; };
 		A846565327746B63006F3FB4 /* bestViews13682.swift in Sources */ = {isa = PBXBuildFile; fileRef = A846565227746B63006F3FB4 /* bestViews13682.swift */; };
 		A846565527746E5A006F3FB4 /* ubud10492.swift in Sources */ = {isa = PBXBuildFile; fileRef = A846565427746E5A006F3FB4 /* ubud10492.swift */; };
+		A849A806280D7E32008665E9 /* _tempList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A849A805280D7E32008665E9 /* _tempList.swift */; };
 		A84E4B722727D591003870C0 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84E4B712727D591003870C0 /* Tour.swift */; };
 		A84E4B762727DB1F003870C0 /* climbingToBatur1008.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84E4B752727DB1F003870C0 /* climbingToBatur1008.swift */; };
 		A84F5B5E2651537E00A70FE5 /* Suwat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F5B5D2651537E00A70FE5 /* Suwat.swift */; };
@@ -222,6 +223,7 @@
 		A846565027746225006F3FB4 /* unusualPlaces11469.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unusualPlaces11469.swift; sourceTree = "<group>"; };
 		A846565227746B63006F3FB4 /* bestViews13682.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestViews13682.swift; sourceTree = "<group>"; };
 		A846565427746E5A006F3FB4 /* ubud10492.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ubud10492.swift; sourceTree = "<group>"; };
+		A849A805280D7E32008665E9 /* _tempList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _tempList.swift; sourceTree = "<group>"; };
 		A84E4B712727D591003870C0 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		A84E4B752727DB1F003870C0 /* climbingToBatur1008.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climbingToBatur1008.swift; sourceTree = "<group>"; };
 		A84F5B5D2651537E00A70FE5 /* Suwat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suwat.swift; sourceTree = "<group>"; };
@@ -475,6 +477,7 @@
 				A87100B02754C51100C5C253 /* LD.swift */,
 				A8F4F48427B0F5CD00EBDD86 /* TestingCloudKit.swift */,
 				A8A335A227BB4D120000DD31 /* datePickerTest.swift */,
+				A849A805280D7E32008665E9 /* _tempList.swift */,
 			);
 			path = _temp;
 			sourceTree = "<group>";
@@ -946,6 +949,7 @@
 				A8460BEF264CDFE700F3E9AC /* Botanic Garden.swift in Sources */,
 				A864C4B4266B49550005EC81 /* Category Card.swift in Sources */,
 				A8BD4F1127FB326F0022A269 /* TimeConventer.swift in Sources */,
+				A849A806280D7E32008665E9 /* _tempList.swift in Sources */,
 				A86ED854266F090E0070173F /* Distance View.swift in Sources */,
 				A8BD4F0827FB2E5B0022A269 /* UsableData.swift in Sources */,
 				A81B655D2759FA8900C383A8 /* Sawangan.swift in Sources */,

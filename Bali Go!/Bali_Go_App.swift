@@ -12,7 +12,7 @@ struct Bali_Go_App: App {
     
     
     
-    @StateObject private var modelData = ModelData()
+    @StateObject private var modelData = LandmarkViewModel()
     @StateObject private var location = LocationFetcher()
     @StateObject private var route = UserPreferencesViewModel()
 //    @StateObject private var eventModel = EventModel()

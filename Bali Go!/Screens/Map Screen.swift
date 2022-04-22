@@ -10,7 +10,7 @@ import SwiftUI
 struct Map_Screen: View {
     
     @EnvironmentObject var location: LocationFetcher
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var modelData: LandmarkViewModel
     
     var body: some View {
         NavigationView {

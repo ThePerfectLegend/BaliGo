@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A800FC64265FB8B500B8A166 /* Bird Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800FC63265FB8B500B8A166 /* Bird Park.swift */; };
-		A803F8C42619E15400F699D8 /* Like Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803F8C32619E15400F699D8 /* Like Button.swift */; };
+		A803F8C42619E15400F699D8 /* CardLikeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803F8C32619E15400F699D8 /* CardLikeButtons.swift */; };
 		A806619B264644A700612F4F /* Campuhan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806619A264644A700612F4F /* Campuhan.swift */; };
 		A8187F7526B7B6F600DCCC36 /* Tanah Lot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8187F7426B7B6F600DCCC36 /* Tanah Lot.swift */; };
 		A8187F7826B7BD3200DCCC36 /* Goa Lawah.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8187F7726B7BD3200DCCC36 /* Goa Lawah.swift */; };
@@ -87,6 +87,8 @@
 		A8568B9526BBC580007FA868 /* Batukaru.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568B9426BBC580007FA868 /* Batukaru.swift */; };
 		A858C2302664DC3C00F92409 /* Tukad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858C22F2664DC3C00F92409 /* Tukad.swift */; };
 		A858C2372664E6DB00F92409 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858C2362664E6DB00F92409 /* Color.swift */; };
+		A85E08D82812965300F98C4E /* Likeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E08D72812965300F98C4E /* Likeable.swift */; };
+		A85E08DA2812A3A800F98C4E /* DetailViewLikeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E08D92812A3A800F98C4E /* DetailViewLikeButtons.swift */; };
 		A864126B2662243800F288DF /* Ubud Monkey Forest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A864126A2662243800F288DF /* Ubud Monkey Forest.swift */; };
 		A864C4B4266B49550005EC81 /* Category Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A864C4B3266B49550005EC81 /* Category Card.swift */; };
 		A865C824265549A900ABA633 /* Like Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865C823265549A900ABA633 /* Like Screen.swift */; };
@@ -128,6 +130,7 @@
 		A8A8C5AE2618F9E200C5724A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8C5AD2618F9E200C5724A /* ContentView.swift */; };
 		A8A8C5B02618F9E500C5724A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A8C5AF2618F9E500C5724A /* Assets.xcassets */; };
 		A8A8C5B32618F9E500C5724A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A8C5B22618F9E500C5724A /* Preview Assets.xcassets */; };
+		A8AAD1E72811400500016E27 /* ContentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AAD1E62811400500016E27 /* ContentTableView.swift */; };
 		A8AC0FB027B61B0C000647FC /* Event_Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0FAF27B61B0C000647FC /* Event_Detail.swift */; };
 		A8B87E222732685400E0D9B9 /* UserPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */; };
 		A8B87E2627326E7B00E0D9B9 /* Setting Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */; };
@@ -145,6 +148,8 @@
 		A8CAA349262DD2760098ECDE /* Close Detail View Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAA348262DD2760098ECDE /* Close Detail View Button.swift */; };
 		A8D063FE26633D28004FDED2 /* All Buttom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D063FD26633D28004FDED2 /* All Buttom.swift */; };
 		A8D0640126634075004FDED2 /* All Category Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D0640026634075004FDED2 /* All Category Screen.swift */; };
+		A8D4C987280FEBB100B73DFE /* _tempHidetabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D4C986280FEBB100B73DFE /* _tempHidetabBar.swift */; };
+		A8D4C98928101F8B00B73DFE /* TabBarHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D4C98828101F8B00B73DFE /* TabBarHide.swift */; };
 		A8D70E132766E4CA0064DABD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D70E122766E4CA0064DABD /* MapKit.framework */; };
 		A8DA675326569D8800ECBDFA /* Gunung Kawi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA675226569D8800ECBDFA /* Gunung Kawi.swift */; };
 		A8DA675926569E4700ECBDFA /* Tirta Empul.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA675826569E4700ECBDFA /* Tirta Empul.swift */; };
@@ -169,7 +174,7 @@
 
 /* Begin PBXFileReference section */
 		A800FC63265FB8B500B8A166 /* Bird Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bird Park.swift"; sourceTree = "<group>"; };
-		A803F8C32619E15400F699D8 /* Like Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Like Button.swift"; sourceTree = "<group>"; };
+		A803F8C32619E15400F699D8 /* CardLikeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLikeButtons.swift; sourceTree = "<group>"; };
 		A806619A264644A700612F4F /* Campuhan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campuhan.swift; sourceTree = "<group>"; };
 		A8187F7426B7B6F600DCCC36 /* Tanah Lot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tanah Lot.swift"; sourceTree = "<group>"; };
 		A8187F7726B7BD3200DCCC36 /* Goa Lawah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goa Lawah.swift"; sourceTree = "<group>"; };
@@ -248,6 +253,8 @@
 		A8568B9426BBC580007FA868 /* Batukaru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Batukaru.swift; sourceTree = "<group>"; };
 		A858C22F2664DC3C00F92409 /* Tukad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tukad.swift; sourceTree = "<group>"; };
 		A858C2362664E6DB00F92409 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A85E08D72812965300F98C4E /* Likeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Likeable.swift; sourceTree = "<group>"; };
+		A85E08D92812A3A800F98C4E /* DetailViewLikeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewLikeButtons.swift; sourceTree = "<group>"; };
 		A864126A2662243800F288DF /* Ubud Monkey Forest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ubud Monkey Forest.swift"; sourceTree = "<group>"; };
 		A864C4B3266B49550005EC81 /* Category Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category Card.swift"; sourceTree = "<group>"; };
 		A865C823265549A900ABA633 /* Like Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Like Screen.swift"; sourceTree = "<group>"; };
@@ -291,6 +298,7 @@
 		A8A8C5AF2618F9E500C5724A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8A8C5B22618F9E500C5724A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8A8C5B42618F9E500C5724A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8AAD1E62811400500016E27 /* ContentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableView.swift; sourceTree = "<group>"; };
 		A8AC0FAF27B61B0C000647FC /* Event_Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_Detail.swift; sourceTree = "<group>"; };
 		A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewModel.swift; sourceTree = "<group>"; };
 		A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting Screen.swift"; sourceTree = "<group>"; };
@@ -308,6 +316,8 @@
 		A8CAA348262DD2760098ECDE /* Close Detail View Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Close Detail View Button.swift"; sourceTree = "<group>"; };
 		A8D063FD26633D28004FDED2 /* All Buttom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Buttom.swift"; sourceTree = "<group>"; };
 		A8D0640026634075004FDED2 /* All Category Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Category Screen.swift"; sourceTree = "<group>"; };
+		A8D4C986280FEBB100B73DFE /* _tempHidetabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _tempHidetabBar.swift; sourceTree = "<group>"; };
+		A8D4C98828101F8B00B73DFE /* TabBarHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHide.swift; sourceTree = "<group>"; };
 		A8D70E122766E4CA0064DABD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A8DA675226569D8800ECBDFA /* Gunung Kawi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gunung Kawi.swift"; sourceTree = "<group>"; };
 		A8DA675826569E4700ECBDFA /* Tirta Empul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tirta Empul.swift"; sourceTree = "<group>"; };
@@ -478,8 +488,26 @@
 				A8F4F48427B0F5CD00EBDD86 /* TestingCloudKit.swift */,
 				A8A335A227BB4D120000DD31 /* datePickerTest.swift */,
 				A849A805280D7E32008665E9 /* _tempList.swift */,
+				A8D4C986280FEBB100B73DFE /* _tempHidetabBar.swift */,
 			);
 			path = _temp;
+			sourceTree = "<group>";
+		};
+		A85E08D52812851C00F98C4E /* Like Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A803F8C32619E15400F699D8 /* CardLikeButtons.swift */,
+				A85E08D92812A3A800F98C4E /* DetailViewLikeButtons.swift */,
+			);
+			path = "Like Buttons";
+			sourceTree = "<group>";
+		};
+		A85E08D6281295DF00F98C4E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A85E08D72812965300F98C4E /* Likeable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A86816BF27AA3C9300C390E8 /* Activities */ = {
@@ -602,8 +630,9 @@
 				A850882C266B772B00F4E1AA /* _temp */,
 				A8BD4F0927FB2F800022A269 /* Extensions */,
 				A881ADE52809B8AE0051851E /* _Events */,
-				A8A8C5AF2618F9E500C5724A /* Assets.xcassets */,
+				A85E08D6281295DF00F98C4E /* Protocols */,
 				A8A8C5B42618F9E500C5724A /* Info.plist */,
+				A8A8C5AF2618F9E500C5724A /* Assets.xcassets */,
 				A8EBDCB9274FB809001C895C /* Launch Screen.storyboard */,
 				A8A8C5B12618F9E500C5724A /* Preview Content */,
 			);
@@ -671,6 +700,7 @@
 				A8BD4F0E27FB30B70022A269 /* RandomSelection.swift */,
 				A8BD4F1027FB326F0022A269 /* TimeConventer.swift */,
 				A8BD4F1427FB370A0022A269 /* BackWithGesture.swift */,
+				A8D4C98828101F8B00B73DFE /* TabBarHide.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -687,9 +717,9 @@
 		A8D85FCB261DC122003C8C39 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				A85E08D52812851C00F98C4E /* Like Buttons */,
 				A89873F026DCD99600E78ECD /* Detail Map View.swift */,
 				A8FBC1D1263AEAA800D26935 /* ExpandableText.swift */,
-				A803F8C32619E15400F699D8 /* Like Button.swift */,
 				A8CAA348262DD2760098ECDE /* Close Detail View Button.swift */,
 				A8D063FD26633D28004FDED2 /* All Buttom.swift */,
 				A858C2362664E6DB00F92409 /* Color.swift */,
@@ -702,6 +732,7 @@
 				A83AE56D2792D0BA0017AEDE /* bali-go-cover-1024px.png */,
 				A8EEFEEA27ABA48600FA189C /* ClearBackgroundView.swift */,
 				A868A90127B790B9000F681F /* GO.swift */,
+				A8AAD1E62811400500016E27 /* ContentTableView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -848,9 +879,10 @@
 				A81B654F2759E9FC00C383A8 /* Dreamland.swift in Sources */,
 				A8EE0F0F2644EF80000F0E94 /* Main Screen.swift in Sources */,
 				A8A335A327BB4D120000DD31 /* datePickerTest.swift in Sources */,
+				A8D4C98928101F8B00B73DFE /* TabBarHide.swift in Sources */,
 				A846565127746225006F3FB4 /* unusualPlaces11469.swift in Sources */,
 				A8568B9226BBC126007FA868 /* Batur.swift in Sources */,
-				A803F8C42619E15400F699D8 /* Like Button.swift in Sources */,
+				A803F8C42619E15400F699D8 /* CardLikeButtons.swift in Sources */,
 				A81B65552759F10900C383A8 /* Nyang Nyang.swift in Sources */,
 				A842BADD26522EF4003C9063 /* Category Home.swift in Sources */,
 				A85138BB280AE100002B3540 /* ActivityViewModel.swift in Sources */,
@@ -871,6 +903,7 @@
 				A858C2372664E6DB00F92409 /* Color.swift in Sources */,
 				A8460BF2264CE25E00F3E9AC /* Aling-Aling.swift in Sources */,
 				A83B7986276DC99A008EE9FE /* agung924.swift in Sources */,
+				A8D4C987280FEBB100B73DFE /* _tempHidetabBar.swift in Sources */,
 				A8187F7B26B7C64700DCCC36 /* Ulun Danu Beratan.swift in Sources */,
 				A868A90227B790B9000F681F /* GO.swift in Sources */,
 				A8568B9526BBC580007FA868 /* Batukaru.swift in Sources */,
@@ -878,6 +911,7 @@
 				A81B65532759EDA100C383A8 /* Bingin.swift in Sources */,
 				A8A5E7DD27523333004121F0 /* divingAmed940.swift in Sources */,
 				A8C1911126806A7B00FB800C /* Custom Corners.swift in Sources */,
+				A85E08D82812965300F98C4E /* Likeable.swift in Sources */,
 				A8B87E2627326E7B00E0D9B9 /* Setting Screen.swift in Sources */,
 				A83B7980276DC660008EE9FE /* ubudTourBirdPark690.swift in Sources */,
 				A8BD4F0F27FB30B70022A269 /* RandomSelection.swift in Sources */,
@@ -952,6 +986,7 @@
 				A849A806280D7E32008665E9 /* _tempList.swift in Sources */,
 				A86ED854266F090E0070173F /* Distance View.swift in Sources */,
 				A8BD4F0827FB2E5B0022A269 /* UsableData.swift in Sources */,
+				A85E08DA2812A3A800F98C4E /* DetailViewLikeButtons.swift in Sources */,
 				A81B655D2759FA8900C383A8 /* Sawangan.swift in Sources */,
 				A89BFAAF2643D41800FDA4C6 /* Goa Gajah.swift in Sources */,
 				A87100B12754C51100C5C253 /* LD.swift in Sources */,
@@ -965,6 +1000,7 @@
 				A8340CE126BA50D800B8FC6B /* GitGit.swift in Sources */,
 				A84E4B762727DB1F003870C0 /* climbingToBatur1008.swift in Sources */,
 				A8E9873B263806F0009401BF /* Landmark Detail.swift in Sources */,
+				A8AAD1E72811400500016E27 /* ContentTableView.swift in Sources */,
 				A8340CE726BA5DEE00B8FC6B /* Banyumala.swift in Sources */,
 				A846565527746E5A006F3FB4 /* ubud10492.swift in Sources */,
 				A8460BE7264CD93200F3E9AC /* Agung.swift in Sources */,

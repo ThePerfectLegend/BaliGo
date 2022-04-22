@@ -9,39 +9,47 @@ import SwiftUI
 
 struct ActivityMainCard: View {
     
-    var activity: Activity = climbingToBaturVolcano
+    @State var activity: Activity
+    
+//    @EnvironmentObject var viewModel: ActivityViewModel
+//    var landmarkIndex: Int {
+//        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+//    }
     
     var body: some View {
-        VStack {
-            Image(activity.image)
-                .resizable()
-                .frame(width: 335, height: 160) // 240
-                .aspectRatio(contentMode: .fit)
-                .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
-            
-            VStack(alignment: .leading, spacing: 2) {
-                Text(activity.name)
-                    .font(.headline)
-                    .lineLimit(2)
-                HStack(alignment: .bottom) {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(activity.type)
-                            .font(.callout)
-                            .fontWeight(.medium)
-                            .foregroundColor(.secondary)
-                            .lineLimit(1)
-                        ActivityRaitingView(activity: activity)
+        ZStack(alignment: .topTrailing) {
+            VStack {
+                Image(activity.image)
+                    .resizable()
+                    .frame(width: 335, height: 160) // 240
+                    .aspectRatio(contentMode: .fit)
+                    .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(activity.name)
+                        .font(.headline)
+                        .lineLimit(2)
+                    HStack(alignment: .bottom) {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(activity.type)
+                                .font(.callout)
+                                .fontWeight(.medium)
+                                .foregroundColor(.secondary)
+                                .lineLimit(1)
+                            ActivityRaitingView(activity: activity)
+                        }
+                        Spacer()
+                        ActivityPriceView(activity: activity)
                     }
-                    Spacer()
-                    ActivityPriceView(activity: activity)
                 }
+                .frame(width: 335)
             }
             .frame(width: 335)
             
-            Spacer()
-
+            LikeButtonActivityCard(activity: $activity)
+                .font(.title)
+                .padding(10)
         }
-        .frame(width: 335)
     }
 }
 
@@ -62,6 +70,8 @@ struct ActivityRaitingView: View {
                 }
                 Text(String(format: "%.1f", activity.rating))
                     .font(.subheadline)
+                    .lineLimit(1)
+                    .scaledToFit()
             }
         }
     }

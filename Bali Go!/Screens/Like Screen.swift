@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Like_Screen: View {
 
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var modelData: LandmarkViewModel
     @State private var screenState: Bool = true
 
     private var filteredLandmarks: [Landmark] {

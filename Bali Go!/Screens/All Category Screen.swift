@@ -10,7 +10,7 @@ import SwiftUI
 
 struct All_Category_Screen: View {
     
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var modelData: LandmarkViewModel
     @State private var screenState: Bool = true
     
     var category: String

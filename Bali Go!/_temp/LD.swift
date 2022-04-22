@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LD: View {
     
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var modelData: LandmarkViewModel
     var landmark: Landmark
     
     var landmarkIndex: Int {
@@ -81,9 +81,9 @@ struct LD: View {
             
         }
             HStack{
-                Back_Buttom_LandmarkDetail(presentationMode: presentationMode)
+                CustomBackButton(presentationMode: presentationMode)
                 Spacer()
-                Like_Button_LandmarkDetail(engage: $modelData.landmarks[landmarkIndex])
+                LikeButtonLandmarkDetail(landmark: $modelData.landmarks[landmarkIndex])
             }
             .padding(.horizontal, 12)
         }

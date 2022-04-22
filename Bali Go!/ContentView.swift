@@ -42,9 +42,9 @@ struct ContentView: View {
                     .tabItem {Label("Настройки", systemImage: "gear" )}
                     .tag("Settings")
                 
-                ActivityDetailCard()
-                    .tabItem {Label("Developing", systemImage: "bonjour" )}
-                    .tag("Developing")
+//                ActivityDetailCard()
+//                    .tabItem {Label("Developing", systemImage: "bonjour" )}
+//                    .tag("Developing")
                 
                 
             }
@@ -88,7 +88,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(ModelData())
+            .environmentObject(LandmarkViewModel())
             
     }
 }

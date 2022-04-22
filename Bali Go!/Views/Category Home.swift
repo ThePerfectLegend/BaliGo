@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Category_Home: View {
     
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var modelData: LandmarkViewModel
     
     var body: some View {
         ForEach(modelData.categories.keys.sorted(), id: \.self) { key in

@@ -42,7 +42,7 @@ struct Go: View {
             }
             .foregroundColor(Color.white)
             .frame(maxWidth: .infinity)
-            .frame(height: 44)
+            .frame(height: 50)
             .background(LinearGradient(gradient: Gradient(colors: [Color.baliGo, Color.baliGoSec]),
                                        startPoint: .init(x: 1.2, y: 0.21),
                                        endPoint: .init(x: -0.5, y: 0.79)))

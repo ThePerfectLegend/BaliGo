@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Small_Cards_Category_View: View {
     
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var modelData: LandmarkViewModel
     
     var categoryName: String
     var items: [Landmark]

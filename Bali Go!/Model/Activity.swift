@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Activity: Codable, Identifiable, Hashable  {
+struct Activity: Codable, Identifiable, Hashable {
+    
+    static let type = "Activity"
     
     let id: Int
     let name: String
@@ -18,4 +20,5 @@ struct Activity: Codable, Identifiable, Hashable  {
     let price: [UserPreferencesViewModel.Currency : Double]
     let image: String
     let description: String
+    let milestoneContent: [[String: String]]
 }

@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ActivityDetailCard: View {
     
-    let activity: Activity = climbingToBaturVolcano
+    @State var activity: Activity = climbingToBaturVolcano
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+        
     var body: some View {
         ZStack(alignment: .top) {
             ScrollView(.vertical) {
@@ -47,24 +49,41 @@ struct ActivityDetailCard: View {
                     }
                     
                     Text(activity.description)
-                        .font(.callout)
+                        .font(.callout.leading(.tight))
                         .padding(.top, 2)
                     
-                    Text("Полное описание на MyBaliTrips \(Image(systemName: "arrow.up.forward.app.fill"))")
-                        .font(.callout)
-                        .fontWeight(.medium)
-                        .foregroundColor(.baliGo)
-                        .padding(.top, 2)
+                    ContentTableView(contentData: activity.milestoneContent)
+                    BookingBotton
                     
                 }
-                .padding(.horizontal, 12)
-                
-                _tempList()
-                    .offset(y: -28)
-                    .padding(.trailing, 12)
-
-
+                .padding([.horizontal, .bottom,], 12)
             }
         }
+        .navigationBarTitleDisplayMode(.large)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(
+            leading: CustomBackButton(presentationMode: presentationMode),
+            trailing: LikeButtonActivityDetail(activity: $activity))
+    }
+    
+    
+    private var BookingBotton: some View {
+            Button(action: {} ) {
+                VStack(alignment: .center) {
+                    Text("Заказать")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                    Text("Совместно с MyBaliTrips")
+                        .font(.footnote)
+                }
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .frame(height: 50)
+                .background(LinearGradient(gradient: Gradient(colors: [Color.baliGo, Color.baliGoSec]),
+                                           startPoint: .init(x: 1.2, y: 0.21),
+                                           endPoint: .init(x: -0.5, y: 0.79)))
+                .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
+
+            }
     }
 }

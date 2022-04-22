@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Liked_Card: View {
     
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var modelData: LandmarkViewModel
     var landmarkIndex: Int {
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
@@ -22,7 +22,7 @@ struct Liked_Card: View {
                 VStack {
                     HStack {
                         Spacer()
-                        Like_Button(engage: $modelData.landmarks[landmarkIndex])
+                        LikeButtonLandmarkCard(landmark: $modelData.landmarks[landmarkIndex])
                             .padding(8.0)
                             .font(.title2)
                     }

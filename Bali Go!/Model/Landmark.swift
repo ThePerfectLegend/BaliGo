@@ -12,6 +12,8 @@ import MapKit
 
 
 struct Landmark: Codable, Identifiable, Hashable {
+    
+    static let type = "Landmark"
         
     var id: Int
     var name: String

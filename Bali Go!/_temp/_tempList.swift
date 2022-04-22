@@ -13,8 +13,8 @@ struct _tempList: View {
     
     var body: some View {
         VStack {
-            List {
-                Section {
+//            List {
+//                VStack {
                     // 1
                     HStack {
                         Image(systemName: "clock")
@@ -23,12 +23,14 @@ struct _tempList: View {
 //                            .foregroundColor(.baliGo)
                             .frame(width: 25, height: 25, alignment: .center)
                         VStack(alignment: .leading, spacing: 2) {
-                            Text("Длительность 8 часов")
-                                .font(.callout)
+                            Text("Длительность 8 часов и еще текст для проверки")
+                                .font(.callout.leading(.tight))
                                 .fontWeight(.medium)
                             Text("Восхождение на вулкан начнется около 4 утра")
-                                .font(.subheadline)
+                                .font(.subheadline.leading(.tight))
                                 .foregroundColor(.secondary)
+                            Divider()
+                                .padding(.top, 2)
                         }
                     }
                    // 2
@@ -39,12 +41,14 @@ struct _tempList: View {
 //                            .foregroundColor(.baliGo)
                             .frame(width: 25, height: 25, alignment: .center)
                         VStack(alignment: .leading, spacing: 2) {
-                            Text("Трансфер включен")
-                                .font(.callout)
+                            Text("Трансфер включен или выключен")
+                                .font(.callout.leading(.loose))
                                 .fontWeight(.medium)
                             Text("Из отеля/виллы и обратно")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
+                            Divider()
+                                .padding(.top, 2)
                         }
                     }
                     
@@ -53,7 +57,7 @@ struct _tempList: View {
                         Image(systemName: "leaf.fill")
                             .font(.title3)
                             .padding(.trailing, 4)
-                            .foregroundColor(.baliGo)
+//                            .foregroundColor(.baliGo)
                             .frame(width: 25, height: 25, alignment: .center)
                         VStack(alignment: .leading, spacing: 2) {
                             Text("Легкий завтрак")
@@ -62,6 +66,8 @@ struct _tempList: View {
                             Text("Перед началом подъема и на вершине")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
+                            Divider()
+                                .padding(.top, 2)
                         }
                     }
                     
@@ -70,7 +76,7 @@ struct _tempList: View {
                         Image(systemName: "person.2.fill")
                             .font(.title3)
                             .padding(.trailing, 4)
-                            .foregroundColor(.baliGo)
+//                            .foregroundColor(.baliGo)
                             .frame(width: 25, height: 25, alignment: .center)
                         VStack(alignment: .leading, spacing: 2) {
                             Text("Подъем с гидом-проводником")
@@ -79,6 +85,8 @@ struct _tempList: View {
                             Text("До 5 человек в группе")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
+                            Divider()
+                                .padding(.top, 2)
                         }
                     }
                     // 5
@@ -86,7 +94,7 @@ struct _tempList: View {
                         Image(systemName: "figure.walk")
                             .font(.title3)
                             .padding(.trailing, 4)
-                            .foregroundColor(.baliGo)
+//                            .foregroundColor(.baliGo)
                             .frame(width: 25, height: 25, alignment: .center)
                         VStack(alignment: .leading, spacing: 2) {
                             Text("Для людей со средней физической подготовкой")
@@ -95,20 +103,32 @@ struct _tempList: View {
                             Text("Время подъема и спуска 4-5 часов")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
+                            Divider()
+                                .padding(.top, 2)
+                                .opacity(0)
                         }
                     }
 
-                } header: {
-                    Text("Об активности")
-                        .font(.callout)
-                        .fontWeight(.medium)
-                }
+//                }
+//            header: {
+//                    Text("Об активности")
+//                        .font(.callout)
+//                        .fontWeight(.medium)
+//                }
 
 
-            }
-            .scaledToFill()
-            .listStyle(.plain)
+//            }
+//            .scaledToFill()
+//            .listStyle(.plain)
             
         }
+    }
+}
+
+struct OptionsList: View {
+    
+    
+    var body: some View {
+        Text("")
     }
 }

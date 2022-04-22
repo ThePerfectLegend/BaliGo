@@ -9,7 +9,9 @@ import Foundation
 import Combine
 
 
-final class ModelData: ObservableObject {
+final class LandmarkViewModel: ObservableObject {
+    
+    static let instance = LandmarkViewModel()
 
     @Published var landmarks = [Landmark]()
     @Published var selectedLandmarks = [Landmark]()

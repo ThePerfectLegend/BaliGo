@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Back_Buttom_LandmarkDetail: View {
+struct CustomBackButton: View {
 
     var presentationMode: Binding<PresentationMode>
 
@@ -23,30 +23,6 @@ struct Back_Buttom_LandmarkDetail: View {
             .background(Blur(style: .systemMaterial))
             .mask(Image(systemName: "circle.fill")
             .font(.title))
-        }
-    }
-}
-
-struct Like_Button_LandmarkDetail: View {
-    
-    @EnvironmentObject var modelData: ModelData
-    @Binding var engage: Landmark
-    
-    var body: some View {
-            Button(action: {
-                engage.isLiked.toggle()
-                modelData.save(object: engage)
-                HapticManager.instance.notification(type: engage.isLiked ? .success : .warning)
-            }) {
-                ZStack {
-                    Text("\(Image(systemName: engage.isLiked ? "heart.fill" : "heart"))")
-                        .font(.headline)
-                        .foregroundColor(Color.baliGo)
-                        .padding(20)
-                }
-                .background(Blur(style: .systemMaterial))
-                .mask(Image(systemName: "circle.fill")
-                .font(.title))
         }
     }
 }

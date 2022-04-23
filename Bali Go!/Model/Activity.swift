@@ -21,4 +21,7 @@ struct Activity: Codable, Identifiable, Hashable {
     let image: String
     let description: String
     let milestoneContent: [[String: String]]
+    let link: String
+    let partner: String
+    let priceOption: String
 }

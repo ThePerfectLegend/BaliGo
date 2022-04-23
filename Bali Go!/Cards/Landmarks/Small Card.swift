@@ -20,7 +20,7 @@ struct Small_Card: View {
                 .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
             VStack(alignment: .leading) {
                 Text(landmark.name)
-                    .font(.body)
+                    .font(.callout)
                     .lineLimit(1)
             }
         }

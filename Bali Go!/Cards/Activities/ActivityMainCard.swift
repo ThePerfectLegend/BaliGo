@@ -9,21 +9,24 @@ import SwiftUI
 
 struct ActivityMainCard: View {
     
-    @State var activity: Activity
+    var activity: Activity
     
-//    @EnvironmentObject var viewModel: ActivityViewModel
-//    var landmarkIndex: Int {
-//        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
-//    }
+    @EnvironmentObject var viewModel: ActivityViewModel
+    
+    var activityIndex: Int {
+        viewModel.activities.firstIndex(where: { $0.id == activity.id })!
+    }
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
             VStack {
                 Image(activity.image)
                     .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 335, height: 160) // 240
-                    .aspectRatio(contentMode: .fit)
+                    .clipped()
                     .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                    
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(activity.name)
@@ -46,7 +49,7 @@ struct ActivityMainCard: View {
             }
             .frame(width: 335)
             
-            LikeButtonActivityCard(activity: $activity)
+            LikeButtonActivityCard(activity: $viewModel.activities[activityIndex])
                 .font(.title)
                 .padding(10)
         }
@@ -102,26 +105,34 @@ struct ActivityRaitingView: View {
 
 struct ActivityPriceView: View {
     
-    @EnvironmentObject var vm: UserPreferencesViewModel
     var activity: Activity
     
-    var price: Double = 2979
+    @EnvironmentObject var userPreferencesVM: UserPreferencesViewModel
     
-    //            Text("\(String(format: "%.1f", price)) ₽")
+    private var selectedPrice: String {
+        if let unwrapped = activity.price[userPreferencesVM.currency] {
+            return String("\(unwrapped.formattedWithSeparator) \(userPreferencesVM.currency.rawValue)")
+        } else {
+            return ""
+        }
+        
+    }
     
     var body: some View {
-        VStack(alignment: .trailing) {
-            Text("От")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-            Text("2 979 ₽")
-                .font(.title3)
-                .fontWeight(.semibold)
-                .foregroundColor(.baliGo)
-            Text("За человека")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-        }
+        if selectedPrice != "" {
+            VStack(alignment: .trailing) {
+                Text("От")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                Text(selectedPrice)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                Text(activity.priceOption)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+        } else { EmptyView() }
+
     }
 }
 

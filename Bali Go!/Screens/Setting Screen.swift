@@ -11,44 +11,58 @@ import StoreKit
 
 struct Setting_Screen: View {
     
-    @EnvironmentObject var route: UserPreferencesViewModel
+    @EnvironmentObject var userPreferencesVM: UserPreferencesViewModel
         
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Карта и навигация")) {
-                    Picker("Тип карты", selection: $route.mapType) {
+                Section {
+                    Picker("Тип карты", selection: $userPreferencesVM.mapType) {
                         ForEach(UserPreferencesViewModel.MapType.allCases) { maps in
-                            if maps != route.mapType {
+                            if maps != userPreferencesVM.mapType {
                                 Text(maps.rawValue)
                                     .navigationBarTitle("Тип карты", displayMode: .inline)
                             } else { Text(maps.rawValue) }
                         }
                     }
                                         
-                    Picker("Строить маршрут в", selection: $route.routeApp) {
+                    Picker("Строить маршрут в", selection: $userPreferencesVM.routeApp) {
                         ForEach(UserPreferencesViewModel.RouteApp.allCases) { apps in
-                            if apps != route.routeApp {
+                            if apps != userPreferencesVM.routeApp {
                                 Text(apps.rawValue)
                                     .navigationBarTitle("Маршрут", displayMode: .inline)
+                            } else {  Text(apps.rawValue) }
+                        }
+                    }
+                    
+                    Picker("Валюта", selection: $userPreferencesVM.currency) {
+                        ForEach(UserPreferencesViewModel.Currency.allCases) { apps in
+                            if apps != userPreferencesVM.currency {
+                                Text(apps.rawValue)
+                                    .navigationBarTitle("Валюта", displayMode: .inline)
                             } else {  Text(apps.rawValue) }
                         }
                     }
                 }
                 
                 Section(header: Text("Оценка и рекомендации")) {
-                    Button("Оценить Bali Go!") {
+                    Button {
                         writeReview()
+                    } label: {
+                        PickerLineDesign(systemName: "star.fill", title: "Оценить BaliGo!")
                     }
                     
-                    Button("Поделиться Bali Go!") {
+                    Button {
                         showAppShareSheet()
+                    } label: {
+                        PickerLineDesign(systemName: "square.and.arrow.up", title: "Поделиться BaliGo!")
                     }
                 }
             }
             .navigationBarTitle("Настройки", displayMode: .large)
-            .onChange(of: route.routeApp) { _ in route.routeAppSave() }
-            .onChange(of: route.mapType) { _ in route.mapOptionsSave() }
+            .onChange(of: userPreferencesVM.routeApp) { _ in userPreferencesVM.routeAppSave() }
+            .onChange(of: userPreferencesVM.mapType) { _ in userPreferencesVM.mapOptionsSave() }
+            .onChange(of: userPreferencesVM.currency) { _ in userPreferencesVM.currencySave() }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
@@ -61,4 +75,20 @@ struct Setting_Screen: View {
         /// написать отзыв
 //            do { UIApplication.shared.open(URL(string: "https://apps.apple.com/app/id1580667720?action=write-review")!) }
     }
+    
+    struct PickerLineDesign: View {
+        
+        var systemName: String
+        var title: String
+        
+        var body: some View {
+            HStack {
+                Image(systemName: systemName)
+                    .frame(width: 20, height: 20, alignment: .center)
+                Text(title)
+            }
+        }
+    }
+    
+    
 }

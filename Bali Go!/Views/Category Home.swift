@@ -15,6 +15,6 @@ struct Category_Home: View {
         ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
             Small_Cards_Category_View(categoryName: key, items: modelData.categories[key]!)
         }
-        .padding(.bottom, 8)
+        .padding(.bottom, 4)
     }
 }

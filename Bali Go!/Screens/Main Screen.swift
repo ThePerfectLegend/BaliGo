@@ -10,17 +10,14 @@ import SwiftUI
 
 struct Main_Screen: View {
     
-    @EnvironmentObject var modelData: LandmarkViewModel
+    @EnvironmentObject var viewModel: ActivityViewModel
     @EnvironmentObject var location: LocationFetcher
     
     var body: some View {
         NavigationView {
             VStack{
                 ScrollView(showsIndicators: true) {
-                    NavigationLink(destination: ActivityDetailCard()) {
-                        ActivityMainCard(activity: climbingToBaturVolcano)
-                    }
-                    .buttonStyle(PlainButtonStyle())
+                    ActivityMainView(activities: viewModel.activities)
                     Category_Home()
                 }
             }

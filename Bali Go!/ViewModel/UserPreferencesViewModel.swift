@@ -12,7 +12,7 @@ final class UserPreferencesViewModel: ObservableObject {
 
     @Published var routeApp: RouteApp
     @Published var mapType: MapType
-    @Published var currency: Currency = .RUB
+    @Published var currency: Currency = .IDR
     
     enum RouteApp: String, Codable, CaseIterable, Identifiable, Hashable {
         case appleMaps = "Apple Карты"
@@ -22,16 +22,16 @@ final class UserPreferencesViewModel: ObservableObject {
     }
     
     enum MapType: String, Codable, CaseIterable, Identifiable, Hashable {
-        case standard = "Схема"
         case satelliteFlyover = "Спутник"
+        case standard = "Схема"
         
         var id: MapType {self}
     }
     
     enum Currency: String, Codable, CaseIterable, Identifiable, Hashable {
-        case RUB = "₽"
-        case USD = "$"
         case IDR = "Rp"
+        case USD = "$"
+        case RUB = "₽"
         
         var id: Currency {self}
     }
@@ -41,7 +41,6 @@ final class UserPreferencesViewModel: ObservableObject {
         if let routeAppData = UserDefaults.standard.data(forKey: "routeApp") {
             if let decoded = try? JSONDecoder().decode(RouteApp.self, from: routeAppData) {
                 self.routeApp = decoded
-                print("RouteApp loaded from UserDefaults")
             } else { self.routeApp = .appleMaps }
         } else { self.routeApp = .appleMaps }
 
@@ -49,22 +48,51 @@ final class UserPreferencesViewModel: ObservableObject {
         if let mapOptionData = UserDefaults.standard.data(forKey: "mapOptions") {
             if let decoded = try? JSONDecoder().decode(MapType.self, from: mapOptionData) {
                 self.mapType = decoded
-                print("MapOptions loaded from UserDefaults")
-            } else { self.mapType = .standard }
-        } else { self.mapType = .standard }
+            } else { self.mapType = .satelliteFlyover }
+        } else { self.mapType = .satelliteFlyover }
+        
+        /// получение валюты пользователя
+        if let currencyOption = UserDefaults.standard.data(forKey: "currencyOption") {
+            if let decoded = try? JSONDecoder().decode(Currency.self, from: currencyOption) {
+                self.currency = decoded
+            } else { self.currency = getUserCurrency() }
+        } else { self.currency = getUserCurrency() }
+        /// сохраняем полученную валюту чтобы более не ходить за ней в настройки устройства
+        currencySave()
+    }
+    
+    private func getUserCurrency() -> Currency {
+        if let currency = Locale.current.currencyCode {
+            switch currency {
+            case "RUB":
+                return .RUB
+            case "USD":
+                return .USD
+            case "IDR":
+                return .IDR
+            default:
+                return .IDR
+            }
+        } else {
+            return .IDR
+        }
     }
     
     func routeAppSave() {
         if let encoded = try? JSONEncoder().encode(routeApp) {
             UserDefaults.standard.set(encoded, forKey: "routeApp")
-            print("Route app changed and saved")
         }
     }
     
     func mapOptionsSave() {
         if let encoded = try? JSONEncoder().encode(mapType) {
             UserDefaults.standard.set(encoded, forKey: "mapOptions")
-            print("Map type changed and saved")
+        }
+    }
+    
+    func currencySave() {
+        if let encoded = try? JSONEncoder().encode(currency) {
+            UserDefaults.standard.set(encoded, forKey: "currencyOption")
         }
     }
 }

@@ -29,7 +29,7 @@ struct LikeButtonActivityDetail: View {
     var body: some View {
         Button {
             activity.isLiked.toggle()
-            // save
+            ActivityViewModel.instance.save()
             HapticManager.instance.notification(type: activity.isLiked ? .success : .warning)
         } label: {
             LikeButtonDetailViewDesign(toggleProperty: activity.isLiked)
@@ -44,14 +44,13 @@ struct LikeButtonDetailViewDesign: View {
     
     var body: some View {
         ZStack {
-            Image(systemName: toggleProperty ? "heart.fill" : "heart")
-                .font(.headline)
+            Text("\(Image(systemName: toggleProperty ? "heart.fill" : "heart"))")
                 .foregroundColor(Color.baliGo)
-                .padding(20)
+                .fontWeight(.semibold)
+            Circle().frame(width: 35, height: 35)
+                .opacity(0)
         }
         .background(Blur(style: .systemMaterial))
-        .mask(Image(systemName: "circle.fill")
-        .font(.title))
+        .mask(Circle().frame(width: 35, height: 35))
     }
-    
 }

@@ -9,7 +9,13 @@ import SwiftUI
 
 struct ActivityDetailCard: View {
     
-    @State var activity: Activity = climbingToBaturVolcano
+    var activity: Activity
+    
+    @EnvironmentObject var viewModel: ActivityViewModel
+    
+    var activityIndex: Int {
+        viewModel.activities.firstIndex(where: { $0.id == activity.id })!
+    }
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
         
@@ -23,12 +29,12 @@ struct ActivityDetailCard: View {
                             Image(activity.image)
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width / 1.5 + (offset > 0 ? offset : 0))
-                                .cornerRadius(2)
+                                .frame(width: UIScreen.main.bounds.width, height: (UIScreen.main.bounds.width * 0.5) + (offset > 0 ? offset : 0))
+                                .clipped()
                                 .offset(y: (offset > 0 ? -offset : 0))
                         )
                     }
-                    .frame(height: UIScreen.main.bounds.width / 1.5)
+                    .frame(height: UIScreen.main.bounds.width * 0.5)
                 }
                 VStack(alignment: .leading) {
                     Text(activity.name)
@@ -63,7 +69,7 @@ struct ActivityDetailCard: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(
             leading: CustomBackButton(presentationMode: presentationMode),
-            trailing: LikeButtonActivityDetail(activity: $activity))
+            trailing: LikeButtonActivityDetail(activity: $viewModel.activities[activityIndex]))
     }
     
     
@@ -73,7 +79,7 @@ struct ActivityDetailCard: View {
                     Text("Заказать")
                         .font(.title3)
                         .fontWeight(.semibold)
-                    Text("Совместно с MyBaliTrips")
+                    Text("Совместно с \(activity.partner)")
                         .font(.footnote)
                 }
                 .foregroundColor(.white)
@@ -85,5 +91,9 @@ struct ActivityDetailCard: View {
                 .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
 
             }
+    }
+    
+    func hey() {
+        print("Hey")
     }
 }

@@ -32,7 +32,6 @@ struct Landmark_Detail: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width + (offset > 0 ? offset : 0))
-                                .cornerRadius(2)
                                 .offset(y: (offset > 0 ? -offset : 0))
                         )
                     }

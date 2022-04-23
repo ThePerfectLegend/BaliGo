@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct Big_Cards_View: View {
+struct ActivityMainView: View {
 
-    var landmarks: [Landmark]
+    var activities: [Activity]
 
     var body: some View {
         VStack(alignment: .leading) {
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    ForEach(landmarks, id: \.id) { landmark in
-                        NavigationLink(destination: Landmark_Detail(landmark: landmark)) {
-                            Big_Card(landmark: landmark)
+                HStack(spacing: 15) {
+                    ForEach(activities, id: \.id) { activity in
+                        NavigationLink(destination: ActivityDetailCard(activity: activity)) {
+                            ActivityMainCard(activity: activity)
                         }
                         .buttonStyle(PlainButtonStyle())
                     }
@@ -25,7 +25,7 @@ struct Big_Cards_View: View {
                 .padding(.horizontal, 18)
             }
         }
-        .padding(.vertical, 8)
+        .padding(.bottom, 4)
     }
 }
 

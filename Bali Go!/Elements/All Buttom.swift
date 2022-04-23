@@ -17,7 +17,6 @@ struct All_Buttom: View {
             Text("Показать все")
                 .foregroundColor(.baliGo)
                 .font(.body)
-                .fontWeight(.regular)
         }
     }
 }

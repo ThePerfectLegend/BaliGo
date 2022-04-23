@@ -17,15 +17,16 @@ struct CustomBackButton: View {
                 Text("\(Image(systemName: "chevron.backward"))")
                     .foregroundColor(Color.baliGo)
                     .fontWeight(.semibold)
-                    .font(.headline)
-                    .padding()
+                Circle().frame(width: 35, height: 35)
+                    .opacity(0)
+
             }
             .background(Blur(style: .systemMaterial))
-            .mask(Image(systemName: "circle.fill")
-            .font(.title))
+            .mask(Circle().frame(width: 35, height: 35))
         }
     }
 }
+
 
 struct CloseButton: View {
 

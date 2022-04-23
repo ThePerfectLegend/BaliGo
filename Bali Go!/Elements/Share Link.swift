@@ -13,7 +13,7 @@ final class LinkMetadataManager: NSObject,  UIActivityItemSource {
 
   var linkMetadata: LPLinkMetadata
 
-  let appTitle = "Bali Go!"
+  let appTitle = "BaliGo!"
   let appleStoreProductURL = "https://apps.apple.com/app/bali-go/id1580667720"  // The url of your app in Apple Store
   let iconImage = "bali-go-cover-1024px" // The name of the image file in your directory
   let png = "png"  // The extension of the image

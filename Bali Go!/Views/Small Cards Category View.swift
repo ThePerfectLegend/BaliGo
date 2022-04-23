@@ -29,7 +29,7 @@ struct Small_Cards_Category_View: View {
             .padding(.horizontal, 18)
 
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
+                HStack(spacing: 15) {
                     ForEach(items) { landmark in
                         NavigationLink(destination: Landmark_Detail(landmark: landmark)) {
                         Small_Card(landmark: landmark)

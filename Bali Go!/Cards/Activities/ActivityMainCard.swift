@@ -35,7 +35,7 @@ struct ActivityMainCard: View {
                     HStack(alignment: .bottom) {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(activity.type)
-                                .font(.callout)
+                                .font(.subheadline)
                                 .fontWeight(.medium)
                                 .foregroundColor(.secondary)
                                 .lineLimit(1)

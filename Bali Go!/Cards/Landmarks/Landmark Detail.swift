@@ -3,8 +3,6 @@
 //  Bali Go!
 //
 //  Created by Nizami Tagiyev on 27.04.2021.
-//
-
 import SwiftUI
 
 struct Landmark_Detail: View {

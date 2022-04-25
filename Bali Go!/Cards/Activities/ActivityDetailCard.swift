@@ -10,6 +10,10 @@ import SwiftUI
 struct ActivityDetailCard: View {
     
     var activity: Activity
+    var utm_campaign: String
+    private var featuredLink: String {
+        return activity.link + utm_campaign
+    }
     
     @EnvironmentObject var viewModel: ActivityViewModel
     
@@ -49,6 +53,9 @@ struct ActivityDetailCard: View {
                                 .foregroundColor(.secondary)
                                 .lineLimit(1)
                             ActivityRaitingView(activity: activity)
+                                .onTapGesture {
+                                    UIApplication.shared.open(URL(string: featuredLink + "&utm_content=reviews" + "#travelers-reviews")!)
+                                }
                         }
                         Spacer()
                         ActivityPriceView(activity: activity)
@@ -69,31 +76,32 @@ struct ActivityDetailCard: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(
             leading: CustomBackButton(presentationMode: presentationMode),
-            trailing: LikeButtonActivityDetail(activity: $viewModel.activities[activityIndex]))
+            trailing: HStack {
+                ShareButton(featuredLink: featuredLink)
+                LikeButtonActivityDetail(activity: $viewModel.activities[activityIndex])
+            }
+        )
     }
     
     
     private var BookingBotton: some View {
-            Button(action: {} ) {
-                VStack(alignment: .center) {
-                    Text("Заказать")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                    Text("Совместно с \(activity.partner)")
-                        .font(.footnote)
-                }
-                .foregroundColor(.white)
-                .frame(maxWidth: .infinity)
-                .frame(height: 50)
-                .background(LinearGradient(gradient: Gradient(colors: [Color.baliGo, Color.baliGoSec]),
-                                           startPoint: .init(x: 1.2, y: 0.21),
-                                           endPoint: .init(x: -0.5, y: 0.79)))
-                .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
-
+        Button {
+            UIApplication.shared.open(URL(string: featuredLink + "&utm_content=booking" + "#product")!)
+        } label: {
+            VStack(alignment: .center) {
+                Text("Заказать")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                Text("В партнерстве с \(activity.partner)")
+                    .font(.footnote)
             }
-    }
-    
-    func hey() {
-        print("Hey")
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity)
+            .frame(height: 50)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.baliGo, Color.baliGoSec]),
+                                       startPoint: .init(x: 1.2, y: 0.21),
+                                       endPoint: .init(x: -0.5, y: 0.79)))
+            .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
+        }
     }
 }

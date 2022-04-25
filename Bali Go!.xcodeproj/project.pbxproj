@@ -16,6 +16,7 @@
 		A8187F7E26B7CCCD00DCCC36 /* Besakih.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8187F7D26B7CCCD00DCCC36 /* Besakih.swift */; };
 		A8187F8126B7D40200DCCC36 /* Lempuyang.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8187F8026B7D40200DCCC36 /* Lempuyang.swift */; };
 		A8187F8426B7E05E00DCCC36 /* Jatiluwih.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8187F8326B7E05E00DCCC36 /* Jatiluwih.swift */; };
+		A819D2F028169CF5009400EA /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A819D2EF28169CF5009400EA /* ShareButton.swift */; };
 		A81B654D2759E73A00C383A8 /* Balangan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B654C2759E73A00C383A8 /* Balangan.swift */; };
 		A81B654F2759E9FC00C383A8 /* Dreamland.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B654E2759E9FC00C383A8 /* Dreamland.swift */; };
 		A81B65512759EBE100C383A8 /* Padang-Padang.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B65502759EBE100C383A8 /* Padang-Padang.swift */; };
@@ -184,6 +185,7 @@
 		A8187F7D26B7CCCD00DCCC36 /* Besakih.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Besakih.swift; sourceTree = "<group>"; };
 		A8187F8026B7D40200DCCC36 /* Lempuyang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lempuyang.swift; sourceTree = "<group>"; };
 		A8187F8326B7E05E00DCCC36 /* Jatiluwih.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jatiluwih.swift; sourceTree = "<group>"; };
+		A819D2EF28169CF5009400EA /* ShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
 		A81B654C2759E73A00C383A8 /* Balangan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balangan.swift; sourceTree = "<group>"; };
 		A81B654E2759E9FC00C383A8 /* Dreamland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dreamland.swift; sourceTree = "<group>"; };
 		A81B65502759EBE100C383A8 /* Padang-Padang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Padang-Padang.swift"; sourceTree = "<group>"; };
@@ -738,6 +740,7 @@
 				A8EEFEEA27ABA48600FA189C /* ClearBackgroundView.swift */,
 				A868A90127B790B9000F681F /* GO.swift */,
 				A8AAD1E62811400500016E27 /* ContentTableView.swift */,
+				A819D2EF28169CF5009400EA /* ShareButton.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -922,6 +925,7 @@
 				A868A90227B790B9000F681F /* GO.swift in Sources */,
 				A8568B9526BBC580007FA868 /* Batukaru.swift in Sources */,
 				A86816C727AA3E8D00C390E8 /* EventsSample.swift in Sources */,
+				A819D2F028169CF5009400EA /* ShareButton.swift in Sources */,
 				A81B65532759EDA100C383A8 /* Bingin.swift in Sources */,
 				A84398B22814200700120A38 /* CurrencyLocale.swift in Sources */,
 				A8A5E7DD27523333004121F0 /* divingAmed940.swift in Sources */,

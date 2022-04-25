@@ -46,7 +46,8 @@ struct LikeButtonDetailViewDesign: View {
         ZStack {
             Text("\(Image(systemName: toggleProperty ? "heart.fill" : "heart"))")
                 .foregroundColor(Color.baliGo)
-                .fontWeight(.semibold)
+                .font(.callout)
+                .fontWeight(.medium)
             Circle().frame(width: 35, height: 35)
                 .opacity(0)
         }

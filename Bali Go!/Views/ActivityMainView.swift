@@ -16,7 +16,7 @@ struct ActivityMainView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 15) {
                     ForEach(activities, id: \.id) { activity in
-                        NavigationLink(destination: ActivityDetailCard(activity: activity)) {
+                        NavigationLink(destination: ActivityDetailCard(activity: activity, utm_campaign: "&utm_campaign=main")) {
                             ActivityMainCard(activity: activity)
                         }
                         .buttonStyle(PlainButtonStyle())
@@ -28,4 +28,5 @@ struct ActivityMainView: View {
         .padding(.bottom, 4)
     }
 }
+
 

@@ -16,7 +16,8 @@ struct CustomBackButton: View {
             ZStack {
                 Text("\(Image(systemName: "chevron.backward"))")
                     .foregroundColor(Color.baliGo)
-                    .fontWeight(.semibold)
+                    .font(.callout)
+                    .fontWeight(.medium)
                 Circle().frame(width: 35, height: 35)
                     .opacity(0)
 

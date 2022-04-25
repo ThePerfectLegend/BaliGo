@@ -28,17 +28,12 @@ struct ActivityMainCard: View {
                     .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
                     
 
-                VStack(alignment: .leading, spacing: 2) {
+                VStack(alignment: .leading) {
                     Text(activity.name)
                         .font(.headline)
                         .lineLimit(2)
                     HStack(alignment: .bottom) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(activity.type)
-                                .font(.callout)
-                                .fontWeight(.medium)
-                                .foregroundColor(.secondary)
-                                .lineLimit(1)
+                        VStack(alignment: .leading) {
                             ActivityRaitingView(activity: activity)
                         }
                         Spacer()
@@ -123,13 +118,9 @@ struct ActivityPriceView: View {
             VStack(alignment: .trailing) {
                 Text("От")
                     .font(.subheadline)
-                    .foregroundColor(.secondary)
                 Text(selectedPrice)
                     .font(.title3)
                     .fontWeight(.semibold)
-                Text(activity.priceOption)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
             }
         } else { EmptyView() }
 

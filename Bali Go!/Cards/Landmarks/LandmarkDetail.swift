@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct Landmark_Detail: View {
+struct LandmarkDetailView: View {
     
     @EnvironmentObject var modelData: LandmarkViewModel
+    
     var landmark: Landmark
     
     var landmarkIndex: Int {
@@ -19,6 +20,8 @@ struct Landmark_Detail: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
         
     @State private var descSheet = false
+    
+    @EnvironmentObject var viewModel: ActivityViewModel
     
         
     var body: some View {
@@ -31,11 +34,12 @@ struct Landmark_Detail: View {
                             Image(landmark.imagesNames[0])
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width + (offset > 0 ? offset : 0))
+                                .frame(width: UIScreen.main.bounds.width, height: (UIScreen.main.bounds.width * 0.5) + (offset > 0 ? offset : 0))
+                                .clipped()
                                 .offset(y: (offset > 0 ? -offset : 0))
                         )
                     }
-                    .frame(height: UIScreen.main.bounds.width)
+                    .frame(height: UIScreen.main.bounds.width * 0.5)
                 }
                 VStack(alignment: .leading) {
                     Group {
@@ -53,44 +57,54 @@ struct Landmark_Detail: View {
                                 .font(.subheadline)
                     }
                     
+                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te.")
+                            .font(.subheadline)
+                            .padding(.vertical, 2)
                         
-                    ExpandableText(landmark.discription, lineLimit: 4)
-                        .fixedSize(horizontal: false, vertical: true)
-                        
-                    Divider()
-                        
+                        Button {
+                            descSheet = true
+                        } label: {
+                            Text("Подробное описание")
+                                .font(.callout.weight(.semibold))
                         }
-                        .padding(.horizontal, 12)
+                    }
+
+                        ContentTableView(contentData: climbingToBaturVolcano.milestoneContent)
                     
-                    Tours_in_Landmark(landmark: landmark)
+                    Divider()
+                        .padding(.bottom, 8)
+                        
+
+                    
+                    ActivitySecondaryCard(activity: climbingToBaturVolcano)
                     
                     Group {
-                        Text("Расположение")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                        Text(landmark.visibleAddress)
-                            .font(.subheadline)
+                        Divider()
+                            .padding(.bottom, 8)
                         NavigationLink(destination: FullMapView(landmark: landmark)) {
                         SmallMapView(landmark: landmark)
-                            .frame(height: 144)
+                            .frame(height: 160)
+                            .frame(maxWidth: .infinity)
                             .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
                         }
                         Go(coordinate: landmark.location)
-                            .padding(.bottom, 12)
                     }
-                    .padding([.horizontal], 12)
                 }
-        }
-            HStack{
-                CustomBackButton(presentationMode: presentationMode)
-                Spacer()
-                LikeButtonLandmarkDetail(landmark: $modelData.landmarks[landmarkIndex])
+                .padding([.horizontal, .bottom], 12)
             }
-            .padding(.horizontal, 12)
         }
-        .navigationBarHidden(true)
-        
+        .navigationBarTitleDisplayMode(.large)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(
+            leading: CustomBackButton(presentationMode: presentationMode),
+            trailing: LikeButtonLandmarkDetail(landmark: $modelData.landmarks[landmarkIndex]))
+        .sheet(isPresented: $descSheet) {
+//            descSheet = false
+        } content: {
+            SheedView(landmark: landmark)
+        }
 
+//        .sheet(isPresented: $descSheet, content: SheedView(landmark: landmark))
     }
 
 }
@@ -128,5 +142,37 @@ struct FullMapView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarTitle(landmark.name)
+    }
+}
+
+struct SheedView: View {
+    
+    var landmark: Landmark
+    
+    var body: some View {
+        ZStack {
+            ScrollView {
+                VStack {
+                    Text(landmark.description)
+                        .font(.body)
+                }
+                .padding(.horizontal, 12)
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .clearModalBackground()
+        .background(Blur(style: .systemMaterial))
+//        .navigationBarTitleDisplayMode(.inline)
+//        .navigationTitle(landmark.name)
+//        .toolbar {
+//            ToolbarItem(placement: .automatic) {
+//                VStack {
+//                    Text(landmark.name)
+//                        .font(.headline)
+//                    Text(landmark.type)
+//                        .font(.subheadline)
+//                }
+//            }
+//        }
     }
 }

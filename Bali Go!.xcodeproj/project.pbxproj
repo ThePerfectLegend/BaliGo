@@ -72,7 +72,7 @@
 		A850882A266B747100F4E1AA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8508829266B747100F4E1AA /* Location.swift */; };
 		A85138B3280ADF2E002B3540 /* ActivityMainCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138B2280ADF2E002B3540 /* ActivityMainCard.swift */; };
 		A85138B5280ADF4C002B3540 /* ActivitySecondaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138B4280ADF4C002B3540 /* ActivitySecondaryCard.swift */; };
-		A85138B7280ADF5D002B3540 /* ActivityDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138B6280ADF5D002B3540 /* ActivityDetailCard.swift */; };
+		A85138B7280ADF5D002B3540 /* ActivityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138B6280ADF5D002B3540 /* ActivityDetail.swift */; };
 		A85138B9280AE0C0002B3540 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138B8280AE0C0002B3540 /* Activity.swift */; };
 		A85138BB280AE100002B3540 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85138BA280AE100002B3540 /* ActivityViewModel.swift */; };
 		A8568B7326BB7AE5007FA868 /* LekeLeke.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568B7226BB7AE5007FA868 /* LekeLeke.swift */; };
@@ -160,7 +160,7 @@
 		A8E29572280C596B00106F31 /* climbingToBaturVolcano.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E29571280C596B00106F31 /* climbingToBaturVolcano.swift */; };
 		A8E987352637F798009401BF /* Big Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E987342637F798009401BF /* Big Card.swift */; };
 		A8E9873826380150009401BF /* Small Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9873726380150009401BF /* Small Card.swift */; };
-		A8E9873B263806F0009401BF /* Landmark Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9873A263806F0009401BF /* Landmark Detail.swift */; };
+		A8E9873B263806F0009401BF /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9873A263806F0009401BF /* LandmarkDetail.swift */; };
 		A8EBDCBA274FB809001C895C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EBDCB9274FB809001C895C /* Launch Screen.storyboard */; };
 		A8EE0F0F2644EF80000F0E94 /* Main Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EE0F0E2644EF80000F0E94 /* Main Screen.swift */; };
 		A8EE95C32775709B00A6FB7B /* simbolsBali8088.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EE95C22775709B00A6FB7B /* simbolsBali8088.swift */; };
@@ -241,7 +241,7 @@
 		A8508829266B747100F4E1AA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A85138B2280ADF2E002B3540 /* ActivityMainCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMainCard.swift; sourceTree = "<group>"; };
 		A85138B4280ADF4C002B3540 /* ActivitySecondaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySecondaryCard.swift; sourceTree = "<group>"; };
-		A85138B6280ADF5D002B3540 /* ActivityDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailCard.swift; sourceTree = "<group>"; };
+		A85138B6280ADF5D002B3540 /* ActivityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetail.swift; sourceTree = "<group>"; };
 		A85138B8280AE0C0002B3540 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A85138BA280AE100002B3540 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 		A8568B7226BB7AE5007FA868 /* LekeLeke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LekeLeke.swift; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 		A8E29571280C596B00106F31 /* climbingToBaturVolcano.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climbingToBaturVolcano.swift; sourceTree = "<group>"; };
 		A8E987342637F798009401BF /* Big Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Big Card.swift"; sourceTree = "<group>"; };
 		A8E9873726380150009401BF /* Small Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Small Card.swift"; sourceTree = "<group>"; };
-		A8E9873A263806F0009401BF /* Landmark Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Landmark Detail.swift"; sourceTree = "<group>"; usesTabs = 0; };
+		A8E9873A263806F0009401BF /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; usesTabs = 0; };
 		A8EBDCB9274FB809001C895C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A8EE0F0E2644EF80000F0E94 /* Main Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Screen.swift"; sourceTree = "<group>"; };
 		A8EE95C22775709B00A6FB7B /* simbolsBali8088.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simbolsBali8088.swift; sourceTree = "<group>"; };
@@ -522,7 +522,7 @@
 				A82A2C4B2727B10000E3C6DF /* Tour Card.swift */,
 				A85138B2280ADF2E002B3540 /* ActivityMainCard.swift */,
 				A85138B4280ADF4C002B3540 /* ActivitySecondaryCard.swift */,
-				A85138B6280ADF5D002B3540 /* ActivityDetailCard.swift */,
+				A85138B6280ADF5D002B3540 /* ActivityDetail.swift */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -759,7 +759,7 @@
 			children = (
 				A8E987342637F798009401BF /* Big Card.swift */,
 				A8E9873726380150009401BF /* Small Card.swift */,
-				A8E9873A263806F0009401BF /* Landmark Detail.swift */,
+				A8E9873A263806F0009401BF /* LandmarkDetail.swift */,
 				A82B43672657C78600C2AC71 /* Liked Card.swift */,
 				A864C4B3266B49550005EC81 /* Category Card.swift */,
 				A83E6360267F13F100C2BCEE /* Map Landmark Detail.swift */,
@@ -883,7 +883,7 @@
 				A8568B8626BB99D0007FA868 /* Virgin.swift in Sources */,
 				A83B7974276DC0DF008EE9FE /* northTour647.swift in Sources */,
 				A8568B7726BB8078007FA868 /* Jimbaran.swift in Sources */,
-				A85138B7280ADF5D002B3540 /* ActivityDetailCard.swift in Sources */,
+				A85138B7280ADF5D002B3540 /* ActivityDetail.swift in Sources */,
 				A8A5E7E12752398B004121F0 /* divingBlueLagoon1024.swift in Sources */,
 				A8A5E7DB27522A90004121F0 /* baturSunrise19639.swift in Sources */,
 				A8D0640126634075004FDED2 /* All Category Screen.swift in Sources */,
@@ -1019,7 +1019,7 @@
 				A86A281026B8E613003E56C8 /* Kuta.swift in Sources */,
 				A8340CE126BA50D800B8FC6B /* GitGit.swift in Sources */,
 				A84E4B762727DB1F003870C0 /* climbingToBatur1008.swift in Sources */,
-				A8E9873B263806F0009401BF /* Landmark Detail.swift in Sources */,
+				A8E9873B263806F0009401BF /* LandmarkDetail.swift in Sources */,
 				A8AAD1E72811400500016E27 /* ContentTableView.swift in Sources */,
 				A8340CE726BA5DEE00B8FC6B /* Banyumala.swift in Sources */,
 				A846565527746E5A006F3FB4 /* ubud10492.swift in Sources */,

@@ -9,7 +9,7 @@ import Foundation
 
 var climbingToBaturVolcano = Activity(
     id: 1,
-    name: "Восхождение на Батур",
+    name: "Восхождение на вулкан Батур",
     type: "Трекинг",
     numberOfReviews: 425,
     rating: 4.8,
@@ -42,5 +42,5 @@ var climbingToBaturVolcano = Activity(
     
     link: "https://mybalitrips.com/ru/climbing-to-batur-volcano/?utm_pid=447",
     partner: "MyBaliTrips",
-    priceOption: "За человека"
+    marketingText: "Треккинг на высоту 1717 метров и незабываемые пейзажи"
 )

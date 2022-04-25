@@ -50,7 +50,7 @@ struct LD: View {
                     }
                     .font(.subheadline)
                         
-                    ExpandableText(landmark.discription, lineLimit: 4)
+                    ExpandableText(landmark.description, lineLimit: 4)
                         .fixedSize(horizontal: false, vertical: true)
                         
                     Divider()

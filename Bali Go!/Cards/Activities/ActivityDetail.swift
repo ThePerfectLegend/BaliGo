@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ActivityDetailCard: View {
+struct ActivityDetailView: View {
     
     var activity: Activity
     var utm_campaign: String

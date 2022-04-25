@@ -31,7 +31,7 @@ struct Small_Cards_Category_View: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 15) {
                     ForEach(items) { landmark in
-                        NavigationLink(destination: Landmark_Detail(landmark: landmark)) {
+                        NavigationLink(destination: LandmarkDetailView(landmark: landmark)) {
                         Small_Card(landmark: landmark)
                         }
                         .buttonStyle(PlainButtonStyle())

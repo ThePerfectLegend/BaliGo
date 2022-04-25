@@ -94,7 +94,7 @@ struct Like_Screen: View {
             ScrollView{
                 VStack(spacing: 8) {
                     ForEach(likedLandmarks) { landmark in
-                        NavigationLink(destination: Landmark_Detail(landmark: landmark)
+                        NavigationLink(destination: LandmarkDetailView(landmark: landmark)
                         ) { Liked_Card(landmark: landmark) }
                     }
                     .buttonStyle(PlainButtonStyle())

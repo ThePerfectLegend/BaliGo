@@ -70,7 +70,7 @@ struct All_Category_Screen: View {
             ScrollView{
                 VStack(spacing: 8) {
                     ForEach(likedLandmarks) { landmark in
-                        NavigationLink(destination: Landmark_Detail(landmark: landmark)) {
+                        NavigationLink(destination: LandmarkDetailView(landmark: landmark)) {
                             Category_Card(landmark: landmark)
                         }
                     }

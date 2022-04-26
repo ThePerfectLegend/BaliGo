@@ -15,7 +15,7 @@ struct Map_Landmark_Detail: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            NavigationLink(destination: Landmark_Detail(landmark: landmark)) {
+            NavigationLink(destination: LandmarkDetailView(landmark: landmark)) {
                 HStack(alignment: .top, spacing: 8) {
                     Image(landmark.imagesNames[0])
                         .resizable()

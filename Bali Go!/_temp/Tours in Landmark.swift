@@ -15,7 +15,7 @@ struct Tours_in_Landmark: View {
     /// Эту логику необходимо переписать, может быть проблемный кейс когда тур не добавлен в массив tours а на локации указаны id тура
         
     var withTours: Bool {
-        if landmark.toursToLandmark.count == 0 {
+        if landmark.activitiesOnLandmark.count == 0 {
             return false
         } else {
             return true
@@ -26,7 +26,7 @@ struct Tours_in_Landmark: View {
     
     var toursForLandmark: [Tour] {
         var arrayForTours = [Tour]()
-        for landmarkTourID in landmark.toursToLandmark {
+        for landmarkTourID in landmark.activitiesOnLandmark {
             for tour in tours {
                 if landmarkTourID == tour.id {
                     arrayForTours.append(tour)

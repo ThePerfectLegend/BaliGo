@@ -33,5 +33,5 @@ var ticketsToGili = Activity(
     ],
     link: "https://mybalitrips.com/ru/tickets-to-gili-islands/?utm_pid=447",
     partner: "MyBaliTrips",
-    priceOption: "За человека"
+    marketingText: "Райский отдых без хлопот, регги, бирюзовые лагуны и коктейли с зонтиками"
 )

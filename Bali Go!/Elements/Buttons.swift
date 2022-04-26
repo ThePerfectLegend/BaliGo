@@ -14,10 +14,9 @@ struct CustomBackButton: View {
     var body: some View {
         Button(action: { presentationMode.wrappedValue.dismiss()}) {
             ZStack {
-                Text("\(Image(systemName: "chevron.backward"))")
+                Image(systemName: "chevron.backward")
                     .foregroundColor(Color.baliGo)
-                    .font(.callout)
-                    .fontWeight(.medium)
+                    .font(.callout.weight(.semibold))
                 Circle().frame(width: 35, height: 35)
                     .opacity(0)
 

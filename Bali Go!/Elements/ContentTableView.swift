@@ -24,8 +24,7 @@ struct ContentTableView: View {
                         .frame(width: 25, height: 25, alignment: .center)
                     VStack(alignment: .leading, spacing: 2) {
                         Text(milestone["Primary"] ?? "")
-                            .font(.callout.leading(.tight))
-                            .fontWeight(.medium)
+                            .font(.callout.leading(.tight).weight(.medium))
                         Text(milestone["Secondary"] ?? "")
                             .font(.subheadline.leading(.tight))
                             .foregroundColor(.secondary)

@@ -47,7 +47,6 @@ struct Go: View {
                                        startPoint: .init(x: 1.2, y: 0.21),
                                        endPoint: .init(x: -0.5, y: 0.79)))
             .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
-
         }
     }
 }

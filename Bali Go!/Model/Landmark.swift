@@ -17,7 +17,7 @@ struct Landmark: Codable, Identifiable, Hashable {
         
     var id: Int
     var name: String
-    var discription: String
+    var description: String
     var isLiked: Bool = false
     
     let island: Island
@@ -91,7 +91,7 @@ struct Landmark: Codable, Identifiable, Hashable {
         }
     }
     
-    var toursToLandmark = [Int]()
+    var activitiesOnLandmark = [Int]()
     
 //    var optionDesc1 : [String: String] = [:]
 //    var optionDesc2 : [String: String] = [:]

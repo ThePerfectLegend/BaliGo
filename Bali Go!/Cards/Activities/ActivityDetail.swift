@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ActivityDetailCard: View {
+struct ActivityDetailView: View {
     
     var activity: Activity
     var utm_campaign: String
@@ -40,34 +40,12 @@ struct ActivityDetailCard: View {
                     }
                     .frame(height: UIScreen.main.bounds.width * 0.5)
                 }
-                VStack(alignment: .leading) {
-                    Text(activity.name)
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .lineLimit(2)
-                    HStack(alignment: .bottom) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(activity.type)
-                                .font(.callout)
-                                .fontWeight(.medium)
-                                .foregroundColor(.secondary)
-                                .lineLimit(1)
-                            ActivityRaitingView(activity: activity)
-                                .onTapGesture {
-                                    UIApplication.shared.open(URL(string: featuredLink + "&utm_content=reviews" + "#travelers-reviews")!)
-                                }
-                        }
-                        Spacer()
-                        ActivityPriceView(activity: activity)
-                    }
-                    
-                    Text(activity.description)
-                        .font(.callout.leading(.tight))
-                        .padding(.top, 2)
-                    
+                VStack(alignment: .leading, spacing: 12) {
+                    header
+                    SmallDescView(description: activity.description)
+                    readMoreButton
                     ContentTableView(contentData: activity.milestoneContent)
                     BookingBotton
-                    
                 }
                 .padding([.horizontal, .bottom,], 12)
             }
@@ -83,6 +61,38 @@ struct ActivityDetailCard: View {
         )
     }
     
+    private var header: some View {
+        VStack(alignment: .leading) {
+            Text(activity.name)
+                .font(.title3)
+                .fontWeight(.semibold)
+                .lineLimit(2)
+            HStack(alignment: .bottom) {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(activity.type)
+                        .font(.callout)
+                        .fontWeight(.medium)
+                        .foregroundColor(.secondary)
+                        .lineLimit(1)
+                    ActivityRaitingView(activity: activity)
+                        .onTapGesture {
+                            UIApplication.shared.open(URL(string: featuredLink + "&utm_content=reviews" + "#travelers-reviews")!)
+                        }
+                }
+                Spacer()
+                ActivityPriceView(activity: activity)
+            }
+        }
+    }
+    
+    private var readMoreButton: some View {
+        Button {
+            UIApplication.shared.open(URL(string: featuredLink + "&utm_content=readmore")!)
+        } label: {
+            Text("Подробное описание на \(activity.partner) \(Image(systemName: "arrow.up.forward.app.fill"))")
+                .font(.callout.weight(.semibold))
+        }
+    }
     
     private var BookingBotton: some View {
         Button {
@@ -104,4 +114,5 @@ struct ActivityDetailCard: View {
             .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
         }
     }
+    
 }

@@ -99,15 +99,50 @@ struct LandmarkDetailView: View {
             leading: CustomBackButton(presentationMode: presentationMode),
             trailing: LikeButtonLandmarkDetail(landmark: $modelData.landmarks[landmarkIndex]))
         .sheet(isPresented: $descSheet) {
-//            descSheet = false
-        } content: {
-            SheedView(landmark: landmark)
+            sheedView
         }
 
 //        .sheet(isPresented: $descSheet, content: SheedView(landmark: landmark))
     }
-
+    
+    private var sheedView: some View {
+        NavigationView {
+                ScrollView {
+                    VStack {
+                        Text(landmark.description)
+                            .font(.body)
+                    }
+                    .padding(.horizontal, 18)
+                    .padding(.vertical, 12)
+            }
+                
+                .navigationBarItems(
+                    leading: Text(landmark.name).font(.title3.weight(.semibold)),
+                    trailing: CloseButton(showDeteil: $descSheet))
+                .navigationBarTitleDisplayMode(.inline)
+        }
+        .background(Blur(style: .systemMaterial))
+    }
 }
+
+
+struct SheetView: View {
+    @Binding var showSheetView: Bool
+
+    var body: some View {
+        NavigationView {
+            Text("List of notifications")
+            .navigationBarTitle(Text("Notifications"), displayMode: .inline)
+                .navigationBarItems(trailing: Button(action: {
+                    print("Dismissing sheet view...")
+                    self.showSheetView = false
+                }) {
+                    Text("Done").bold()
+                })
+        }
+    }
+}
+
 
 
 struct SmallMapView: View {
@@ -142,37 +177,5 @@ struct FullMapView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarTitle(landmark.name)
-    }
-}
-
-struct SheedView: View {
-    
-    var landmark: Landmark
-    
-    var body: some View {
-        ZStack {
-            ScrollView {
-                VStack {
-                    Text(landmark.description)
-                        .font(.body)
-                }
-                .padding(.horizontal, 12)
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .clearModalBackground()
-        .background(Blur(style: .systemMaterial))
-//        .navigationBarTitleDisplayMode(.inline)
-//        .navigationTitle(landmark.name)
-//        .toolbar {
-//            ToolbarItem(placement: .automatic) {
-//                VStack {
-//                    Text(landmark.name)
-//                        .font(.headline)
-//                    Text(landmark.type)
-//                        .font(.subheadline)
-//                }
-//            }
-//        }
     }
 }

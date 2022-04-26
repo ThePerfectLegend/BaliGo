@@ -24,7 +24,7 @@ var padangPadang = Landmark(
     longitude: 115.10446670736279,
     internalRate: 0,
     internalSubRate: 0.8,
-    toursToLandmark: [21]
+    activitiesOnLandmark: [21]
 )
 
 

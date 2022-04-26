@@ -41,8 +41,8 @@ struct ContentView: View {
                 Setting_Screen()
                     .tabItem {Label("Настройки", systemImage: "gear" )}
                     .tag("Settings")
-                
-//                ActivityDetailCard()
+//                
+//                ActivityLandmarkView()
 //                    .tabItem {Label("Developing", systemImage: "bonjour" )}
 //                    .tag("Developing")
                 

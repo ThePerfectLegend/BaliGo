@@ -24,5 +24,5 @@ var legian = Landmark(
     longitude: 115.1644172748953,
     internalRate: 0,
     internalSubRate: 0.93,
-    toursToLandmark: [34]
+    activitiesOnLandmark: [34]
 )

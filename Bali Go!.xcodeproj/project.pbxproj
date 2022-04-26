@@ -106,6 +106,7 @@
 		A87100B12754C51100C5C253 /* LD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87100B02754C51100C5C253 /* LD.swift */; };
 		A87361CA278BE8DF0018DF3A /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87361C9278BE8DF0018DF3A /* Blur.swift */; };
 		A87361CC278BEDBC0018DF3A /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87361CB278BEDBC0018DF3A /* Buttons.swift */; };
+		A87666272817CDC9003C3345 /* ActivityLandmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87666262817CDC9003C3345 /* ActivityLandmarkView.swift */; };
 		A879CEFB272BDF0B0033887B /* Tours in Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879CEFA272BDF0B0033887B /* Tours in Landmark.swift */; };
 		A881ADE82809BE7B0051851E /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881ADE72809BE7B0051851E /* HapticManager.swift */; };
 		A89873F126DCD99600E78ECD /* Detail Map View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89873F026DCD99600E78ECD /* Detail Map View.swift */; };
@@ -275,6 +276,7 @@
 		A87100B02754C51100C5C253 /* LD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LD.swift; sourceTree = "<group>"; };
 		A87361C9278BE8DF0018DF3A /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 		A87361CB278BEDBC0018DF3A /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		A87666262817CDC9003C3345 /* ActivityLandmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLandmarkView.swift; sourceTree = "<group>"; };
 		A879CEFA272BDF0B0033887B /* Tours in Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tours in Landmark.swift"; sourceTree = "<group>"; };
 		A881ADE72809BE7B0051851E /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		A89873F026DCD99600E78ECD /* Detail Map View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Detail Map View.swift"; sourceTree = "<group>"; };
@@ -490,6 +492,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F4F48227B0DEEE00EBDD86 /* CloudKitUtility.swift */,
+				A879CEFA272BDF0B0033887B /* Tours in Landmark.swift */,
 				A87100B02754C51100C5C253 /* LD.swift */,
 				A8F4F48427B0F5CD00EBDD86 /* TestingCloudKit.swift */,
 				A8A335A227BB4D120000DD31 /* datePickerTest.swift */,
@@ -785,8 +788,8 @@
 				A89B9AB326C39D270022642F /* MapView */,
 				A842BAD9265223AB003C9063 /* Small Cards Category View.swift */,
 				A842BADC26522EF4003C9063 /* Category Home.swift */,
-				A879CEFA272BDF0B0033887B /* Tours in Landmark.swift */,
 				A8BD4F1227FB33BB0022A269 /* ActivityMainView.swift */,
+				A87666262817CDC9003C3345 /* ActivityLandmarkView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -899,6 +902,7 @@
 				A8D4C98928101F8B00B73DFE /* TabBarHide.swift in Sources */,
 				A846565127746225006F3FB4 /* unusualPlaces11469.swift in Sources */,
 				A8568B9226BBC126007FA868 /* Batur.swift in Sources */,
+				A87666272817CDC9003C3345 /* ActivityLandmarkView.swift in Sources */,
 				A803F8C42619E15400F699D8 /* CardLikeButtons.swift in Sources */,
 				A81B65552759F10900C383A8 /* Nyang Nyang.swift in Sources */,
 				A842BADD26522EF4003C9063 /* Category Home.swift in Sources */,

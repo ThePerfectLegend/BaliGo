@@ -24,5 +24,5 @@ var kuta = Landmark(
     longitude: 115.16735728472828,
     internalRate: 0,
     internalSubRate: 0.94,
-    toursToLandmark: [34]
+    activitiesOnLandmark: [34]
 )

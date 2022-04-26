@@ -24,7 +24,7 @@ var banyumala = Landmark(
     longitude: 115.1050986293998,
     internalRate: 0,
     internalSubRate: 0.99,
-    toursToLandmark: [12, 14]
+    activitiesOnLandmark: [12, 14]
 )
 
 //Wanagiri, Sukasada, Buleleng Regency, Bali 81161

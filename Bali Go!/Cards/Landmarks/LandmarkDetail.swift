@@ -13,7 +13,7 @@ struct LandmarkDetailView: View {
     
     var landmark: Landmark
     
-    var landmarkIndex: Int {
+    private var landmarkIndex: Int {
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
     
@@ -43,44 +43,26 @@ struct LandmarkDetailView: View {
                 }
                 VStack(alignment: .leading) {
                     Group {
-                        Text(landmark.name)
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        HStack {
-                            Text(landmark.type)
-                                .font(.callout)
-                                .fontWeight(.medium)
-                                .foregroundColor(.secondary)
-                            Spacer()
-                            Distance_View(ladnmark: landmark, showMark: true)
-                                .font(.subheadline)
-                    }
+                        header
                     
                         Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te.")
-                            .font(.subheadline)
+                            .font(.callout.leading(.tight))
                             .padding(.vertical, 2)
                         
-                        Button {
-                            descSheet = true
-                        } label: {
-                            Text("Подробное описание")
-                                .font(.callout.weight(.semibold))
-                        }
-                    }
+                       readMoreButton
+                    
 
                         ContentTableView(contentData: climbingToBaturVolcano.milestoneContent)
                     
                     Divider()
-                        .padding(.bottom, 8)
-                        
+                    }
+                    .padding(.horizontal, 12)
 
+                    ActivityLandmarkView(landmark: landmark)
                     
-                    ActivitySecondaryCard(activity: climbingToBaturVolcano)
                     
                     Group {
-                        Divider()
-                            .padding(.bottom, 8)
+                        Text("Расположение").font(.title3.weight(.semibold))
                         NavigationLink(destination: FullMapView(landmark: landmark)) {
                         SmallMapView(landmark: landmark)
                             .frame(height: 160)
@@ -89,8 +71,8 @@ struct LandmarkDetailView: View {
                         }
                         Go(coordinate: landmark.location)
                     }
+                    .padding([.horizontal, .bottom], 12)
                 }
-                .padding([.horizontal, .bottom], 12)
             }
         }
         .navigationBarTitleDisplayMode(.large)
@@ -102,47 +84,52 @@ struct LandmarkDetailView: View {
             sheedView
         }
 
-//        .sheet(isPresented: $descSheet, content: SheedView(landmark: landmark))
+    }
+    
+    private var header: some View {
+        VStack(alignment: .leading) {
+            Text(landmark.name)
+                .font(.title3)
+                .fontWeight(.semibold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            HStack {
+                Text(landmark.type)
+                    .font(.callout)
+                    .fontWeight(.medium)
+                    .foregroundColor(.secondary)
+                Spacer()
+                Distance_View(ladnmark: landmark, showMark: true)
+                    .font(.subheadline)
+            }
+        }
+    }
+    
+    private var readMoreButton: some View {
+        Button {
+            descSheet = true
+        } label: {
+            Text("Подробное описание").font(.callout.weight(.semibold))
+        }
     }
     
     private var sheedView: some View {
         NavigationView {
-                ScrollView {
-                    VStack {
-                        Text(landmark.description)
-                            .font(.body)
-                    }
-                    .padding(.horizontal, 18)
-                    .padding(.vertical, 12)
+            ScrollView {
+                VStack {
+                    Text(landmark.description).font(.body)
+                }
+                .padding(.horizontal, 18)
+                .padding(.vertical, 12)
             }
-                
-                .navigationBarItems(
-                    leading: Text(landmark.name).font(.title3.weight(.semibold)),
-                    trailing: CloseButton(showDeteil: $descSheet))
-                .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(
+                leading: Text(landmark.name).font(.title3.weight(.semibold)),
+                trailing: CloseButton(showDeteil: $descSheet))
+            .navigationBarTitleDisplayMode(.inline)
         }
         .background(Blur(style: .systemMaterial))
     }
+    
 }
-
-
-struct SheetView: View {
-    @Binding var showSheetView: Bool
-
-    var body: some View {
-        NavigationView {
-            Text("List of notifications")
-            .navigationBarTitle(Text("Notifications"), displayMode: .inline)
-                .navigationBarItems(trailing: Button(action: {
-                    print("Dismissing sheet view...")
-                    self.showSheetView = false
-                }) {
-                    Text("Done").bold()
-                })
-        }
-    }
-}
-
 
 
 struct SmallMapView: View {

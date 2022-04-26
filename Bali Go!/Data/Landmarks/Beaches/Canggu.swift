@@ -24,5 +24,5 @@ var canggu = Landmark(
     longitude: 115.13065666318508,
     internalRate: 0,
     internalSubRate: 0.91,
-    toursToLandmark: [34]
+    activitiesOnLandmark: [34]
 )

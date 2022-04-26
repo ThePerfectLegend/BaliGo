@@ -63,7 +63,9 @@ struct ActivityDetailView: View {
                     
                     Text(activity.description)
                         .font(.callout.leading(.tight))
-                        .padding(.top, 2)
+                        .padding(.vertical, 2)
+                    
+                    readMoreButton
                     
                     ContentTableView(contentData: activity.milestoneContent)
                     BookingBotton
@@ -81,6 +83,17 @@ struct ActivityDetailView: View {
                 LikeButtonActivityDetail(activity: $viewModel.activities[activityIndex])
             }
         )
+    }
+    
+    
+    
+    private var readMoreButton: some View {
+        Button {
+            UIApplication.shared.open(URL(string: featuredLink + "&utm_content=readmore")!)
+        } label: {
+            Text("Подробное описание на \(activity.partner) \(Image(systemName: "arrow.up.forward.app.fill"))")
+                .font(.callout.weight(.semibold))
+        }
     }
     
     
@@ -104,4 +117,6 @@ struct ActivityDetailView: View {
             .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
         }
     }
+    
+    
 }

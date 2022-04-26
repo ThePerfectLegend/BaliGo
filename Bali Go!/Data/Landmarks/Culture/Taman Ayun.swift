@@ -24,6 +24,6 @@ var tamanAyun = Landmark(
     longitude: 115.1725344374761,
     internalRate: 0,
     internalSubRate: 0.93,
-    toursToLandmark: [31, 17]
+    activitiesOnLandmark: [31, 17]
 )
 

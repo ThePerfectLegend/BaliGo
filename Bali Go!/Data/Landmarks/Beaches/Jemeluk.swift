@@ -24,6 +24,6 @@ var jemeluk = Landmark(
     longitude: 115.65993215329763,
     internalRate: 1,
     internalSubRate: 0.95,
-    toursToLandmark: [7]
+    activitiesOnLandmark: [7]
 )
 //Jl. Raya Amed, Bunutan, Abang, Kabupaten Karangasem, Bali 80852

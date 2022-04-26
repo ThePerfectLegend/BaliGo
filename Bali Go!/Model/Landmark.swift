@@ -91,7 +91,7 @@ struct Landmark: Codable, Identifiable, Hashable {
         }
     }
     
-    var toursToLandmark = [Int]()
+    var activitiesOnLandmark = [Int]()
     
 //    var optionDesc1 : [String: String] = [:]
 //    var optionDesc2 : [String: String] = [:]

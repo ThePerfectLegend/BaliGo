@@ -24,5 +24,5 @@ var ulunDanuBeratan = Landmark(
     longitude: 115.16519815517312,
     internalRate: 1,
     internalSubRate: 0.99,
-    toursToLandmark: [12, 15, 25, 13, 14]
+    activitiesOnLandmark: [12, 15, 25, 13, 14]
 )

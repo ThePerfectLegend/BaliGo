@@ -24,5 +24,7 @@ var batur = Landmark(
     longitude: 115.37939924273402,
     internalRate: 1,
     internalSubRate: 0.99,
-    toursToLandmark: [1 ,5, 35, 3]
+    activitiesOnLandmark: [1, 2]
 )
+
+//activitiesOnLandmark: [1 ,5, 35, 3]

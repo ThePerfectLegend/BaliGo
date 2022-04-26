@@ -24,5 +24,5 @@ var blueLagoon = Landmark(
     longitude: 115.51255411543217,
     internalRate: 1,
     internalSubRate: 0.9,
-    toursToLandmark: [8, 9]
+    activitiesOnLandmark: [8, 9]
 )

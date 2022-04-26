@@ -10,6 +10,15 @@ import SwiftUI
 struct ActivitySecondaryCard: View {
     
     var activity: Activity
+    var widthInfinity: Bool
+    
+    private var widthSize: CGFloat {
+        if widthInfinity {
+            return (UIScreen.main.bounds.width - 24)
+        } else {
+            return CGFloat(335)
+        }
+    }
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -17,11 +26,9 @@ struct ActivitySecondaryCard: View {
                 Image(activity.image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 335, height: 160)
+                    .frame(width: widthSize, height: 160)
                     .clipped()
                     .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
-                    
-
                 VStack(alignment: .leading, spacing: 2) {
                     Text(activity.name)
                         .font(.headline)
@@ -30,6 +37,7 @@ struct ActivitySecondaryCard: View {
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         .lineLimit(2)
+                        .fixedSize(horizontal: false, vertical: true)
                     HStack(alignment: .bottom) {
                         VStack(alignment: .leading) {
                             ActivityRaitingView(activity: activity)
@@ -38,9 +46,9 @@ struct ActivitySecondaryCard: View {
                         ActivityPriceView(activity: activity)
                     }
                 }
-                .frame(width: 335)
+                .frame(width: widthSize)
             }
-            .frame(width: 335)
+            .frame(width: widthSize)
         }
     }
 }

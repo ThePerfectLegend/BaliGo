@@ -24,5 +24,5 @@ var tibumana = Landmark(
     longitude: 115.33116303860055,
     internalRate: 1,
     internalSubRate: 0.97,
-    toursToLandmark: [18]
+    activitiesOnLandmark: [18]
 )

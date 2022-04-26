@@ -24,5 +24,5 @@ var birdPark = Landmark(
     longitude: 115.25181441748285,
     internalRate: 0,
     internalSubRate: 0.97,
-    toursToLandmark: [32, 20]
+    activitiesOnLandmark: [32, 20]
 )

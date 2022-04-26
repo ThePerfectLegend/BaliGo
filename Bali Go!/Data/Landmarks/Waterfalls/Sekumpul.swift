@@ -24,5 +24,5 @@ var secumpul = Landmark(
     longitude: 115.18326,
     internalRate: 0,
     internalSubRate: 0.98,
-    toursToLandmark: [13, 28, 25]
+    activitiesOnLandmark: [13, 28, 25]
 )

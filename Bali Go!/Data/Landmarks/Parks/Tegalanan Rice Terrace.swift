@@ -25,5 +25,5 @@ var tegalananRiceTerrace = Landmark(
     longitude: 115.27853987394867,
     internalRate: 1,
     internalSubRate: 0.99,
-    toursToLandmark: [30, 29, 19, 20, 22, 18]
+    activitiesOnLandmark: [30, 29, 19, 20, 22, 18]
 )

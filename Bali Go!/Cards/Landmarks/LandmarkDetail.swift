@@ -9,21 +9,18 @@ import SwiftUI
 
 struct LandmarkDetailView: View {
     
-    @EnvironmentObject var modelData: LandmarkViewModel
-    
     var landmark: Landmark
+    
+    @EnvironmentObject var modelData: LandmarkViewModel
+    @EnvironmentObject var viewModel: ActivityViewModel
     
     private var landmarkIndex: Int {
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-        
     @State private var descSheet = false
     
-    @EnvironmentObject var viewModel: ActivityViewModel
-    
-        
     var body: some View {
         ZStack(alignment: .top) {
             ScrollView{
@@ -41,34 +38,18 @@ struct LandmarkDetailView: View {
                     }
                     .frame(height: UIScreen.main.bounds.width * 0.5)
                 }
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 8) {
                     Group {
                         header
-                    
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te.")
-                            .font(.callout.leading(.tight))
-                            .padding(.vertical, 2)
-                        
-                       readMoreButton
-                    
-
+                        SmallDescView(description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te.")
+                        readMoreButton
                         ContentTableView(contentData: climbingToBaturVolcano.milestoneContent)
-                    
-                    Divider()
+                        Divider()
                     }
                     .padding(.horizontal, 12)
-
                     ActivityLandmarkView(landmark: landmark)
-                    
-                    
-                    Group {
-                        Text("Расположение").font(.title3.weight(.semibold))
-                        NavigationLink(destination: FullMapView(landmark: landmark)) {
-                        SmallMapView(landmark: landmark)
-                            .frame(height: 160)
-                            .frame(maxWidth: .infinity)
-                            .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
-                        }
+                    VStack(spacing: 12) {
+                        landmarkMapView
                         Go(coordinate: landmark.location)
                     }
                     .padding([.horizontal, .bottom], 12)
@@ -83,7 +64,7 @@ struct LandmarkDetailView: View {
         .sheet(isPresented: $descSheet) {
             sheedView
         }
-
+        
     }
     
     private var header: some View {
@@ -109,6 +90,18 @@ struct LandmarkDetailView: View {
             descSheet = true
         } label: {
             Text("Подробное описание").font(.callout.weight(.semibold))
+        }
+    }
+
+    private var landmarkMapView: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Расположение").font(.title3.weight(.semibold))
+            NavigationLink(destination: FullMapView(landmark: landmark)) {
+                SmallMapView(landmark: landmark)
+                    .frame(height: 160)
+                    .frame(maxWidth: .infinity)
+                    .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
+            }
         }
     }
     

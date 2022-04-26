@@ -14,7 +14,7 @@ struct ActivityLandmarkView: View {
     @EnvironmentObject var viewModel: ActivityViewModel
     
     private var activityScenario: Int {
-        return landmark.activitiesOnLandmark.count
+        return activityForLandmark.count
     }
     
     private var activityForLandmark: [Activity] {
@@ -31,12 +31,12 @@ struct ActivityLandmarkView: View {
     
     var body: some View {
         switch activityScenario {
-        case 0:
-            EmptyView()
-        case 1:
+        case let x where x > 1:
+            fewActivity
+        case let x where x == 1:
             oneActivity
         default:
-            fewActivity
+            EmptyView()
         }
     }
     
@@ -59,7 +59,10 @@ struct ActivityLandmarkView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 12) {
                     ForEach(activityForLandmark) { activity in
-                        ActivitySecondaryCard(activity: activity, widthInfinity: false)
+                        NavigationLink(destination: ActivityDetailView(activity: activity, utm_campaign: "&utm_campaign=landmark")) {
+                            ActivitySecondaryCard(activity: activity, widthInfinity: false)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
                 .padding(.horizontal, 12)

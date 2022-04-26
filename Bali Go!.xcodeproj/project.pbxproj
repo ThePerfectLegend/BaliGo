@@ -89,6 +89,7 @@
 		A8568B9526BBC580007FA868 /* Batukaru.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568B9426BBC580007FA868 /* Batukaru.swift */; };
 		A858C2302664DC3C00F92409 /* Tukad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858C22F2664DC3C00F92409 /* Tukad.swift */; };
 		A858C2372664E6DB00F92409 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858C2362664E6DB00F92409 /* Color.swift */; };
+		A85DADBD2818329700B0CCB3 /* SmallDescView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85DADBC2818329700B0CCB3 /* SmallDescView.swift */; };
 		A85E08D82812965300F98C4E /* Likeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E08D72812965300F98C4E /* Likeable.swift */; };
 		A85E08DA2812A3A800F98C4E /* DetailViewLikeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E08D92812A3A800F98C4E /* DetailViewLikeButtons.swift */; };
 		A864126B2662243800F288DF /* Ubud Monkey Forest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A864126A2662243800F288DF /* Ubud Monkey Forest.swift */; };
@@ -259,6 +260,7 @@
 		A8568B9426BBC580007FA868 /* Batukaru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Batukaru.swift; sourceTree = "<group>"; };
 		A858C22F2664DC3C00F92409 /* Tukad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tukad.swift; sourceTree = "<group>"; };
 		A858C2362664E6DB00F92409 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A85DADBC2818329700B0CCB3 /* SmallDescView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDescView.swift; sourceTree = "<group>"; };
 		A85E08D72812965300F98C4E /* Likeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Likeable.swift; sourceTree = "<group>"; };
 		A85E08D92812A3A800F98C4E /* DetailViewLikeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewLikeButtons.swift; sourceTree = "<group>"; };
 		A864126A2662243800F288DF /* Ubud Monkey Forest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ubud Monkey Forest.swift"; sourceTree = "<group>"; };
@@ -744,6 +746,7 @@
 				A868A90127B790B9000F681F /* GO.swift */,
 				A8AAD1E62811400500016E27 /* ContentTableView.swift */,
 				A819D2EF28169CF5009400EA /* ShareButton.swift */,
+				A85DADBC2818329700B0CCB3 /* SmallDescView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -962,6 +965,7 @@
 				A8460BDD264CCCC000F3E9AC /* Tirta Gangga.swift in Sources */,
 				A86A281626B8F1B3003E56C8 /* Sangeh.swift in Sources */,
 				A8340CE426BA59E100B8FC6B /* Nungnung.swift in Sources */,
+				A85DADBD2818329700B0CCB3 /* SmallDescView.swift in Sources */,
 				A83B7976276DC27B008EE9FE /* northWestTour.swift in Sources */,
 				A8568B7A26BB84C4007FA868 /* Melasti.swift in Sources */,
 				A8F4F48327B0DEEE00EBDD86 /* CloudKitUtility.swift in Sources */,

@@ -11,11 +11,32 @@ import SwiftUI
 struct Like_Screen: View {
 
     @EnvironmentObject var modelData: LandmarkViewModel
+    @EnvironmentObject var activityViewModel: ActivityViewModel
     @State private var screenState: Bool = true
+    @State private var selection: String = "Activity"
 
     private var filteredLandmarks: [Landmark] {
-        modelData.landmarks.filter { landmark in (landmark.isLiked) }
+        modelData.landmarks.filter { landmark in landmark.isLiked }
     }
+    
+    private var likedActivities: [Activity] {
+        activityViewModel.activities.filter { activity in activity.isLiked }
+    }
+    
+    @State var screenType: LikedTypes = .activity
+    
+    enum LikedTypes: String, Identifiable, CaseIterable {
+        case activity = "Активности"
+        case landmark = "Локации"
+        var id: LikedTypes { self }
+    }
+    
+    // Сценарии
+    // Нет лайкнутых элементов - пустой экран
+    // Есть лайкнутые локации
+    // Есть лайкнутые активности
+    // Есть и активности и локации
+    
     
     private var numberOfLiked: Bool {
         if filteredLandmarks.count != 0 {
@@ -40,18 +61,45 @@ struct Like_Screen: View {
                             }
                         }
                 }
-                .navigationBarTitle(Text("Избранное"), displayMode: .inline)
-                .navigationBarItems(trailing: ViewSwither(list: $screenState, showButton: numberOfLiked))
+                .navigationBarTitleDisplayMode(.inline)
                 .navigationBarHidden(false)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        ViewSwither(list: $screenState, showButton: numberOfLiked)
+                    }
+                    ToolbarItem(placement: .principal) {
+                        typePicker
+                    }
+                }
+
         }
         .navigationViewStyle(.stack) /// глушит предупреждения в консоли об отступах
+    }
+    
+    private var typePicker: some View {
+        Picker("LikedTypes",selection: $screenType) {
+            ForEach(LikedTypes.allCases) { types in
+                Text(types.rawValue).tag(types.rawValue)
+            }
+        }
+        .pickerStyle(SegmentedPickerStyle())
+        .frame(width: 220)
+    }
+    
+    private var addButton: some View {
+        Button {
+            print("Add something")
+        } label: {
+            Image(systemName: "plus")
+        }
+
     }
     
 
     struct TextIfEmpty: View {
         var body: some View {
             VStack {
-                Text("Здесь сохраняются места, которые вы отметите ")
+                Text("Здесь сохраняются места и активности, которые вы отметите ")
                 + Text("\(Image(systemName: "heart.fill"))")
                     .foregroundColor(.baliGo)
             }
@@ -78,7 +126,7 @@ struct Like_Screen: View {
                     Image(systemName: "list.bullet")
                 }
             }
-            .padding(16)
+//            .padding(16)
             } else {
                 EmptyView()
             }
@@ -92,7 +140,7 @@ struct Like_Screen: View {
 
         var body: some View {
             ScrollView{
-                VStack(spacing: 8) {
+                VStack(alignment: .leading, spacing: 8) {
                     ForEach(likedLandmarks) { landmark in
                         NavigationLink(destination: LandmarkDetailView(landmark: landmark)
                         ) { Liked_Card(landmark: landmark) }
@@ -101,7 +149,7 @@ struct Like_Screen: View {
 
                     Spacer()
                 }
-                .padding([.horizontal, .top], 18)
+                .padding(18)
             }
         }
     }

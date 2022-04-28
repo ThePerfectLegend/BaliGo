@@ -41,7 +41,6 @@ struct LandmarkDetailView: View {
                         header
                         SmallDescView(description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te.")
                         readMoreButton
-                        ContentTableView(contentData: climbingToBaturVolcano.milestoneContent)
                         Divider()
                     }
                     .padding(.horizontal, 12)
@@ -109,8 +108,8 @@ struct LandmarkDetailView: View {
                 VStack {
                     Text(landmark.description).font(.body)
                 }
-                .padding(.horizontal, 18)
-                .padding(.vertical, 12)
+                .padding([.horizontal, .bottom], 18)
+                .padding(.top, 8)
             }
             .navigationBarItems(
                 leading: Text(landmark.name).font(.title3.weight(.semibold)),

@@ -36,17 +36,16 @@ struct Liked_Card: View {
                 .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
             }
             .padding(.trailing, 8)
-            VStack(alignment: .leading, spacing: 4) {
+            VStack(alignment: .leading, spacing: 2) {
                 Text(landmark.name)
                     .font(.headline)
                     .lineLimit(1)
                 Text(landmark.type)
                     .font(.callout)
-                    .fontWeight(.medium)
                     .foregroundColor(.secondary)
                     .lineLimit(1)
                 Distance_View(ladnmark: landmark, showMark: true)
-                    .font(.callout)
+                    .font(.subheadline)
                 Spacer(minLength: 4)
                 Divider()
             }

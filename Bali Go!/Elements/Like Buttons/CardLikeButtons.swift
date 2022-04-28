@@ -29,7 +29,7 @@ struct LikeButtonActivityCard: View {
     var body: some View {
         Button {
             activity.isLiked.toggle()
-            ActivityViewModel.instance.save()
+            ActivityViewModel.instance.save(object: activity)
             HapticManager.instance.notification(type: activity.isLiked ? .success : .warning)
         } label: {
             LikeButtonCardDesign(toggleProperty: activity.isLiked)

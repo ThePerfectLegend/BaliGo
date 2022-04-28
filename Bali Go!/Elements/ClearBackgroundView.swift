@@ -25,7 +25,7 @@ struct ClearBackgroundViewModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .background(ClearBackgroundView())
-            .background(Blur(style: .systemUltraThinMaterial))
+//            .background(Blur(style: .systemUltraThinMaterial))
     }
 }
 

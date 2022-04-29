@@ -62,4 +62,9 @@ final class LandmarkViewModel: ObservableObject {
             print("Saved")
         }
     }
+    
+    func getSuggestion() -> [Landmark] {
+        let suggested = landmarks.filter { landmark in !landmark.isLiked }
+        return suggested
+    }
 }

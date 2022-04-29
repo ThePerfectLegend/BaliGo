@@ -37,15 +37,12 @@ struct Liked_Card: View {
             }
             .padding(.trailing, 8)
             VStack(alignment: .leading, spacing: 2) {
-                Text(landmark.name)
-                    .font(.headline)
+                Text(landmark.name).font(.headline)
                     .lineLimit(1)
-                Text(landmark.type)
-                    .font(.callout)
+                Text(landmark.type).font(.callout.weight(.medium))
                     .foregroundColor(.secondary)
                     .lineLimit(1)
-                Distance_View(ladnmark: landmark, showMark: true)
-                    .font(.subheadline)
+                Distance_View(ladnmark: landmark, showMark: true).font(.subheadline)
                 Spacer(minLength: 4)
                 Divider()
             }

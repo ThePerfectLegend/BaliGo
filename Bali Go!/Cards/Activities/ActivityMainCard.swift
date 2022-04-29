@@ -23,15 +23,15 @@ struct ActivityMainCard: View {
                 Image(activity.image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 335, height: 160) // 240
+                    .frame(width: (UIScreen.main.bounds.width - 36), height: 160) // 240
                     .clipped()
                     .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
-                    
-
                 VStack(alignment: .leading) {
-                    Text(activity.name)
-                        .font(.headline)
+                    Text(activity.name).font(.headline)
                         .lineLimit(2)
+                    Text(activity.type).font(.callout.weight(.medium))
+                        .foregroundColor(.secondary)
+                        .lineLimit(1)
                     HStack(alignment: .bottom) {
                         VStack(alignment: .leading) {
                             ActivityRaitingView(activity: activity)
@@ -40,9 +40,9 @@ struct ActivityMainCard: View {
                         ActivityPriceView(activity: activity)
                     }
                 }
-                .frame(width: 335)
+                .frame(width: UIScreen.main.bounds.width - 36)
             }
-            .frame(width: 335)
+            .frame(width: UIScreen.main.bounds.width - 36)
             
             LikeButtonActivityCard(activity: $viewModel.activities[activityIndex])
                 .font(.title)

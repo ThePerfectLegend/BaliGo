@@ -55,7 +55,6 @@ struct All_Category_Screen: View {
                     Image(systemName: "list.bullet")
                 }
             }
-            .padding(16)
         }
     }
     
@@ -77,7 +76,8 @@ struct All_Category_Screen: View {
                     .buttonStyle(PlainButtonStyle())
                     Spacer()
                 }
-                .padding([.horizontal, .top], 18)
+                .padding(.horizontal, 18)
+                .padding(.vertical, 12)
             }
         }
     }

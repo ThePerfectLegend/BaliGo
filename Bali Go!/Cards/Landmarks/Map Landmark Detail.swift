@@ -23,12 +23,9 @@ struct Map_Landmark_Detail: View {
                         .aspectRatio(contentMode: .fill)
                         .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(landmark.name)
-                            .font(.headline)
+                        Text(landmark.name).font(.headline)
                             .lineLimit(2)
-                        Text(landmark.type)
-                            .font(.callout)
-                            .fontWeight(.medium)
+                        Text(landmark.type).font(.callout.weight(.medium))
                             .foregroundColor(.secondary)
                             .lineLimit(1)
                         Distance_View(ladnmark: landmark, showMark: true)
@@ -36,6 +33,8 @@ struct Map_Landmark_Detail: View {
                     }
                     Spacer()
                     CloseButton(showDeteil: $showDeteil)
+                        .padding(8)
+
                 }
                 .frame(height: 120)
                 .frame(maxWidth: .infinity)
@@ -45,7 +44,7 @@ struct Map_Landmark_Detail: View {
             Go(coordinate: landmark.location)
         }
         .padding(12)
-        .background(Blur(style: .systemUltraThinMaterial))
-        .mask(Custom_Corners(corners: [.topLeft, .topRight], radius: 12))
+        .background(Blur(style: .systemThinMaterial))
+        .mask(Custom_Corners(corners: [.topLeft, .topRight], radius: 8))
     }
 }

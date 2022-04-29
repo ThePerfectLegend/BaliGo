@@ -63,15 +63,11 @@ struct ActivityDetailView: View {
     
     private var header: some View {
         VStack(alignment: .leading) {
-            Text(activity.name)
-                .font(.title3)
-                .fontWeight(.semibold)
+            Text(activity.name).font(.title3.weight(.semibold))
                 .lineLimit(2)
             HStack(alignment: .bottom) {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(activity.type)
-                        .font(.callout)
-                        .fontWeight(.medium)
+                    Text(activity.type).font(.callout.weight(.semibold))
                         .foregroundColor(.secondary)
                         .lineLimit(1)
                     ActivityRaitingView(activity: activity)
@@ -102,8 +98,8 @@ struct ActivityDetailView: View {
                 Text("Заказать")
                     .font(.title3)
                     .fontWeight(.semibold)
-                Text("В партнерстве с \(activity.partner)")
-                    .font(.footnote)
+//                Text("В партнерстве с \(activity.partner)")
+//                    .font(.footnote)
             }
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)

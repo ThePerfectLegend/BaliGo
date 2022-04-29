@@ -43,14 +43,6 @@ struct Setting_Screen: View {
                             } else {  Text(apps.rawValue) }
                         }
                     }
-                }
-                
-                Section(header: Text("Оценка и рекомендации")) {
-                    Button {
-                        writeReview()
-                    } label: {
-                        PickerLineDesign(systemName: "star.fill", title: "Оценить BaliGo!")
-                    }
                     
                     Button {
                         showAppShareSheet()
@@ -83,12 +75,10 @@ struct Setting_Screen: View {
         
         var body: some View {
             HStack {
-                Image(systemName: systemName)
+                Image(systemName: systemName).font(.body.weight(.medium))
                     .frame(width: 20, height: 20, alignment: .center)
-                Text(title)
+                Text(title).font(.body.weight(.medium))
             }
         }
     }
-    
-    
 }

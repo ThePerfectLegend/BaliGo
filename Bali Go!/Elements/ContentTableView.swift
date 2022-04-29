@@ -21,7 +21,7 @@ struct ContentTableView: View {
                     Image(systemName: milestone["Image"] ?? "")
                         .font(.title3)
                         .padding(.trailing, 4)
-                        .frame(width: 25, height: 25, alignment: .center)
+                        .frame(width: 20, height: 20, alignment: .center)
                     VStack(alignment: .leading, spacing: 2) {
                         Text(milestone["Primary"] ?? "")
                             .font(.callout.leading(.tight).weight(.medium))

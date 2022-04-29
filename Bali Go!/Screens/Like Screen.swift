@@ -9,13 +9,16 @@
 import SwiftUI
 
 struct Like_Screen: View {
-
+    
     @EnvironmentObject var modelData: LandmarkViewModel
     @EnvironmentObject var activityViewModel: ActivityViewModel
-    @State private var screenState: Bool = true
-    @State private var selection: String = "Activity"
-
-    private var filteredLandmarks: [Landmark] {
+    @State private var showLandmarkMap: Bool = false
+    @State private var screenType: LikedTypes = .activity
+    private var tempCS: ScreenStates {
+        screenChanging()
+    }
+    
+    private var likedLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in landmark.isLiked }
     }
     
@@ -23,67 +26,138 @@ struct Like_Screen: View {
         activityViewModel.activities.filter { activity in activity.isLiked }
     }
     
-    @State var screenType: LikedTypes = .activity
-    
     enum LikedTypes: String, Identifiable, CaseIterable {
         case activity = "Активности"
         case landmark = "Локации"
         var id: LikedTypes { self }
     }
     
-    // Сценарии
-    // Нет лайкнутых элементов - пустой экран
-    // Есть лайкнутые локации
-    // Есть лайкнутые активности
-    // Есть и активности и локации
+    enum ScreenStates {
+        case noLikes, landmarkLiked, activityLiked, bothLiked
+    }
     
-    
-    private var numberOfLiked: Bool {
-        if filteredLandmarks.count != 0 {
-            return true
+    func screenChanging() -> ScreenStates {
+        if (likedLandmarks.count + likedActivities.count) == 0 {
+            return .noLikes
+        } else if likedLandmarks.count == 0 && likedActivities.count != 0 {
+            return .activityLiked
+        } else if likedLandmarks.count != 0 && likedActivities.count == 0 {
+            return .landmarkLiked
         } else {
-            return false
+            return .bothLiked
         }
     }
     
-
+    
     var body: some View {
         NavigationView {
-                VStack {
-                    if numberOfLiked == false {
-                        TextIfEmpty()
-                        } else {
-                            switch screenState {
-                            case true:
-                                ListView(likedLandmarks: filteredLandmarks)
-                            case false:
-                                MapViewInSwiftUI(landmarksForDisplay: filteredLandmarks, safeAreas: [])
-                            }
-                        }
-                }
-                .navigationBarTitleDisplayMode(.inline)
-                .navigationBarHidden(false)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        ViewSwither(list: $screenState, showButton: numberOfLiked)
-                    }
-                    ToolbarItem(placement: .principal) {
-                        typePicker
+            VStack {
+                if tempCS == .noLikes {
+                    EmptyLikesView(title: "Добавьте сюда путешествия, в которые хотите отправиться") {}
+                } else {
+                    switch screenType {
+                    case .activity:
+                        activityView
+                    case .landmark:
+                        landmarksView
                     }
                 }
-
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(false)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    addButton
+                }
+                ToolbarItem(placement: .principal) {
+                    typePicker
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    mapSwither
+                }
+            }
+            
         }
         .navigationViewStyle(.stack) /// глушит предупреждения в консоли об отступах
-    }
-    
-    private var typePicker: some View {
-        Picker("LikedTypes",selection: $screenType) {
-            ForEach(LikedTypes.allCases) { types in
-                Text(types.rawValue).tag(types.rawValue)
+        .onAppear {
+            if tempCS == .landmarkLiked {
+                screenType = .landmark
+            } else if tempCS == .activityLiked {
+                screenType = .activity
             }
         }
-        .pickerStyle(SegmentedPickerStyle())
-        .frame(width: 220)
+    }
+    
+    @ViewBuilder private var typePicker: some View {
+        if tempCS == .noLikes {
+            Text("Избранное").font(.body.weight(.semibold))
+        } else {
+            Picker("LikedTypes",selection: $screenType) {
+                ForEach(LikedTypes.allCases) { types in
+                    Text(types.rawValue).tag(types.rawValue)
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .frame(width: 220)
+        }
+        
+    }
+    
+    @ViewBuilder private var landmarksView: some View {
+        if !showLandmarkMap {
+            if likedLandmarks.count != 0 {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 8) {
+                        ForEach(likedLandmarks) { landmark in
+                            NavigationLink(destination: LandmarkDetailView(landmark: landmark)) {
+                                Liked_Card(landmark: landmark) }
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                    .padding(.horizontal, 18)
+                    .padding(.vertical, 12)
+                }
+            } else {
+                EmptyLikesView(title: "Добавьте сюда локации, которые хотите посетить") {}
+            }
+        } else {
+            MapViewInSwiftUI(landmarksForDisplay: likedLandmarks, safeAreas: [])
+        }
+    }
+    
+    @ViewBuilder private var mapSwither: some View {
+        if screenType == .landmark && likedLandmarks.count != 0 {
+            Button {
+                showLandmarkMap.toggle()
+            } label: {
+                if showLandmarkMap {
+                    Image(systemName: "list.bullet")
+                } else {
+                    Image(systemName: "map.fill")
+                }
+            }
+        } else {
+            EmptyView()
+        }
+    }
+    
+    @ViewBuilder private var activityView: some View {
+        if likedActivities.count != 0 {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                    ForEach(likedActivities) { activity in
+                        NavigationLink(destination: ActivityDetailView(activity: activity, utm_campaign: "&utm_campaign=liked")) {
+                            ActivityMainCard(activity: activity)
+                        }
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                }
+                .padding(.horizontal, 18)
+                .padding(.vertical, 12)
+            }
+        } else {
+            EmptyLikesView(title: "Добавьте сюда активности, которыми хотите занаяться") {}
+        }
     }
     
     private var addButton: some View {
@@ -92,65 +166,30 @@ struct Like_Screen: View {
         } label: {
             Image(systemName: "plus")
         }
-
+        
     }
     
-
-    struct TextIfEmpty: View {
+    struct EmptyLikesView<Content:View>: View {
+        
+        let title: String
+        let content: Content?
+        
+        init(title: String, @ViewBuilder content: () -> Content) {
+            self.title = title
+            self.content = content()
+        }
+        
         var body: some View {
             VStack {
-                Text("Здесь сохраняются места и активности, которые вы отметите ")
-                + Text("\(Image(systemName: "heart.fill"))")
-                    .foregroundColor(.baliGo)
+                Text(title)
+                content
             }
             .padding(.horizontal, 32)
             .multilineTextAlignment(.center)
-            
-        }
-    }
-    
-    
-    struct ViewSwither: View {
-        
-        @Binding var list: Bool
-        var showButton: Bool
-        
-        var body: some View {
-            if showButton == true {
-            Button(action: {
-                    list.toggle()
-            }) {
-                if list == true {
-                    Image(systemName: "map.fill")
-                } else {
-                    Image(systemName: "list.bullet")
-                }
-            }
-//            .padding(16)
-            } else {
-                EmptyView()
-            }
-        }
-        
-    }
-
-    struct ListView: View {
-
-        var likedLandmarks: [Landmark]
-
-        var body: some View {
-            ScrollView{
-                VStack(alignment: .leading, spacing: 8) {
-                    ForEach(likedLandmarks) { landmark in
-                        NavigationLink(destination: LandmarkDetailView(landmark: landmark)
-                        ) { Liked_Card(landmark: landmark) }
-                    }
-                    .buttonStyle(PlainButtonStyle())
-
-                    Spacer()
-                }
-                .padding(18)
-            }
         }
     }
 }
+
+
+
+

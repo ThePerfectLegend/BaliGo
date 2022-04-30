@@ -136,6 +136,8 @@
 		A8A8C5B32618F9E500C5724A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A8C5B22618F9E500C5724A /* Preview Assets.xcassets */; };
 		A8AAD1E72811400500016E27 /* ContentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AAD1E62811400500016E27 /* ContentTableView.swift */; };
 		A8AC0FB027B61B0C000647FC /* Event_Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0FAF27B61B0C000647FC /* Event_Detail.swift */; };
+		A8AC89CB281DB2CB007133D7 /* InstagramTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC89CA281DB2CB007133D7 /* InstagramTour.swift */; };
+		A8AC89CD281DBBE7007133D7 /* Diving.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC89CC281DBBE7007133D7 /* Diving.swift */; };
 		A8B87E222732685400E0D9B9 /* UserPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */; };
 		A8B87E2627326E7B00E0D9B9 /* Setting Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */; };
 		A8BD4F0827FB2E5B0022A269 /* UsableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F0727FB2E5B0022A269 /* UsableData.swift */; };
@@ -309,6 +311,8 @@
 		A8A8C5B42618F9E500C5724A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AAD1E62811400500016E27 /* ContentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableView.swift; sourceTree = "<group>"; };
 		A8AC0FAF27B61B0C000647FC /* Event_Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_Detail.swift; sourceTree = "<group>"; };
+		A8AC89CA281DB2CB007133D7 /* InstagramTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTour.swift; sourceTree = "<group>"; };
+		A8AC89CC281DBBE7007133D7 /* Diving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diving.swift; sourceTree = "<group>"; };
 		A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewModel.swift; sourceTree = "<group>"; };
 		A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting Screen.swift"; sourceTree = "<group>"; };
 		A8BD4F0727FB2E5B0022A269 /* UsableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsableData.swift; sourceTree = "<group>"; };
@@ -756,6 +760,8 @@
 			children = (
 				A8E29571280C596B00106F31 /* climbingToBaturVolcano.swift */,
 				A8DD4D9C2813272000E61BF5 /* TicketsToGili.swift */,
+				A8AC89CA281DB2CB007133D7 /* InstagramTour.swift */,
+				A8AC89CC281DBBE7007133D7 /* Diving.swift */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -1018,6 +1024,7 @@
 				A81B655D2759FA8900C383A8 /* Sawangan.swift in Sources */,
 				A89BFAAF2643D41800FDA4C6 /* Goa Gajah.swift in Sources */,
 				A87100B12754C51100C5C253 /* LD.swift in Sources */,
+				A8AC89CB281DB2CB007133D7 /* InstagramTour.swift in Sources */,
 				A8CAA349262DD2760098ECDE /* Close Detail View Button.swift in Sources */,
 				A89873F126DCD99600E78ECD /* Detail Map View.swift in Sources */,
 				A82A2C4C2727B10000E3C6DF /* Tour Card.swift in Sources */,
@@ -1031,6 +1038,7 @@
 				A8AAD1E72811400500016E27 /* ContentTableView.swift in Sources */,
 				A8340CE726BA5DEE00B8FC6B /* Banyumala.swift in Sources */,
 				A846565527746E5A006F3FB4 /* ubud10492.swift in Sources */,
+				A8AC89CD281DBBE7007133D7 /* Diving.swift in Sources */,
 				A8460BE7264CD93200F3E9AC /* Agung.swift in Sources */,
 				A83B797E276DC5C5008EE9FE /* instagramTour693.swift in Sources */,
 				A8FBC1D2263AEAA800D26935 /* ExpandableText.swift in Sources */,

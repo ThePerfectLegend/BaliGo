@@ -12,7 +12,7 @@ var climbingToBaturVolcano = Activity(
     name: "Восхождение на вулкан Батур",
     type: "Трекинг",
     numberOfReviews: 425,
-    rating: 4.8,
+    rating: 4.7,
     price: [.USD : 37, .RUB : 2979, .IDR : 530000],
     image: "climbingToBatur1008",
     description: """
@@ -29,7 +29,7 @@ var climbingToBaturVolcano = Activity(
         
         ["Primary": "Легкий завтрак",
          "Secondary": "Перед началом подъема и на вершине",
-         "Image": "leaf.fill"],
+         "Image": "cup.and.saucer.fill"],
         
         ["Primary": "Подъем с гидом-проводником",
          "Secondary": "До 5 человек в группе",

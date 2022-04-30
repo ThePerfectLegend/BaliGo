@@ -17,12 +17,12 @@ struct ContentTableView: View {
     var body: some View {
         VStack {
             ForEach(contentData, id: \.self) { milestone in
-                HStack {
+                HStack(alignment: .top) {
                     Image(systemName: milestone["Image"] ?? "")
-                        .font(.title3)
-                        .padding(.trailing, 4)
-                        .frame(width: 20, height: 20, alignment: .center)
-                    VStack(alignment: .leading, spacing: 2) {
+                        .font(.headline)
+                        .padding(.trailing, 6)
+                        .frame(width: 24, alignment: .center)
+                    VStack(alignment: .leading, spacing: 4) {
                         Text(milestone["Primary"] ?? "")
                             .font(.callout.leading(.tight).weight(.medium))
                         Text(milestone["Secondary"] ?? "")

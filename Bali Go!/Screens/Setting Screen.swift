@@ -47,7 +47,7 @@ struct Setting_Screen: View {
                     Button {
                         showAppShareSheet()
                     } label: {
-                        PickerLineDesign(systemName: "square.and.arrow.up", title: "Поделиться BaliGo!")
+                        Text("Поделиться BaliGo!")
                     }
                 }
             }

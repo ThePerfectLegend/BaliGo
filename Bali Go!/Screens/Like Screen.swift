@@ -13,6 +13,7 @@ struct Like_Screen: View {
     @EnvironmentObject var modelData: LandmarkViewModel
     @EnvironmentObject var activityViewModel: ActivityViewModel
     @State private var showLandmarkMap: Bool = false
+//    @State private var showSuggestSheet: Bool = false
     @State private var screenType: LikedTypes = .activity
     private var tempCS: ScreenStates {
         screenChanging()
@@ -52,9 +53,14 @@ struct Like_Screen: View {
     var body: some View {
         NavigationView {
             VStack {
-                if tempCS == .noLikes {
-                    EmptyLikesView(title: "Добавьте сюда путешествия, в которые хотите отправиться") {}
-                } else {
+                switch tempCS {
+                case .noLikes:
+                    TextIfEmpty()
+                case .landmarkLiked:
+                    landmarksView.onAppear {screenType = .landmark}
+                case .activityLiked:
+                    activityView.onAppear {screenType = .activity}
+                case .bothLiked:
                     switch screenType {
                     case .activity:
                         activityView
@@ -66,9 +72,6 @@ struct Like_Screen: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(false)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    addButton
-                }
                 ToolbarItem(placement: .principal) {
                     typePicker
                 }
@@ -89,9 +92,7 @@ struct Like_Screen: View {
     }
     
     @ViewBuilder private var typePicker: some View {
-        if tempCS == .noLikes {
-            Text("Избранное").font(.body.weight(.semibold))
-        } else {
+        if tempCS == .bothLiked {
             Picker("LikedTypes",selection: $screenType) {
                 ForEach(LikedTypes.allCases) { types in
                     Text(types.rawValue).tag(types.rawValue)
@@ -99,8 +100,9 @@ struct Like_Screen: View {
             }
             .pickerStyle(SegmentedPickerStyle())
             .frame(width: 220)
+        } else {
+            Text("Избранное").font(.body.weight(.semibold))
         }
-        
     }
     
     @ViewBuilder private var landmarksView: some View {
@@ -131,9 +133,9 @@ struct Like_Screen: View {
                 showLandmarkMap.toggle()
             } label: {
                 if showLandmarkMap {
-                    Image(systemName: "list.bullet")
+                    Image(systemName: "list.bullet").font(.subheadline.weight(.semibold))
                 } else {
-                    Image(systemName: "map.fill")
+                    Image(systemName: "map.fill").font(.subheadline.weight(.semibold))
                 }
             }
         } else {
@@ -160,15 +162,6 @@ struct Like_Screen: View {
         }
     }
     
-    private var addButton: some View {
-        Button {
-            print("Add something")
-        } label: {
-            Image(systemName: "plus")
-        }
-        
-    }
-    
     struct EmptyLikesView<Content:View>: View {
         
         let title: String
@@ -188,6 +181,82 @@ struct Like_Screen: View {
             .multilineTextAlignment(.center)
         }
     }
+    
+    struct TextIfEmpty: View {
+        var body: some View {
+            VStack {
+                Text("Здесь хранятся места и активности, отмеченные ")
+                + Text("\(Image(systemName: "heart.fill"))")
+                    .foregroundColor(.baliGo)
+            }
+            .padding(.horizontal, 32)
+            .multilineTextAlignment(.center)
+            
+        }
+    }
+    
+    
+//    private var addButton: some View {
+//        Button {
+//            showSuggestSheet.toggle()
+//        } label: {
+//            Image(systemName: "plus")
+//        }
+//    }
+    
+//    struct SuggestionSheet: View {
+//
+//        var suggestionScenario: LikedTypes
+//        @Binding var showSheed: Bool
+//        private var suggestedActivity: [Activity] {
+//            ActivityViewModel.instance.getSuggestion()
+//        }
+//        private var suggestedLandmark: [Landmark] {
+//            LandmarkViewModel.instance.getSuggestion()
+//        }
+//
+//
+//
+//        var body: some View {
+//            NavigationView {
+//                ScrollView {
+//                    VStack {
+//                        switch suggestionScenario {
+//                        case .activity:
+//                            VStack(alignment: .leading, spacing: 12) {
+//                                ForEach(suggestedActivity) { activity in
+//                                    NavigationLink(destination: ActivityDetailView(activity: activity, utm_campaign: "&utm_campaign=suggest")) {
+//                                        ActivityMainCard(activity: activity)
+//                                    }
+//                                }
+//                                .buttonStyle(PlainButtonStyle())
+//                            }
+//                        case .landmark:
+//                            VStack(alignment: .leading, spacing: 8) {
+//                                ForEach(suggestedLandmark) { landmark in
+//                                    NavigationLink(destination: LandmarkDetailView(landmark: landmark)) {
+//                                        Liked_Card(landmark: landmark) }
+//                                }
+//                                .buttonStyle(PlainButtonStyle())
+//                            }
+//                        }                    }
+//                    .padding([.horizontal, .bottom], 18)
+//                    .padding(.top, 8)
+//                }
+//                .navigationBarTitleDisplayMode(.inline)
+//                .toolbar {
+//                    ToolbarItem(placement: .principal) {
+//                        Text(suggestionScenario.rawValue).font(.body.weight(.semibold))
+//                    }
+//                    ToolbarItem(placement: .navigationBarTrailing) {
+//                        CloseButton(showDeteil: $showSheed)
+//                    }
+//                }
+//            }
+//            .background(Blur(style: .systemMaterial))
+//        }
+//    }
+
 }
 
 

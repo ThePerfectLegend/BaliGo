@@ -17,13 +17,12 @@ struct ShareButton: View {
         } label: {
             ZStack {
                 Image(systemName: "square.and.arrow.up")
-                    .foregroundColor(Color.baliGo)
-                    .font(.callout.weight(.semibold))
-                Circle().frame(width: 35, height: 35)
+                    .foregroundColor(Color.baliGo).font(.subheadline.weight(.semibold))
+                Circle().frame(width: 32, height: 32)
                     .opacity(0)
             }
             .background(Blur(style: .systemMaterial))
-            .mask(Circle().frame(width: 35, height: 35))
+            .mask(Circle().frame(width: 32, height: 32))
         }
     }
     

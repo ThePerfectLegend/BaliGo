@@ -14,14 +14,14 @@ struct CustomBackButton: View {
     var body: some View {
         Button(action: { presentationMode.wrappedValue.dismiss()}) {
             ZStack {
-                Image(systemName: "chevron.backward").font(.callout.weight(.semibold))
+                Image(systemName: "chevron.backward").font(.subheadline.weight(.semibold))
                     .foregroundColor(Color.baliGo)
-                Circle().frame(width: 35, height: 35)
+                Circle().frame(width: 32, height: 32)
                     .opacity(0)
 
             }
             .background(Blur(style: .systemMaterial))
-            .mask(Circle().frame(width: 35, height: 35))
+            .mask(Circle().frame(width: 32, height: 32))
         }
     }
 }
@@ -32,15 +32,15 @@ struct CloseButton: View {
     @Binding var showDeteil: Bool
 
     var body: some View {
-        Button(action: {showDeteil = false}) {
+        Button(action: {showDeteil.toggle()}) {
             ZStack {
-                Image(systemName: "xmark").font(.headline)
+                Image(systemName: "xmark").font(.subheadline.weight(.semibold))
                     .foregroundColor(Color.baliGo)
-                Circle().frame(width: 35, height: 35)
+                Circle().frame(width: 32, height: 32)
                     .opacity(0)
             }
             .background(Blur(style: .systemMaterial))
-            .mask(Circle().frame(width: 35, height: 35))
+            .mask(Circle().frame(width: 32, height: 32))
         }
 //        .contentShape(Circle())
     }

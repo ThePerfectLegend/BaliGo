@@ -65,6 +65,7 @@ final class LandmarkViewModel: ObservableObject {
     
     func getSuggestion() -> [Landmark] {
         let suggested = landmarks.filter { landmark in !landmark.isLiked }
+        print("Landmark: \(suggested.count)")
         return suggested
     }
 }

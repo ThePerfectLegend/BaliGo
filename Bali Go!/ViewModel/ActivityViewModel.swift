@@ -49,4 +49,10 @@ final class ActivityViewModel: ObservableObject {
             print("Saved")
         }
     }
+    
+    func getSuggestion() -> [Activity] {
+        let suggested = activities.filter { activity in !activity.isLiked }
+        print("Activity: \(suggested.count)")
+        return suggested
+    }
 }

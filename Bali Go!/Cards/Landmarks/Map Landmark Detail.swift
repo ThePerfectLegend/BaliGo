@@ -29,12 +29,9 @@ struct Map_Landmark_Detail: View {
                             .foregroundColor(.secondary)
                             .lineLimit(1)
                         Distance_View(ladnmark: landmark, showMark: true)
-                            .font(.subheadline)
                     }
                     Spacer()
                     CloseButton(showDeteil: $showDeteil)
-                        .padding(8)
-
                 }
                 .frame(height: 120)
                 .frame(maxWidth: .infinity)

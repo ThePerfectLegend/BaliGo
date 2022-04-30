@@ -50,13 +50,13 @@ struct Distance_View: View {
     }
     
     var body: some View {
-        HStack {
+        HStack(alignment: .center ,spacing: 3) {
             if showDistance {
                 if showMark {
-                    Image(systemName: "location.fill")
-                    Text(calculatedDistance)
+                    Image(systemName: "location.fill").font(.caption2)
+                    Text(calculatedDistance).font(.subheadline)
                 } else {
-                    Text(calculatedDistance) }
+                    Text(calculatedDistance).font(.subheadline) }
             } else {
                 EmptyView()
             }

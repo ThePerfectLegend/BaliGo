@@ -50,9 +50,9 @@ struct All_Category_Screen: View {
                     list.toggle()
             }) {
                 if list == true {
-                    Image(systemName: "map.fill")
+                    Image(systemName: "map.fill").font(.subheadline.weight(.semibold))
                 } else {
-                    Image(systemName: "list.bullet")
+                    Image(systemName: "list.bullet").font(.subheadline.weight(.semibold))
                 }
             }
         }

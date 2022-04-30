@@ -75,7 +75,6 @@ struct LandmarkDetailView: View {
                     .foregroundColor(.secondary)
                 Spacer()
                 Distance_View(ladnmark: landmark, showMark: true)
-                    .font(.subheadline)
             }
         }
     }

@@ -27,7 +27,6 @@ struct Category_Card: View {
                     .foregroundColor(.secondary)
                     .lineLimit(1)
                 Distance_View(ladnmark: landmark, showMark: true)
-                    .font(.callout)
                 Spacer(minLength: 4)
                 Divider()
             }

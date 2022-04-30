@@ -16,12 +16,25 @@ struct ActivityDetailView: View {
     }
     
     @EnvironmentObject var viewModel: ActivityViewModel
+    @EnvironmentObject var userPreferencesVM: UserPreferencesViewModel
     
     var activityIndex: Int {
         viewModel.activities.firstIndex(where: { $0.id == activity.id })!
     }
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    var featuredPrice: [String] {
+        var _featuredPrice = activity.price
+        _featuredPrice.removeValue(forKey: userPreferencesVM.currency)
+        
+        return _featuredPrice
+            .map { key, value in
+                String("\(value.formattedWithSeparator) \(key.rawValue)")
+            }
+            .sorted(by: >)
+    }
+
         
     var body: some View {
         ZStack(alignment: .top) {
@@ -62,7 +75,7 @@ struct ActivityDetailView: View {
     }
     
     private var header: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 2) {
             Text(activity.name).font(.title3.weight(.semibold))
                 .lineLimit(2)
             HStack(alignment: .bottom) {
@@ -75,8 +88,18 @@ struct ActivityDetailView: View {
                             UIApplication.shared.open(URL(string: featuredLink + "&utm_content=reviews" + "#travelers-reviews")!)
                         }
                 }
-                Spacer()
-                ActivityPriceView(activity: activity)
+                Spacer(minLength: 12)
+                Menu {
+                    ForEach(featuredPrice, id: \.self) { price in
+                        Button(price, action: {})
+                    }
+                } label: {
+                    ActivityPriceView(activity: activity)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .onTapGesture {
+                            HapticManager.instance.impact(style: .medium)
+                        }
+                }
             }
         }
     }

@@ -15,11 +15,11 @@ struct ContentView: View {
     
     @State var animate = false
     @State var endSplash = false
+//    @State var tabSelection: Tabs = .tab1
     
     var body: some View {
         
         ZStack {
-        
             TabView {
                 
 //                Event_Screen()
@@ -49,6 +49,7 @@ struct ContentView: View {
                 
             }
             .accentColor(.baliGo)
+            
             
             ZStack {
 

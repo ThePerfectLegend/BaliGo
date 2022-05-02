@@ -76,6 +76,12 @@ struct ActivityDetailView: View {
         .sheet(isPresented: $descSheet) {
             EmptyView()
         }
+        .onAppear {
+            hiddenTabBar()
+        }
+        .onDisappear {
+            showTabBar()
+        }
     }
     
     private var header: some View {

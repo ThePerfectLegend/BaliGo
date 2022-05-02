@@ -12,7 +12,7 @@ struct CustomBackButton: View {
     var presentationMode: Binding<PresentationMode>
 
     var body: some View {
-        Button(action: { presentationMode.wrappedValue.dismiss()}) {
+        Button(action: {presentationMode.wrappedValue.dismiss()}) {
             ZStack {
                 Image(systemName: "chevron.backward").font(.subheadline.weight(.semibold))
                     .foregroundColor(Color.baliGo)

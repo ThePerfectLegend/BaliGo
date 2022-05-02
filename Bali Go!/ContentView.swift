@@ -15,40 +15,70 @@ struct ContentView: View {
     
     @State var animate = false
     @State var endSplash = false
-//    @State var tabSelection: Tabs = .tab1
+    @State private var selectedTab: Tab = .home    
+    
+    enum Tab: Int {
+        case home, liked, map, settings
+    }
     
     var body: some View {
-        
         ZStack {
-            TabView {
-                
-//                Event_Screen()
-//                    .tabItem {Label("Афиша", systemImage: "doc.text.image")}
-//                    .tag("Billboard")
-                
-                Main_Screen()
-                    .tabItem {Label("Путешествия", systemImage: "square.grid.2x2.fill")}
-                    .tag("Home")
-                   
-                Like_Screen()
-                    .tabItem {Label("Избранное", systemImage: "heart.fill")}
-                    .tag("Liked")
-                        
-                Map_Screen()
-                    .tabItem {Label("Карта", systemImage: "map.fill" )}
-                    .tag("Map")
-                
-                Setting_Screen()
-                    .tabItem {Label("Настройки", systemImage: "gear" )}
-                    .tag("Settings")
-//                
-//                ActivityLandmarkView()
-//                    .tabItem {Label("Developing", systemImage: "bonjour" )}
-//                    .tag("Developing")
-                
+            VStack(spacing: 0) {
+                switch selectedTab {
+                case .home:
+                    Main_Screen()
+                    tabBarView
+                case .liked:
+                    Like_Screen()
+                    tabBarView
+                case .map:
+                    Map_Screen()
+                    tabBarView
+                case .settings:
+                    Setting_Screen()
+                    tabBarView
+                }
                 
             }
-            .accentColor(.baliGo)
+            
+                
+                
+                  
+                
+            
+            
+            
+            
+            
+//            TabView {
+                
+////                Event_Screen()
+////                    .tabItem {Label("Афиша", systemImage: "doc.text.image")}
+////                    .tag("Billboard")
+//
+//                Main_Screen()
+//                    .tabItem {Label("Путешествия", systemImage: "square.grid.2x2.fill")}
+//                    .tag("Home")
+//
+//                Like_Screen()
+//                    .tabItem {Label("Избранное", systemImage: "heart.fill")}
+//                    .tag("Liked")
+//
+//                Map_Screen()
+//                    .tabItem {Label("Карта", systemImage: "map.fill" )}
+//                    .tag("Map")
+//
+//                Setting_Screen()
+//                    .tabItem {Label("Настройки", systemImage: "gear" )}
+//                    .tag("Settings")
+////
+////                ActivityLandmarkView()
+////                    .tabItem {Label("Developing", systemImage: "bonjour" )}
+////                    .tag("Developing")
+//
+//
+//            }
+//            .accentColor(.baliGo)
             
             
             ZStack {
@@ -80,7 +110,50 @@ struct ContentView: View {
             }
         }
     }
-}
+    
+    var tabBarView: some View {
+            VStack(spacing: 0) {
+                Divider()
+                
+                HStack(spacing: 20) {
+                    tabBarItem(.home, title: "First", icon: "hare", selectedIcon: "hare.fill")
+                    tabBarItem(.liked, title: "Second", icon: "tortoise", selectedIcon: "tortoise.fill")
+                    tabBarItem(.map, title: "First", icon: "hare", selectedIcon: "hare.fill")
+                    tabBarItem(.settings, title: "Second", icon: "tortoise", selectedIcon: "tortoise.fill")
+                }
+                .padding(.top, 8)
+            }
+            .frame(height: 50)
+            .background(Blur(style: .systemMaterial).edgesIgnoringSafeArea(.all))
+        }
+        
+        func tabBarItem(_ tab: Tab, title: String, icon: String, selectedIcon: String) -> some View {
+            ZStack(alignment: .topTrailing) {
+                VStack(spacing: 3) {
+                    VStack {
+                        Image(systemName: (selectedTab == tab ? selectedIcon : icon))
+                            .font(.system(size: 24))
+                            .foregroundColor(selectedTab == tab ? .primary : .black)
+                    }
+                    .frame(width: 55, height: 28)
+                    
+                    Text(title)
+                        .font(.system(size: 11))
+                        .foregroundColor(selectedTab == tab ? .primary : .black)
+                }
+            }
+            .frame(width: 65, height: 42)
+            .onTapGesture {
+                selectedTab = tab
+            }
+        }
+    }
+    
+    
+
+
+
+
 
 
 

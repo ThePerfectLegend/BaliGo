@@ -34,7 +34,7 @@ struct ActivityMainCard: View {
                         .lineLimit(1)
                     HStack(alignment: .bottom) {
                         VStack(alignment: .leading) {
-                            ActivityRaitingView(activity: activity)
+                            ActivityRaitingView(activity: activity, numberOfReviews: true)
                         }
                         Spacer()
                         ActivityPriceView(activity: activity)
@@ -56,11 +56,25 @@ struct ActivityMainCard: View {
 struct ActivityRaitingView: View {
     
     var activity: Activity
+    var numberOfReviews: Bool
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            Text("\(activity.numberOfReviews) отзывов")
-                .font(.subheadline)
+        if numberOfReviews {
+            VStack(alignment: .leading, spacing: 2) {
+                Text("\(activity.numberOfReviews) отзывов")
+                    .font(.subheadline)
+                HStack {
+                    ZStack {
+                        starsView
+                            .overlay(overlayView.mask(starsView))
+                    }
+                    Text(String(format: "%.1f", activity.rating))
+                        .font(.subheadline)
+                        .lineLimit(1)
+                        .scaledToFit()
+                }
+            }
+        } else {
             HStack {
                 ZStack {
                     starsView
@@ -78,7 +92,7 @@ struct ActivityRaitingView: View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 Rectangle()
-                    .foregroundColor(.yellow)
+                    .foregroundColor(.baliGo)
                     .frame(width: CGFloat(activity.rating) / 5 * geometry.size.width)
             }
         }
@@ -121,6 +135,8 @@ struct ActivityPriceView: View {
                 Text(selectedPrice)
                     .font(.title3)
                     .fontWeight(.semibold)
+                Text("За человека")
+                    .font(.subheadline)
             }
         } else { EmptyView() }
 

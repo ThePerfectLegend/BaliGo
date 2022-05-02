@@ -23,6 +23,7 @@ struct ActivityDetailView: View {
     }
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var descSheet = false
     
     var featuredPrice: [String] {
         var _featuredPrice = activity.price
@@ -72,43 +73,33 @@ struct ActivityDetailView: View {
                 LikeButtonActivityDetail(activity: $viewModel.activities[activityIndex])
             }
         )
+        .sheet(isPresented: $descSheet) {
+            EmptyView()
+        }
     }
     
     private var header: some View {
-        VStack(alignment: .leading, spacing: 2) {
+        VStack(alignment: .leading, spacing: 4) {
             Text(activity.name).font(.title3.weight(.semibold))
-                .lineLimit(2)
+                .lineLimit(3)
             HStack(alignment: .bottom) {
-                VStack(alignment: .leading, spacing: 4) {
                     Text(activity.type).font(.callout.weight(.semibold))
                         .foregroundColor(.secondary)
                         .lineLimit(1)
-                    ActivityRaitingView(activity: activity)
+                Spacer()
+                    ActivityRaitingView(activity: activity, numberOfReviews: false)
                         .onTapGesture {
                             UIApplication.shared.open(URL(string: featuredLink + "&utm_content=reviews" + "#travelers-reviews")!)
                         }
-                }
-                Spacer(minLength: 12)
-                Menu {
-                    ForEach(featuredPrice, id: \.self) { price in
-                        Button(price, action: {})
-                    }
-                } label: {
-                    ActivityPriceView(activity: activity)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                        .onTapGesture {
-                            HapticManager.instance.impact(style: .medium)
-                        }
-                }
             }
         }
     }
     
     private var readMoreButton: some View {
         Button {
-            UIApplication.shared.open(URL(string: featuredLink + "&utm_content=readmore")!)
+            descSheet = true
         } label: {
-            Text("Подробное описание на \(activity.partner) \(Image(systemName: "arrow.up.forward.app.fill"))")
+            Text("Подробное описание \(Image(systemName: "chevron.forward.square.fill"))")
                 .font(.callout.weight(.semibold))
         }
     }
@@ -121,8 +112,6 @@ struct ActivityDetailView: View {
                 Text("Заказать")
                     .font(.title3)
                     .fontWeight(.semibold)
-//                Text("В партнерстве с \(activity.partner)")
-//                    .font(.footnote)
             }
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)

@@ -65,10 +65,9 @@ struct LandmarkDetailView: View {
     }
     
     private var header: some View {
-        VStack(alignment: .leading) {
-            Text(landmark.name)
-                .font(.title3)
-                .fontWeight(.semibold)
+        VStack(alignment: .leading, spacing: 2) {
+            Text(landmark.name).font(.title3.weight(.semibold))
+                .lineLimit(2)
                 .frame(maxWidth: .infinity, alignment: .leading)
             HStack {
                 Text(landmark.type).font(.callout.weight(.semibold))
@@ -83,7 +82,8 @@ struct LandmarkDetailView: View {
         Button {
             descSheet = true
         } label: {
-            Text("Подробное описание").font(.callout.weight(.semibold))
+            Text("Подробное описание \(Image(systemName: "chevron.forward.square.fill"))")
+                .font(.callout.weight(.semibold))
         }
     }
 

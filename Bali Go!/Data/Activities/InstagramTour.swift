@@ -10,7 +10,7 @@ import Foundation
 var instagramTour = Activity(
     id: 3,
     name: "Инстаграм тур",
-    type: "Путешествие",
+    type: "Экскурсия",
     numberOfReviews: 215,
     rating: 4.9,
     price: [.USD: 48, .IDR: 700000, .RUB: 3439],
@@ -28,12 +28,20 @@ var instagramTour = Activity(
          "Image": "car.fill"],
         
         ["Primary": "Входные билеты включены в стоимость",
-         "Secondary": "В парки и храмы",
-         "Image": "wallet.pass.fill"],
+         "Secondary": "Все билеты в парки и храмы",
+         "Image": "wallet.pass"],
+        
+        ["Primary": "Меню азиатской кухнию на обед",
+         "Secondary": "Возьмите с собой легкий перекус на время тура",
+         "Image": "fork.knife"],
         
         ["Primary": "Детям до трех лет бесплатно",
          "Secondary": "Детский билет от 3-х до 12 лет",
-         "Image": "face.smiling"]
+         "Image": "face.smiling"],
+        
+        ["Primary": "Не рекомендуется посещение храмов женщинам в период менструального цикла",
+         "Secondary": "Согласно правилам балийского индуизма",
+         "Image": "exclamationmark.circle"]
     ],
     link: "https://mybalitrips.com/ru/instagram-tour/?utm_pid=447",
     partner: "MyBaliTrips",

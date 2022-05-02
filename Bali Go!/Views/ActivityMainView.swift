@@ -14,7 +14,7 @@ struct ActivityMainView: View {
     var body: some View {
         VStack(alignment: .leading) {
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 15) {
+                HStack(alignment: .top, spacing: 15) {
                     ForEach(activities, id: \.id) { activity in
                         NavigationLink(destination: ActivityDetailView(activity: activity, utm_campaign: "&utm_campaign=main")) {
                             ActivitySecondaryCard(activity: activity, widthInfinity: false)

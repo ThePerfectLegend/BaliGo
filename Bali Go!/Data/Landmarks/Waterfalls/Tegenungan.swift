@@ -24,5 +24,5 @@ var tegenungan = Landmark(
     longitude: 115.28846505766239,
     internalRate: 1,
     internalSubRate: 0.92,
-    activitiesOnLandmark: [30, 19, 20, 22]
+    activitiesOnLandmark: [3]
 )

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		798878E58327B6816B156FE7 /* Pods_Bali_Go_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4D9FB5130FAA50222EC56B /* Pods_Bali_Go_.framework */; };
 		A800FC64265FB8B500B8A166 /* Bird Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800FC63265FB8B500B8A166 /* Bird Park.swift */; };
 		A803F8C42619E15400F699D8 /* CardLikeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803F8C32619E15400F699D8 /* CardLikeButtons.swift */; };
 		A806619B264644A700612F4F /* Campuhan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806619A264644A700612F4F /* Campuhan.swift */; };
@@ -184,6 +185,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B94F822581D47E49F8434D9 /* Pods-Bali Go!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bali Go!.debug.xcconfig"; path = "Target Support Files/Pods-Bali Go!/Pods-Bali Go!.debug.xcconfig"; sourceTree = "<group>"; };
+		77B9228835B4628D523268D6 /* Pods-Bali Go!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bali Go!.release.xcconfig"; path = "Target Support Files/Pods-Bali Go!/Pods-Bali Go!.release.xcconfig"; sourceTree = "<group>"; };
+		8C4D9FB5130FAA50222EC56B /* Pods_Bali_Go_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bali_Go_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A800FC63265FB8B500B8A166 /* Bird Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bird Park.swift"; sourceTree = "<group>"; };
 		A803F8C32619E15400F699D8 /* CardLikeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLikeButtons.swift; sourceTree = "<group>"; };
 		A806619A264644A700612F4F /* Campuhan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campuhan.swift; sourceTree = "<group>"; };
@@ -370,12 +374,23 @@
 			files = (
 				A8D70E132766E4CA0064DABD /* MapKit.framework in Frameworks */,
 				A8F4F48827B0F6DE00EBDD86 /* CloudKit.framework in Frameworks */,
+				798878E58327B6816B156FE7 /* Pods_Bali_Go_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89A2544BBF0501CBD1DF0FDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B94F822581D47E49F8434D9 /* Pods-Bali Go!.debug.xcconfig */,
+				77B9228835B4628D523268D6 /* Pods-Bali Go!.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A83A5D50264CC64600A00AD8 /* Culture */ = {
 			isa = PBXGroup;
 			children = (
@@ -625,6 +640,7 @@
 				A8A8C5AA2618F9E200C5724A /* Bali Go! */,
 				A8A8C5A92618F9E200C5724A /* Products */,
 				A8D70E112766E4CA0064DABD /* Frameworks */,
+				89A2544BBF0501CBD1DF0FDE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -734,6 +750,7 @@
 			children = (
 				A8F4F48727B0F6DE00EBDD86 /* CloudKit.framework */,
 				A8D70E122766E4CA0064DABD /* MapKit.framework */,
+				8C4D9FB5130FAA50222EC56B /* Pods_Bali_Go_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -822,17 +839,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8A8C5B72618F9E500C5724A /* Build configuration list for PBXNativeTarget "Bali Go!" */;
 			buildPhases = (
+				1D8E46E74FDF6698EB839E90 /* [CP] Check Pods Manifest.lock */,
 				A8A8C5A42618F9E200C5724A /* Sources */,
 				A8A8C5A52618F9E200C5724A /* Frameworks */,
 				A8A8C5A62618F9E200C5724A /* Resources */,
+				380D4116DC9504E58A5B6433 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Bali Go!";
-			packageProductDependencies = (
-			);
 			productName = "Bali Go!";
 			productReference = A8A8C5A82618F9E200C5724A /* Bali Go!.app */;
 			productType = "com.apple.product-type.application";
@@ -860,8 +877,6 @@
 				Base,
 			);
 			mainGroup = A8A8C59F2618F9E200C5724A;
-			packageReferences = (
-			);
 			productRefGroup = A8A8C5A92618F9E200C5724A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -884,6 +899,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D8E46E74FDF6698EB839E90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bali Go!-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		380D4116DC9504E58A5B6433 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bali Go!/Pods-Bali Go!-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bali Go!/Pods-Bali Go!-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bali Go!/Pods-Bali Go!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8A8C5A42618F9E200C5724A /* Sources */ = {
@@ -1184,6 +1241,7 @@
 		};
 		A8A8C5B82618F9E500C5724A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B94F822581D47E49F8434D9 /* Pods-Bali Go!.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1210,6 +1268,7 @@
 		};
 		A8A8C5B92618F9E500C5724A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77B9228835B4628D523268D6 /* Pods-Bali Go!.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

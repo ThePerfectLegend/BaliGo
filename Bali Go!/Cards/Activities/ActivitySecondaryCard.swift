@@ -33,6 +33,7 @@ struct ActivitySecondaryCard: View {
                     Text(activity.name)
                         .font(.headline)
                         .lineLimit(2)
+                        .fixedSize(horizontal: false, vertical: true)
                     Text(activity.marketingText)
                         .font(.subheadline)
                         .foregroundColor(.secondary)

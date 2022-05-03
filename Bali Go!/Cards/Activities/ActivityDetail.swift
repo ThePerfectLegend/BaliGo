@@ -17,6 +17,7 @@ struct ActivityDetailView: View {
     
     @EnvironmentObject var viewModel: ActivityViewModel
     @EnvironmentObject var userPreferencesVM: UserPreferencesViewModel
+    @State var uiTabarController: UITabBarController?
     
     var activityIndex: Int {
         viewModel.activities.firstIndex(where: { $0.id == activity.id })!

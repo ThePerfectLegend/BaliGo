@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct ActivityDetailView: View {
     
@@ -59,10 +60,29 @@ struct ActivityDetailView: View {
                     SmallDescView(description: activity.description)
                     readMoreButton
                     ContentTableView(contentData: activity.milestoneContent)
-                    BookingBotton
                 }
-                .padding([.horizontal, .bottom,], 12)
+                .padding(.horizontal, 12)
+                .padding(.bottom, 24)
             }
+            
+            VStack {
+                Spacer()
+                VStack(alignment: .center ,spacing: 0) {
+                    Divider()
+                    HStack(alignment: .top) {
+                        ActivityPriceView(activity: activity)
+                        Spacer()
+                        BookingBotton
+                    }
+                    .padding([.horizontal, .top], 12)
+                    
+                    Spacer()
+                }
+                .frame(height: 100)
+                .background(Blur(style: .systemUltraThinMaterial))
+            }
+            .edgesIgnoringSafeArea([.horizontal, .bottom])
+            
         }
         .navigationBarTitleDisplayMode(.large)
         .navigationBarBackButtonHidden(true)
@@ -73,6 +93,12 @@ struct ActivityDetailView: View {
                 LikeButtonActivityDetail(activity: $viewModel.activities[activityIndex])
             }
         )
+        .introspectTabBarController { (UITabBarController) in
+                    UITabBarController.tabBar.isHidden = true
+                    uiTabarController = UITabBarController
+                }.onDisappear{
+                    uiTabarController?.tabBar.isHidden = false
+                }
     }
     
     private var header: some View {
@@ -126,8 +152,7 @@ struct ActivityDetailView: View {
 //                    .font(.footnote)
             }
             .foregroundColor(.white)
-            .frame(maxWidth: .infinity)
-            .frame(height: 50)
+            .frame(width: 180, height: 50)
             .background(LinearGradient(gradient: Gradient(colors: [Color.baliGo, Color.baliGoSec]),
                                        startPoint: .init(x: 1.2, y: 0.21),
                                        endPoint: .init(x: -0.5, y: 0.79)))

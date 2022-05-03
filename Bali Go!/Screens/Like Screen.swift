@@ -51,35 +51,33 @@ struct Like_Screen: View {
     
     
     var body: some View {
-        NavigationView {
-            VStack {
-                switch tempCS {
-                case .noLikes:
-                    TextIfEmpty()
-                case .landmarkLiked:
-                    landmarksView.onAppear {screenType = .landmark}
-                case .activityLiked:
-                    activityView.onAppear {screenType = .activity}
-                case .bothLiked:
-                    switch screenType {
-                    case .activity:
-                        activityView
-                    case .landmark:
-                        landmarksView
-                    }
+        VStack {
+            switch tempCS {
+            case .noLikes:
+                TextIfEmpty()
+            case .landmarkLiked:
+                landmarksView.onAppear {screenType = .landmark}
+            case .activityLiked:
+                activityView.onAppear {screenType = .activity}
+            case .bothLiked:
+                switch screenType {
+                case .activity:
+                    activityView
+                case .landmark:
+                    landmarksView
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(false)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    typePicker
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    mapSwither
-                }
+        }
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(false)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                typePicker
             }
-            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                mapSwither
+            }
         }
         .navigationViewStyle(.stack) /// глушит предупреждения в консоли об отступах
         .onAppear {

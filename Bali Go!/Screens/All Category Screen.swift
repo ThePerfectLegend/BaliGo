@@ -35,9 +35,11 @@ struct All_Category_Screen: View {
             }
         }
         .navigationBarTitle(Text(category))
-        .navigationBarItems(trailing: ViewSwither(list: $screenState))
-        .navigationBarTitleDisplayMode(.inline)
         .navigationBarHidden(false)
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarItems(trailing: ViewSwither(list: $screenState))
+        
+        
     }
     
     

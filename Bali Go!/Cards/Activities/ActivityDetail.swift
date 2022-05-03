@@ -64,15 +64,16 @@ struct ActivityDetailView: View {
                 .padding([.horizontal, .bottom,], 12)
             }
         }
-        .navigationBarTitleDisplayMode(.large)
-        .navigationBarBackButtonHidden(true)
-        .navigationBarItems(
-            leading: CustomBackButton(presentationMode: presentationMode),
-            trailing: HStack {
-                ShareButton(featuredLink: featuredLink)
-                LikeButtonActivityDetail(activity: $viewModel.activities[activityIndex])
-            }
-        )
+        .navigationBarHidden(true)
+//        .navigationBarTitleDisplayMode(.large)
+//        .navigationBarBackButtonHidden(true)
+//        .navigationBarItems(
+//            leading: CustomBackButton(presentationMode: presentationMode),
+//            trailing: HStack {
+//                ShareButton(featuredLink: featuredLink)
+//                LikeButtonActivityDetail(activity: $viewModel.activities[activityIndex])
+//            }
+//        )
         .sheet(isPresented: $descSheet) {
             EmptyView()
         }

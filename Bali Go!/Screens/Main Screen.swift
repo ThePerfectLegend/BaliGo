@@ -14,15 +14,13 @@ struct Main_Screen: View {
     @EnvironmentObject var location: LocationFetcher
     
     var body: some View {
-        NavigationView {
-            VStack{
-                ScrollView(showsIndicators: true) {
-                    ActivityMainView(activities: viewModel.activities)
-                    Category_Home()
-                }
+        VStack{
+            ScrollView(showsIndicators: true) {
+                ActivityMainView(activities: viewModel.activities)
+                Category_Home()
             }
-            .navigationBarTitle(Text("Путешествия"), displayMode: .large)
         }
+        .navigationBarTitle(Text("Путешествия"), displayMode: .large)
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {location.fetchingLocation()}
     }

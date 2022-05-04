@@ -41,7 +41,7 @@ struct ActivitySecondaryCard: View {
                         .fixedSize(horizontal: false, vertical: true)
                     HStack(alignment: .bottom) {
                         VStack(alignment: .leading) {
-                            ActivityRaitingView(activity: activity)
+                            ActivityRaitingView(activity: activity, numberOfReviews: true)
                         }
                         Spacer()
                         ActivityPriceView(activity: activity)

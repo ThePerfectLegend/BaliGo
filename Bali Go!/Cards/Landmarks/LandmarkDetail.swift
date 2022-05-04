@@ -83,7 +83,8 @@ struct LandmarkDetailView: View {
         Button {
             descSheet = true
         } label: {
-            Text("Подробное описание").font(.callout.weight(.semibold))
+            Text("Подробное описание \(Image(systemName: "chevron.forward.square.fill"))")
+                .font(.callout.weight(.semibold))
         }
     }
 

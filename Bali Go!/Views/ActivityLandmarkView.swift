@@ -41,10 +41,15 @@ struct ActivityLandmarkView: View {
     }
     
     private var oneActivity: some View {
-        VStack {
-            ActivitySecondaryCard(activity: activityForLandmark[0], widthInfinity: true)
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Активность").font(.title3.weight(.semibold))
+            NavigationLink(destination: ActivityDetailView(activity: activityForLandmark[0], utm_campaign: "&utm_campaign=landmark")) {
+                ActivitySecondaryCard(activity: activityForLandmark[0], widthInfinity: true)
+            }
+            .buttonStyle(PlainButtonStyle())
             Divider()
         }
+        .padding(.horizontal, 12)
     }
     
     private var fewActivity: some View {

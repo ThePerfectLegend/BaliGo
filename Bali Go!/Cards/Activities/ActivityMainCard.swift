@@ -29,12 +29,9 @@ struct ActivityMainCard: View {
                 VStack(alignment: .leading) {
                     Text(activity.name).font(.headline)
                         .lineLimit(2)
-                    Text(activity.type).font(.callout.weight(.medium))
-                        .foregroundColor(.secondary)
-                        .lineLimit(1)
                     HStack(alignment: .bottom) {
                         VStack(alignment: .leading) {
-                            ActivityRaitingView(activity: activity)
+                            ActivityRaitingView(activity: activity, numberOfReviews: true)
                         }
                         Spacer()
                         ActivityPriceView(activity: activity)
@@ -56,11 +53,25 @@ struct ActivityMainCard: View {
 struct ActivityRaitingView: View {
     
     var activity: Activity
+    var numberOfReviews: Bool
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            Text("\(activity.numberOfReviews) отзывов")
-                .font(.subheadline)
+        if numberOfReviews {
+            VStack(alignment: .leading, spacing: 2) {
+                Text("\(activity.numberOfReviews) отзывов")
+                    .font(.subheadline)
+                HStack {
+                    ZStack {
+                        starsView
+                            .overlay(overlayView.mask(starsView))
+                    }
+                    Text(String(format: "%.1f", activity.rating))
+                        .font(.subheadline)
+                        .lineLimit(1)
+                        .scaledToFit()
+                }
+            }
+        } else {
             HStack {
                 ZStack {
                     starsView
@@ -78,8 +89,8 @@ struct ActivityRaitingView: View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 Rectangle()
-                    .foregroundColor(.yellow)
-                    .frame(width: CGFloat(activity.rating) / 5 * geometry.size.width)
+                    .foregroundColor(.baliGo)
+                    .frame(width: CGFloat(activity.rating - 0.1) / 5 * geometry.size.width)
             }
         }
         .allowsHitTesting(false)
@@ -89,12 +100,12 @@ struct ActivityRaitingView: View {
         HStack(spacing: 0) {
             ForEach(1..<6) { index in
                 Image(systemName: "star.fill")
-                    .font(.subheadline)
+                    .font(.callout)
                     .foregroundColor(Color.gray)
             }
         }
     }
-
+    
 }
 
 
@@ -115,15 +126,14 @@ struct ActivityPriceView: View {
     
     var body: some View {
         if selectedPrice != "" {
-            VStack(alignment: .trailing) {
-                Text("От")
-                    .font(.subheadline)
-                Text(selectedPrice)
-                    .font(.title3)
-                    .fontWeight(.semibold)
+            VStack(alignment: .trailing, spacing: 1) {
+                Text("От  ").font(.subheadline)
+                + Text(selectedPrice).font(.title3.weight(.semibold))
+                Text("За человека").font(.subheadline)
+                
             }
         } else { EmptyView() }
-
+        
     }
 }
 

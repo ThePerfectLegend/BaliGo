@@ -17,7 +17,8 @@ struct ShareButton: View {
         } label: {
             ZStack {
                 Image(systemName: "square.and.arrow.up")
-                    .foregroundColor(Color.baliGo).font(.subheadline.weight(.semibold))
+                    .font(.footnote.weight(.bold))
+                    .foregroundColor(Color.baliGo)
                 Circle().frame(width: 32, height: 32)
                     .opacity(0)
             }

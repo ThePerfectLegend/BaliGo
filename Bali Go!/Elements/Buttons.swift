@@ -14,7 +14,8 @@ struct CustomBackButton: View {
     var body: some View {
         Button(action: { presentationMode.wrappedValue.dismiss()}) {
             ZStack {
-                Image(systemName: "chevron.backward").font(.subheadline.weight(.semibold))
+                Image(systemName: "chevron.backward")
+                    .font(.footnote.weight(.bold))
                     .foregroundColor(Color.baliGo)
                 Circle().frame(width: 32, height: 32)
                     .opacity(0)
@@ -34,7 +35,8 @@ struct CloseButton: View {
     var body: some View {
         Button(action: {showDeteil.toggle()}) {
             ZStack {
-                Image(systemName: "xmark").font(.subheadline.weight(.semibold))
+                Image(systemName: "xmark")
+                    .font(.footnote.weight(.bold))
                     .foregroundColor(Color.baliGo)
                 Circle().frame(width: 32, height: 32)
                     .opacity(0)

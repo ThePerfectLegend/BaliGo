@@ -151,6 +151,7 @@ struct Like_Screen: View {
                         NavigationLink(destination: ActivityDetailView(activity: activity, utm_campaign: "&utm_campaign=liked")) {
                             ActivityMainCard(activity: activity)
                         }
+                        Divider()
                     }
                     .buttonStyle(PlainButtonStyle())
                 }

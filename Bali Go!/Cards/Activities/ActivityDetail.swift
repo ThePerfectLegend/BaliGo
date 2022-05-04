@@ -69,7 +69,7 @@ struct ActivityDetailView: View {
                 Spacer()
                 VStack(alignment: .center ,spacing: 0) {
                     Divider()
-                    HStack(alignment: .top) {
+                    HStack(alignment: .center) {
                         ActivityPriceView(activity: activity)
                         Spacer()
                         BookingBotton
@@ -102,31 +102,18 @@ struct ActivityDetailView: View {
     }
     
     private var header: some View {
-        VStack(alignment: .leading, spacing: 2) {
+        VStack(alignment: .leading, spacing: 4) {
             Text(activity.name).font(.title3.weight(.semibold))
-                .lineLimit(2)
+                .lineLimit(3)
             HStack(alignment: .bottom) {
-                VStack(alignment: .leading, spacing: 4) {
                     Text(activity.type).font(.callout.weight(.semibold))
                         .foregroundColor(.secondary)
                         .lineLimit(1)
-                    ActivityRaitingView(activity: activity)
+                Spacer()
+                    ActivityRaitingView(activity: activity, numberOfReviews: false)
                         .onTapGesture {
                             UIApplication.shared.open(URL(string: featuredLink + "&utm_content=reviews" + "#travelers-reviews")!)
                         }
-                }
-                Spacer(minLength: 12)
-                Menu {
-                    ForEach(featuredPrice, id: \.self) { price in
-                        Button(price, action: {})
-                    }
-                } label: {
-                    ActivityPriceView(activity: activity)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                        .onTapGesture {
-                            HapticManager.instance.impact(style: .medium)
-                        }
-                }
             }
         }
     }
@@ -135,7 +122,7 @@ struct ActivityDetailView: View {
         Button {
             UIApplication.shared.open(URL(string: featuredLink + "&utm_content=readmore")!)
         } label: {
-            Text("Подробное описание на \(activity.partner) \(Image(systemName: "arrow.up.forward.app.fill"))")
+            Text("Подробное описание \(Image(systemName: "chevron.forward.square.fill"))")
                 .font(.callout.weight(.semibold))
         }
     }

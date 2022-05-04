@@ -24,5 +24,5 @@ var uluwatuBeach = Landmark(
     longitude: 115.08928292954307,
     internalRate: 0,
     internalSubRate: 0.84,
-    activitiesOnLandmark: [21]
+    activitiesOnLandmark: []
 )

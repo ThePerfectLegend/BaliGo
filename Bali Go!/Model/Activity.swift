@@ -24,6 +24,7 @@ struct Activity: Codable, Identifiable, Hashable {
     let link: String
     let partner: String
     let marketingText: String
+    var highPrio = false
 }
 
 struct ActivityNew: Codable, Identifiable, Hashable {

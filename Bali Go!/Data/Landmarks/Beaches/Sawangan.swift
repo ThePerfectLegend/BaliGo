@@ -23,7 +23,8 @@ var sawangan = Landmark(
     latitude: -8.825328518837075,
     longitude: 115.2200185998365,
     internalRate: 0,
-    internalSubRate: 0.82
+    internalSubRate: 0.82,
+    activitiesOnLandmark: [8]
 )
 
 

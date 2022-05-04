@@ -143,6 +143,7 @@
 		A8AC89CD281DBBE7007133D7 /* Diving.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC89CC281DBBE7007133D7 /* Diving.swift */; };
 		A8B62DDB281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B62DDA281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift */; };
 		A8B62DDD281EC2A200ECF344 /* Paraplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B62DDC281EC2A200ECF344 /* Paraplan.swift */; };
+		A8B680A92822839D00A5DD78 /* ClimbingToBaturVolcanoSprings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B680A82822839D00A5DD78 /* ClimbingToBaturVolcanoSprings.swift */; };
 		A8B87E222732685400E0D9B9 /* UserPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */; };
 		A8B87E2627326E7B00E0D9B9 /* Setting Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */; };
 		A8BD4F0827FB2E5B0022A269 /* UsableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD4F0727FB2E5B0022A269 /* UsableData.swift */; };
@@ -325,6 +326,7 @@
 		A8AC89CC281DBBE7007133D7 /* Diving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diving.swift; sourceTree = "<group>"; };
 		A8B62DDA281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KintamaniTourHideCanyon.swift; sourceTree = "<group>"; };
 		A8B62DDC281EC2A200ECF344 /* Paraplan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paraplan.swift; sourceTree = "<group>"; };
+		A8B680A82822839D00A5DD78 /* ClimbingToBaturVolcanoSprings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingToBaturVolcanoSprings.swift; sourceTree = "<group>"; };
 		A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewModel.swift; sourceTree = "<group>"; };
 		A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting Screen.swift"; sourceTree = "<group>"; };
 		A8BD4F0727FB2E5B0022A269 /* UsableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsableData.swift; sourceTree = "<group>"; };
@@ -783,6 +785,7 @@
 			isa = PBXGroup;
 			children = (
 				A8E29571280C596B00106F31 /* ClimbingToBaturVolcano.swift */,
+				A8B680A82822839D00A5DD78 /* ClimbingToBaturVolcanoSprings.swift */,
 				A8DD4D9C2813272000E61BF5 /* TicketsToGili.swift */,
 				A8AC89CA281DB2CB007133D7 /* InstagramTour.swift */,
 				A8B62DDA281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift */,
@@ -1044,6 +1047,7 @@
 				A85DADBD2818329700B0CCB3 /* SmallDescView.swift in Sources */,
 				A83B7976276DC27B008EE9FE /* northWestTour.swift in Sources */,
 				A8568B7A26BB84C4007FA868 /* Melasti.swift in Sources */,
+				A8B680A92822839D00A5DD78 /* ClimbingToBaturVolcanoSprings.swift in Sources */,
 				A8F4F48327B0DEEE00EBDD86 /* CloudKitUtility.swift in Sources */,
 				A81B654D2759E73A00C383A8 /* Balangan.swift in Sources */,
 				A8568B7326BB7AE5007FA868 /* LekeLeke.swift in Sources */,

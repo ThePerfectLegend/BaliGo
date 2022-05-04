@@ -122,14 +122,14 @@ struct ActivityDetailView: View {
         Button {
             UIApplication.shared.open(URL(string: featuredLink + "&utm_content=readmore")!)
         } label: {
-            Text("Подробное описание \(Image(systemName: "chevron.forward.square.fill"))")
+            Text("Подробное описание \(Image(systemName: "arrow.up.right.square.fill"))")
                 .font(.callout.weight(.semibold))
         }
     }
     
     private var BookingBotton: some View {
         Button {
-            UIApplication.shared.open(URL(string: featuredLink + "&utm_content=booking" + "#product")!)
+            UIApplication.shared.open(URL(string: featuredLink + "&utm_content=booking" + "#order-form")!)
         } label: {
             VStack(alignment: .center) {
                 Text("Заказать")

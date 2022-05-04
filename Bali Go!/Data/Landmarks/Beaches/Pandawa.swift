@@ -24,5 +24,5 @@ var pandawa = Landmark(
     longitude: 115.18596782797509,
     internalRate: 0,
     internalSubRate: 0.81,
-    activitiesOnLandmark: [33]
+    activitiesOnLandmark: []
 )

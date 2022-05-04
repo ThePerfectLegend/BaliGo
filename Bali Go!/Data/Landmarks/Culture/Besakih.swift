@@ -24,6 +24,6 @@ var besakih = Landmark(
     longitude: 115.45055181052851,
     internalRate: 0,
     internalSubRate: 0.94,
-    activitiesOnLandmark: [26]
+    activitiesOnLandmark: []
 )
 

@@ -24,5 +24,5 @@ var goaLawah = Landmark(
     longitude: 115.46887702199777,
     internalRate: 0,
     internalSubRate: 0.89,
-    activitiesOnLandmark: [27, 16]
+    activitiesOnLandmark: []
 )

@@ -24,5 +24,5 @@ var agung = Landmark(
     longitude: 115.50295228245258,
     internalRate: 1,
     internalSubRate: 0.98,
-    activitiesOnLandmark: [23]
+    activitiesOnLandmark: []
 )

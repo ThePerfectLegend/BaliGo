@@ -24,6 +24,6 @@ var balangan = Landmark(
     longitude: 115.12519835275087,
     internalRate: 0,
     internalSubRate: 0.83,
-    activitiesOnLandmark: [21, 33]
+    activitiesOnLandmark: []
 )
 

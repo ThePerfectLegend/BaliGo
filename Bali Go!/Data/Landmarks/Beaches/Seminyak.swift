@@ -24,5 +24,5 @@ var seminyak = Landmark(
     longitude: 115.1587590647075,
     internalRate: 0,
     internalSubRate: 0.92,
-    activitiesOnLandmark: [34]
+    activitiesOnLandmark: []
 )

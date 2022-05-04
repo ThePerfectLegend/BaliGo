@@ -24,5 +24,5 @@ var karmaKandara = Landmark(
     longitude: 115.15352238377817,
     internalRate: 0,
     internalSubRate: 0.87,
-    activitiesOnLandmark: [33]
+    activitiesOnLandmark: []
 )

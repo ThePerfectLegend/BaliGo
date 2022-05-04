@@ -90,7 +90,7 @@ struct ActivityRaitingView: View {
             ZStack(alignment: .leading) {
                 Rectangle()
                     .foregroundColor(.baliGo)
-                    .frame(width: CGFloat(activity.rating - 0.1) / 5 * geometry.size.width)
+                    .frame(width: CGFloat(activity.rating) / 5 * geometry.size.width)
             }
         }
         .allowsHitTesting(false)

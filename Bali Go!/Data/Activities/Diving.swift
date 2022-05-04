@@ -9,11 +9,11 @@ import Foundation
 
 var diving = Activity(
     id: 4,
-    name: "Дайвинг на Бали",
+    name: "Дайвинг в Туламбене",
     type: "Дайвинг",
-    numberOfReviews: 147,
-    rating: 5.0,
-    price: [.USD: 109, .IDR: 1638750, .RUB: 8050],
+    numberOfReviews: 97,
+    rating: 4.9,
+    price: [.USD: 110, .IDR: 1650000, .RUB: 7820],
     image: "divingAmed940",
     description: "Начните свою дайвинг-историю на острове Бали. Это безопасное, увлекательное приключение. Его оценят и новички, и опытные дайверы.",
     milestoneContent: [
@@ -37,7 +37,8 @@ var diving = Activity(
          "Secondary": "После погружения запрещены перелеты и подъем в горы",
          "Image": "figure.walk"]
     ],
-    link: "https://mybalitrips.com/ru/diving/?utm_pid=447",
+    link: "https://mybalitrips.com/ru/diving/53/?utm_pid=447",
     partner: "MyBaliTrips",
-    marketingText: "Безопасные погружения для новичков и опытных дайверов"
+    marketingText: "Безопасные погружения для новичков и опытных дайверов в подводный мир у берегов Бали",
+    highPrio: true
 )

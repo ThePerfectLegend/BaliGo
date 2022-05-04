@@ -23,5 +23,6 @@ var nyangNyang = Landmark(
     latitude: -8.83818040924659,
     longitude: 115.0915515579004,
     internalRate: 0,
-    internalSubRate: 0.79
+    internalSubRate: 0.79,
+    activitiesOnLandmark: [8]
 )

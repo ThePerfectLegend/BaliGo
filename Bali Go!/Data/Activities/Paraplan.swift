@@ -13,7 +13,7 @@ var paraplan = Activity(
     type: "Параглайдинг",
     numberOfReviews: 66,
     rating: 4.7,
-    price: [.USD: 60, .RUB: 4175, .IDR: 850000],
+    price: [.USD: 60, .RUB: 4028, .IDR: 850000],
     image: "temp",
     description: "Вы летали во сне? Тогда вы помните это чувство свободы, необыкновенной лёгкости и тишины, несравнимое ни с одним земным удовольствием. Теперь мы предлагаем вам полетать наяву - параплан на Бали!",
     milestoneContent: [
@@ -30,7 +30,8 @@ var paraplan = Activity(
          "Image": "exclamationmark.circle"]
 
     ],
-    link: "https://mybalitrips.com/ru/paraplan-na-bali/?utm_pid=447",
+    link: "https://mybalitrips.com/ru/paraplan-na-bali/795/?utm_pid=447",
     partner: "MyBaliTrips",
-    marketingText: "Ощути свободу контролируемого полета"
+    marketingText: "Ощути свободу контролируемого полета",
+    highPrio: true
 )

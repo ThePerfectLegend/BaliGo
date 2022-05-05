@@ -19,6 +19,7 @@ var ubudMonkeyForest = Landmark(
     state: "Ubud",
     type: "Лес обезьян",
     category: .Parks,
+    uponCategory: .Natute,
     imagesNames: ["Ubud Monkey Forest 1"],
     latitude: -8.518745639453792,
     longitude: 115.26116681608413,

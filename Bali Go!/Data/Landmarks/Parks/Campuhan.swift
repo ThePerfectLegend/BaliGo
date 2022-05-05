@@ -19,6 +19,7 @@ var campuhan = Landmark(
     state: "Sayan",
     type: "Пешеходная тропа",
     category: .Parks,
+    uponCategory: .Natute,
     imagesNames: ["Campuhan 1", "Campuhan 2", "Campuhan 3"],
     latitude: -8.503598831358174,
     longitude: 115.25470618692854,

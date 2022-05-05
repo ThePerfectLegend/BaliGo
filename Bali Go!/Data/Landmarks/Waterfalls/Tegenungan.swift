@@ -19,6 +19,7 @@ var tegenungan = Landmark(
     state: "Kemenuh",
     type: "Водопад",
     category: .Waterfalls,
+    uponCategory: .Natute,
     imagesNames: ["Tegenungan 1", "Tegenungan 2", "Tegenungan 3", "Tegenungan 4"],
     latitude: -8.575407558087498,
     longitude: 115.28846505766239,

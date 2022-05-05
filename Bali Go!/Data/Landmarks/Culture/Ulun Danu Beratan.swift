@@ -19,6 +19,7 @@ var ulunDanuBeratan = Landmark(
     state: "Candikuning",
     type: "Храм",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Ulun Danu Beratan 1", "Ulun Danu Beratan 2", "Ulun Danu Beratan 3"],
     latitude: -8.275742779832443,
     longitude: 115.16519815517312,

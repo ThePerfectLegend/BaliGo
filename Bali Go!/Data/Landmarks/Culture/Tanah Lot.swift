@@ -19,6 +19,7 @@ var tanahLot = Landmark(
     state: "Beraban",
     type: "Морской храм",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Tanah Lot 1", "Tanah Lot 2", "Tanah Lot 3", "Tanah Lot 4"],
     latitude: -8.61954260553215,
     longitude: 115.08754645889555,

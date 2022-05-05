@@ -19,6 +19,7 @@ var kuta = Landmark(
     state: "Legian",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Kuta 1", "Kuta 2", "Kuta 3"],
     latitude: -8.711791491006577,
     longitude: 115.16735728472828,

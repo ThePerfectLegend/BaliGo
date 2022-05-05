@@ -19,6 +19,7 @@ var padangPadang = Landmark(
     state: "Pecatu",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Padang-Padang"],
     latitude: -8.812319786183254,
     longitude: 115.10446670736279,

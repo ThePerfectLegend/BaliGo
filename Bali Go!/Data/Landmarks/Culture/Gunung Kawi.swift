@@ -20,6 +20,7 @@ var gunungKawi = Landmark(
 //    distance: 65.1,
     type: "Усыпальницы",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Gunung Kawi 1", "Gunung Kawi 2", "Gunung Kawi 3", "Gunung Kawi 4"],
     latitude: -8.4236850682151,
     longitude: 115.3105034010225,

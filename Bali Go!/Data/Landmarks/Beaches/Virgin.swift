@@ -19,6 +19,7 @@ var virgin = Landmark(
     state: "Adat Bugbug",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Virgin 1", "Virgin 2", "Virgin 3"],
     latitude: -8.501268909704777,
     longitude: 115.6099431659041,

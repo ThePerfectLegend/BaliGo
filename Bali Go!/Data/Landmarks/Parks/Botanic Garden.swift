@@ -19,6 +19,7 @@ var botanicGarden = Landmark(
     state: "Candikuning",
     type: "Парк",
     category: .Parks,
+    uponCategory: .Natute,
     imagesNames: ["Botanic Badung 1", "Botanic Badung 2", "Botanic Badung 3", "Botanic Badung 4", "Botanic Badung 5"],
     latitude: -8.281563309721566,
     longitude: 115.15642709267738,

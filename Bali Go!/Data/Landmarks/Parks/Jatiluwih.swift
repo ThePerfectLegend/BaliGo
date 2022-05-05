@@ -19,6 +19,7 @@ var jatiluwih = Landmark(
     state: "Jatiluwih",
     type: "Рисовые террасы",
     category: .Parks,
+    uponCategory: .Natute,
     imagesNames: ["Jatiluwih 1", "Jatiluwih 2", "Jatiluwih 3", "Jatiluwih 4"],
     latitude: -8.370270096056135,
     longitude: 115.13115976951366,

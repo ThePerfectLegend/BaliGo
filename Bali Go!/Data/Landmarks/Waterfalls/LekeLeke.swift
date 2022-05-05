@@ -19,6 +19,7 @@ var lekeleke = Landmark(
     state: "Antapan",
     type: "Водопад",
     category: .Waterfalls,
+    uponCategory: .Natute,
     imagesNames: ["LekeLeke 1", "LekeLeke 2", "LekeLeke 3"],
     latitude: -8.364451,
     longitude: 115.196899,

@@ -19,6 +19,7 @@ var gitgit = Landmark(
     state: "Gitgit",
     type: "Водопад",
     category: .Waterfalls,
+    uponCategory: .Natute,
     imagesNames: ["GitGit 1", "GitGit 2", "GitGit 3"],
     latitude: -8.189373923230663,
     longitude: 115.13601924786724,

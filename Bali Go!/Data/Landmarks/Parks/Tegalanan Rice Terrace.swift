@@ -20,6 +20,7 @@ var tegalananRiceTerrace = Landmark(
     state: "Tegallalang",
     type: "Рисовые террасы",
     category: .Parks,
+    uponCategory: .Natute,
     imagesNames: ["Tegalanan 1", "Tegalanan 2", "Tegalanan 3", "Tegalanan 4"],
     latitude: -8.435614644438004,
     longitude: 115.27853987394867,

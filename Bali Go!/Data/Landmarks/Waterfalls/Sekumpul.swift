@@ -19,6 +19,7 @@ var secumpul = Landmark(
     state: "Sekumpul",
     type: "Водопад",
     category: .Waterfalls,
+    uponCategory: .Natute,
     imagesNames: ["Sekumpul 1", "Sekumpul 2", "Sekumpul 3"],
     latitude: -8.17994,
     longitude: 115.18326,

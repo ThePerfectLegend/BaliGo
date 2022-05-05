@@ -19,6 +19,7 @@ var sanur = Landmark(
     state: "Sanur",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Sanur 1", "Sanur 2", "Sanur 3", "Sanur 4"],
     latitude: -8.707034037178326,
     longitude: 115.26259648625428,

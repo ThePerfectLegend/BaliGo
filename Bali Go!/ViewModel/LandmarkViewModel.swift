@@ -19,8 +19,8 @@ final class LandmarkViewModel: ObservableObject {
     
     var categories: [String: [Landmark]] {
         Dictionary(
-            grouping: landmarks,
-            by: { $0.category.rawValue }
+            grouping: landmarks.sorted {$0.internalSubRate > $1.internalSubRate},
+            by: {$0.uponCategory.rawValue}
         )
     }
     

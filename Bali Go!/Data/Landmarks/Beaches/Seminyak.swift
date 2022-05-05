@@ -19,6 +19,7 @@ var seminyak = Landmark(
     state: "Seminyak",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Seminyak 1", "Seminyak 2", "Seminyak 3", "Seminyak 4"],
     latitude: -8.692818550269042,
     longitude: 115.1587590647075,

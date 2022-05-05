@@ -19,6 +19,7 @@ var agung = Landmark(
     state: "Jungutan",
     type: "Активный вулкан",
     category: .Mountains,
+    uponCategory: .Natute,
     imagesNames: ["Agung 1"],
     latitude: -8.370444905298976,
     longitude: 115.50295228245258,

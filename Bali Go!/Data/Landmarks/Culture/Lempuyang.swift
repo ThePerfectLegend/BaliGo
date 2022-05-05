@@ -19,6 +19,7 @@ var lempuyang = Landmark(
     state: "Tri Buana",
     type: "Храм",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Lempuyang 1", "Lempuyang 2", "Lempuyang 3", "Lempuyang 4"],
     latitude: -8.39157060994179,
     longitude: 115.63099704303131,

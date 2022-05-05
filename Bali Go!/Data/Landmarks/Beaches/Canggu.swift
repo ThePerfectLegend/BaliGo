@@ -19,6 +19,7 @@ var canggu = Landmark(
     state: "Canggu",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Canggu 1", "Canggu 2", "Canggu 3"],
     latitude: -8.659542218269259,
     longitude: 115.13065666318508,

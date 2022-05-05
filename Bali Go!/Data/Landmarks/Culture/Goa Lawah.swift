@@ -19,6 +19,7 @@ var goaLawah = Landmark(
     state: "Pesinggahan",
     type: "Храм",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Goa Lawah 1", "Goa Lawah 2", "Goa Lawah 3", "Goa Lawah 4"],
     latitude: -8.551612696350098,
     longitude: 115.46887702199777,

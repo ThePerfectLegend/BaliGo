@@ -20,6 +20,7 @@ var penglipuran = Landmark(
 //    distance: 23.5,
     type: "Традиционная деревня",
     category: .Parks,
+    uponCategory: .Culture,
     imagesNames: ["Penglipuran"],
     latitude: -8.422304186821837,
     longitude: 115.3593386410708,

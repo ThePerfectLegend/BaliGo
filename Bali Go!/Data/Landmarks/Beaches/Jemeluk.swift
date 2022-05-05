@@ -19,6 +19,7 @@ var jemeluk = Landmark(
     state: "Bunutan",
     type: "Бухта",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Jemeluk 1", "Jemeluk 2", "Jemeluk 3"],
     latitude: -8.3386074881322,
     longitude: 115.65993215329763,

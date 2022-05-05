@@ -19,6 +19,7 @@ var dreamland = Landmark(
     state: "Pecatu",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Dreamland"],
     latitude: -8.799500411237624,
     longitude: 115.1180158588256,

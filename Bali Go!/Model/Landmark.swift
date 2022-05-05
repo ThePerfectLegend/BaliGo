@@ -30,6 +30,7 @@ struct Landmark: Codable, Identifiable, Hashable {
     
     var type: String
     var category: Category
+    let uponCategory: UponCategory
     
     enum Category: String, Codable, CaseIterable {
         case Waterfalls = "Водопады"
@@ -38,6 +39,12 @@ struct Landmark: Codable, Identifiable, Hashable {
         case Beaches = "Пляжи"
         case Mountains = "Вулканы"
         case Lakes = "Озера"
+    }
+    
+    enum UponCategory: String, Codable, CaseIterable {
+    case Culture = "Культура"
+    case Natute = "Природа"
+    case Beaches = "Пляжи"
     }
     
     var imagesNames: [String]

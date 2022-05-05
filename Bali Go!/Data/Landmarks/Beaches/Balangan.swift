@@ -19,6 +19,7 @@ var balangan = Landmark(
     state: "Jimbaran",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Balangan"],
     latitude: -8.791432019552296,
     longitude: 115.12519835275087,

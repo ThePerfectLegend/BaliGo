@@ -19,6 +19,7 @@ var nusaDua = Landmark(
     state: "Benoa",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Nusa Dua 1", "Nusa Dua 2", "Nusa Dua 3", "Nusa Dua 4"],
     latitude: -8.807925700202103,
     longitude: 115.23147943552058,

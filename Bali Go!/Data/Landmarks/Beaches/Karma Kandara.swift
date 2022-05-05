@@ -19,6 +19,7 @@ var karmaKandara = Landmark(
     state: "Ungasan",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Karma Kandara"],
     latitude: -8.846149472987486,
     longitude: 115.15352238377817,

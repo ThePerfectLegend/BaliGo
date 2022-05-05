@@ -19,6 +19,7 @@ var tibumana = Landmark(
     state: "Apuan",
     type: "Водопад",
     category: .Waterfalls,
+    uponCategory: .Natute,
     imagesNames:["Tibumana 1", "Tibumana 2", "Tibumana 3"],
     latitude: -8.506366098947908,
     longitude: 115.33116303860055,

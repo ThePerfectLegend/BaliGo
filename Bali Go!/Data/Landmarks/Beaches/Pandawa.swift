@@ -19,6 +19,7 @@ var pandawa = Landmark(
     state: "Kutuh",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Pandawa 1", "Pandawa 2", "Pandawa 3"],
     latitude: -8.844427613209286,
     longitude: 115.18596782797509,

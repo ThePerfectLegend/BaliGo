@@ -19,6 +19,7 @@ var sangeh = Landmark(
     state: "Sangeh",
     type: "Лес обезьян",
     category: .Parks,
+    uponCategory: .Natute,
     imagesNames: ["Sangeh 1", "Sangeh 2", "Sangeh 3", "Sangeh 4"],
     latitude: -8.481790373861974,
     longitude: 115.20674088539484,

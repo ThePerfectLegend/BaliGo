@@ -16,9 +16,7 @@ struct All_Category_Screen: View {
     var category: String
 
     var filteredLandmarks: [Landmark] {
-        modelData.landmarks.filter { landmark in
-            (landmark.category.rawValue == category)
-        }
+        modelData.categories[category]!
     }
 
     var numberOfLandmarks: Int {

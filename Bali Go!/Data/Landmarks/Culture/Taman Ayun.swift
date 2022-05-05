@@ -19,6 +19,7 @@ var tamanAyun = Landmark(
     state: "Mengwi",
     type: "Храм",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Taman Ayun 1", "Taman Ayun 2", "Taman Ayun 3", "Taman Ayun 4"],
     latitude: -8.543985287942787,
     longitude: 115.1725344374761,

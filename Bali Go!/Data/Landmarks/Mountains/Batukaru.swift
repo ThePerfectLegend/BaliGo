@@ -19,6 +19,7 @@ var batucaru = Landmark(
     state: "Wongaya Gede",
     type: "Потухший вулкан",
     category: .Mountains,
+    uponCategory: .Natute,
     imagesNames: ["Batukaru 1", "Batukaru 2", "Batukaru 3"],
     latitude: -8.373092654442065,
     longitude: 115.10299039103909,

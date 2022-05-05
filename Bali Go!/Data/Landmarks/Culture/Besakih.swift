@@ -19,6 +19,7 @@ var besakih = Landmark(
     state: "Besakih",
     type: "Храм",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Besakih 1", "Besakih 2", "Besakih 3"],
     latitude: -8.374556615435335,
     longitude: 115.45055181052851,

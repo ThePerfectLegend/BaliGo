@@ -19,6 +19,7 @@ var tukad = Landmark(
     state: "Jl. Tembuku",
     type: "Каньон",
     category: .Waterfalls,
+    uponCategory: .Natute,
     imagesNames: ["Tukad 1", "Tukad 2", "Tukad 3", "Tukad 4"],
     latitude: -8.440876023778998,
     longitude: 115.38691977223608,

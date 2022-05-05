@@ -20,6 +20,7 @@ var tirtaEmpul = Landmark(
 //    distance: 1.1,
     type: "Храм",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Tirta Empul 1", "Tirta Empul 2", "Tirta Empul 3", "Tirta Empul 4"],
     latitude: -8.415764302562863,
     longitude: 115.31499670711572,

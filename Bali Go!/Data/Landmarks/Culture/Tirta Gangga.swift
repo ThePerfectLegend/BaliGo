@@ -19,6 +19,7 @@ var tirtaGangga = Landmark(
     state: "Ababi",
     type: "Водный дворец",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Tirta Gangga 1", "Tirta Gangga 2", "Tirta Gangga 3", "Tirta Gangga 4"],
     latitude: -8.411922967130273,
     longitude: 115.58742777912917,

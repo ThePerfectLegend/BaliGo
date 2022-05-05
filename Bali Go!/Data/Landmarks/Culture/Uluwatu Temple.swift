@@ -19,6 +19,7 @@ var  uluwatuTemple = Landmark(
     state: "Pecatu",
     type: "Морской храм",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Uluwatu 1", "Uluwatu 2", "Uluwatu 3"],
     latitude: -8.828027390201907,
     longitude: 115.08650704039736,

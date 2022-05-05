@@ -19,6 +19,7 @@ var nungnung = Landmark(
     state: "Belok/Sidan",
     type: "Водопад",
     category: .Waterfalls,
+    uponCategory: .Natute,
     imagesNames: ["Nungnung 1", "Nungnung 2", "Nungnung 3"],
     latitude: -8.331612542039165,
     longitude: 115.22825542825564,

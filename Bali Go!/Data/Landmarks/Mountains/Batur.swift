@@ -19,6 +19,7 @@ var batur = Landmark(
     state: "South Batur",
     type: "Активный вулкан",
     category: .Mountains,
+    uponCategory: .Natute,
     imagesNames: ["Batur 1", "Batur 2", "Batur 3", "Batur 4"],
     latitude: -8.247019485882387,
     longitude: 115.37939924273402,

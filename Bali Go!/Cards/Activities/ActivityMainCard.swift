@@ -137,7 +137,6 @@ struct ActivityPriceView: View {
         } else {
             return ""
         }
-        
     }
     
     var body: some View {

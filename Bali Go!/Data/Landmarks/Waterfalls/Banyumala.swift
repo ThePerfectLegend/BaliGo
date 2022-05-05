@@ -19,6 +19,7 @@ var banyumala = Landmark(
     state: "Wanagiri",
     type: "Водопад",
     category: .Waterfalls,
+    uponCategory: .Natute,
     imagesNames: ["Banyumala 1", "Banyumala 2", "Banyumala 3"],
     latitude: -8.21954511049516,
     longitude: 115.1050986293998,

@@ -19,6 +19,7 @@ var uluwatuBeach = Landmark(
     state: "Pecatu",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Uluwatu beach"],
     latitude: -8.815256142049964,
     longitude: 115.08928292954307,

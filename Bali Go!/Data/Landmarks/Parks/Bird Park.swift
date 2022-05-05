@@ -19,6 +19,7 @@ var birdPark = Landmark(
     state: "Batubulan",
     type: "Заповедник",
     category: .Parks,
+    uponCategory: .Natute,
     imagesNames: ["Bird Park 1", "Bird Park 2", "Bird Park 3", "Bird Park 4", "Bird Park 5"],
     latitude: -8.599975185971704,
     longitude: 115.25181441748285,

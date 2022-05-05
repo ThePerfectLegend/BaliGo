@@ -20,6 +20,7 @@ var goaGajah = Landmark(
 //    distance: 15.1,
     type: "Храмовый комплекс",
     category: .Culture,
+    uponCategory: .Culture,
     imagesNames: ["Goa Gajah 1", "Goa Gajah 2", "Goa Gajah 3", "Goa Gajah 4"],
     latitude: -8.522880729936007,
     longitude: 115.28761166083063,

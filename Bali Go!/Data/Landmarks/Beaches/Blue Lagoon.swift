@@ -19,6 +19,7 @@ var blueLagoon = Landmark(
     state: "Padangbai",
     type: "Бухта",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Blue Lagoon"],
     latitude: -8.52996916808586,
     longitude: 115.51255411543217,

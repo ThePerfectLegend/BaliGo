@@ -19,6 +19,7 @@ var bingin = Landmark(
     state: "Pecatu",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Bingin"],
     latitude: -8.807338432089468,
     longitude: 115.11357068744098,

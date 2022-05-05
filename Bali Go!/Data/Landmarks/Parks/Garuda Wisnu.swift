@@ -19,6 +19,7 @@ var garudaWisnu = Landmark(
     state: "Ungasan",
     type: "Парк",
     category: .Parks,
+    uponCategory: .Culture,
     imagesNames: ["GWK 1", "GWK 2", "GWK 3", "GWK 4"],
     latitude: -8.80680972111593,
     longitude: 115.16538406804636,

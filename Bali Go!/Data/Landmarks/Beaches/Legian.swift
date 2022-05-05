@@ -19,6 +19,7 @@ var legian = Landmark(
     state: "Legian",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Legian 1", "Legian 2", "Legian 3"],
     latitude: -8.702566219550318,
     longitude: 115.1644172748953,

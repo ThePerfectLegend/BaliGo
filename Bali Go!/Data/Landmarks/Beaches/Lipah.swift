@@ -19,6 +19,7 @@ var lipah = Landmark(
     state: "Bunutan",
     type: "Бухта",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Lipah"],
     latitude: -8.351205326977277,
     longitude: 115.68441428901883,

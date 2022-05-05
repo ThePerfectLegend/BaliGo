@@ -19,6 +19,7 @@ var jimbaran = Landmark(
     state: "Jimbaran",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Jimbaran 1", "Jimbaran 2", "Jimbaran 3"],
     latitude: -8.769777975026209,
     longitude: 115.16912937302273,

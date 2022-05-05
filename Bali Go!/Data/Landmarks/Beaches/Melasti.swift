@@ -19,6 +19,7 @@ var melasti = Landmark(
     state: "Ungasan",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Melasti 1", "Melasti 2", "Melasti 3"],
     latitude: -8.848036752691794,
     longitude: 115.15830820221808,

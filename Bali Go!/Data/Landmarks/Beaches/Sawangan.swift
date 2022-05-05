@@ -19,6 +19,7 @@ var sawangan = Landmark(
     state: "Benoa",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Sawangan"],
     latitude: -8.825328518837075,
     longitude: 115.2200185998365,

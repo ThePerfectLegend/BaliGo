@@ -19,6 +19,7 @@ var alingAling = Landmark(
     state: "Sambangan",
     type: "Серия водопадов",
     category: .Waterfalls,
+    uponCategory: .Natute,
     imagesNames: ["Aling 1", "Aling 2", "Aling 3", "Aling 4"],
     latitude: -8.172446597474655,
     longitude: 115.10449257542372,

@@ -19,6 +19,7 @@ var nunggalan = Landmark(
     state: "Pecatu",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Nunggalan"],
     latitude: -8.842392283432105,
     longitude: 115.11120071530937,

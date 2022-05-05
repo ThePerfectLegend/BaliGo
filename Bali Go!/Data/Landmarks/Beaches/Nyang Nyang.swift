@@ -19,6 +19,7 @@ var nyangNyang = Landmark(
     state: "Pecatu",
     type: "Пляж",
     category: .Beaches,
+    uponCategory: .Beaches,
     imagesNames: ["Nyang Nyang"],
     latitude: -8.83818040924659,
     longitude: 115.0915515579004,

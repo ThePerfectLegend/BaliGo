@@ -55,10 +55,26 @@ struct ActivityRaitingView: View {
     var activity: Activity
     var numberOfReviews: Bool
     
+    private var review: String {
+        let _digit = activity.numberOfReviews % 100
+            if (11...14).contains(_digit) {
+                return "отзывов"
+            } else {
+                let digit = activity.numberOfReviews % 10
+                if (2...4).contains(digit) {
+                    return "отзыва"
+                } else if (5...9).contains(digit) || digit == 0 {
+                    return "отзывов"
+                } else {
+                    return "отзыв"
+                }
+            }
+    }
+    
     var body: some View {
         if numberOfReviews {
             VStack(alignment: .leading, spacing: 4) {
-                Text("\(activity.numberOfReviews) отзывов")
+                Text("\(activity.numberOfReviews) \(review)")
                     .font(.subheadline)
                 HStack {
                     ZStack {

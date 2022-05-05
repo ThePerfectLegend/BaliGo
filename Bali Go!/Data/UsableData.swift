@@ -13,7 +13,8 @@ var landscapes = [batucaru, batur, canggu, legian, jemeluk, virgin, sanur, nusaD
 
 var tours = [climbingToBatur1008, baturTrunyan1025, baturJeep20371, divingAmed940, divingBlueLagoon1024, ejoingDay20059, magicNorth16009, velobike11564, waterfallsAndTerrases10198, magicNorth729, waterfall969, northTour647, northWestTour, waterfall968, eastTour, waterfall967, instagramTour693, ubudTourBirdPark690, kintamaniTourHideCanyon687, beachTour793, agung924, uluwatuKecak, realBali11237, oneDayBest7699, ubud10492, simbolsBali8088, animals11105, helicopterBukit, helicopterBeaches, helicopterVulcano]
 
-var activitiesData = [climbingToBaturVolcano, climbingToBaturVolcanoSprings, ticketsToGili, instagramTour, kintamaniTourHideCanyon, diving, paraplan]
+var activitiesData = [climbingToBaturVolcano, climbingToBaturVolcanoSprings, ticketsToGili, instagramTour, kintamaniTourHideCanyon, diving, paraplan,
+                      ticketsToNusaPenida, royalPalaces, motocross, ubudTourBirdPark, safariPark]
 
 
 

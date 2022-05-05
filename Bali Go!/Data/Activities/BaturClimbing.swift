@@ -19,7 +19,7 @@ var climbingToBaturVolcano = Activity(
     Отправляйтесь встречать рассвет на вершину грозного вулкана Батур – вы увидите первозданную красоту острова Бали и наполнитесь его мощной энергией, а в мягком рассеянном свете получатся невероятные фотографии!
     """,
     milestoneContent: [
-        ["Primary": "Среднее время тура 8 - 10 часов",
+        ["Primary": "Среднее время тура 8-10 часов",
          "Secondary": "Восхождение начнется около 4 утра",
          "Image": "clock"],
         
@@ -42,6 +42,5 @@ var climbingToBaturVolcano = Activity(
     
     link: "https://mybalitrips.com/ru/climbing-to-batur-volcano/1008/?utm_pid=447",
     partner: "MyBaliTrips",
-    marketingText: "Треккинг на высоту 1717 метров и незабываемые пейзажи на рассвете",
-    highPrio: true
+    priceOption: "За человека"
 )

@@ -11,7 +11,7 @@ var climbingToBaturVolcanoSprings = Activity(
     id: 9,
     name: "Восхождение на Батур с посещением горячих источников",
     type: "Трекинг",
-    numberOfReviews: 202,
+    numberOfReviews: 112,
     rating: 4.7,
     price: [.USD: 51, .IDR: 730000, .RUB: 3460],
     image: "temp",
@@ -19,7 +19,7 @@ var climbingToBaturVolcanoSprings = Activity(
 Отправляйтесь встречать незабываемый рассвет на вершину грозного вулкана Батур – вы увидите первозданную красоту острова Бали и наполнитесь его мощной энергией, а после расслабьтесь в горячих источниках с роскошным видом на озеро и горы.
 """,
     milestoneContent: [
-        ["Primary": "Среднее время тура 10 - 12 часов",
+        ["Primary": "Среднее время тура 10-12 часов",
          "Secondary": "Восхождение начнется около 4 утра",
          "Image": "clock"],
         
@@ -46,5 +46,6 @@ var climbingToBaturVolcanoSprings = Activity(
     
     link: "https://mybalitrips.com/ru/climbing-to-batur-volcano/1009/?utm_pid=447",
     partner: "MyBaliTrips",
-    marketingText: "Покорите грозный Батур, а после расслабьтесь в горячих источниках"
+    priceOption: "За человека",
+    highPrio: true
 )

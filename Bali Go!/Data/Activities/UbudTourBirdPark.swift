@@ -1,21 +1,23 @@
 //
-//  KintamaniTourHideCanyon.swift
+//  UbudTourBirdPark.swift
 //  Bali Go!
 //
-//  Created by Nizami Tagiyev on 01.05.2022.
+//  Created by Nizami Tagiyev on 05.05.2022.
 //
 
 import Foundation
 
-var kintamaniTourHideCanyon = Activity(
-    id: 7,
-    name: "Кинтамани тур и скрытый каньон",
+var ubudTourBirdPark = Activity(
+    id: 13,
+    name: "Убуд тур и парк птиц",
     type: "Экскурсия",
-    numberOfReviews: 134,
-    rating: 4.7,
-    price: [.USD: 54, .RUB: 3697, .IDR: 780000],
-    image: "kintamaniTourHideCanyon687",
-    description: "Вам хочется узнать больше о церемониях и культовых местах Острова Богов? Для вас и ваших близких мы организуем однодневное путешествие к сердцу Бали — Кинтамани тур с посещением скрытого каньона.",
+    numberOfReviews: 59,
+    rating: 4.9,
+    price: [.USD: 73, .RUB: 4826, .IDR: 1050000],
+    image: "temp",
+    description: """
+Хотите увидеть более сотни видов птиц, проживающих на острове Бали и сделать с ними запоминающиеся фотографии? Для вас и ваших близких мы организуем однодневное путешествие по Убуду с посещением парка птиц и рептилий. Став участником этого путешествия, Вы откроете самые популярные достопримечательности острова Бали: лес обезьян, традиционные балийские храмы, затерянный в джунглях водопад, кофейные плантации и конечно удивительные рисовые террасы. Обедать вы будете в ресторане с видом на дремлющий вулкан Батур и уникальное горное озеро у его подножия!
+""",
     milestoneContent: [
         ["Primary": "Среднее время тура 8-10 часов",
          "Secondary": "Начало около 07:00 - 08:00 утра",
@@ -41,7 +43,7 @@ var kintamaniTourHideCanyon = Activity(
          "Secondary": "Согласно правилам балийского индуизма",
          "Image": "exclamationmark.circle"]
     ],
-    link: "https://mybalitrips.com/ru/kintamani-tour-hide-canyon/687/?utm_pid=447",
+    link: "https://mybalitrips.com/ru/ubud-tour-bird-park/690/?utm_pid=447",
     partner: "MyBaliTrips",
     priceOption: "За человека",
     highPrio: true

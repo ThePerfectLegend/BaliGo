@@ -57,7 +57,7 @@ struct ActivityRaitingView: View {
     
     var body: some View {
         if numberOfReviews {
-            VStack(alignment: .leading, spacing: 2) {
+            VStack(alignment: .leading, spacing: 4) {
                 Text("\(activity.numberOfReviews) отзывов")
                     .font(.subheadline)
                 HStack {
@@ -129,7 +129,7 @@ struct ActivityPriceView: View {
             VStack(alignment: .trailing, spacing: 1) {
                 Text("От  ").font(.subheadline)
                 + Text(selectedPrice).font(.title3.weight(.semibold))
-                Text("За человека").font(.subheadline)
+                Text(activity.priceOption).font(.subheadline)
                 
             }
         } else { EmptyView() }

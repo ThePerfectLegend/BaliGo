@@ -24,5 +24,5 @@ var lempuyang = Landmark(
     longitude: 115.63099704303131,
     internalRate: 1,
     internalSubRate: 0.96,
-    activitiesOnLandmark: []
+    activitiesOnLandmark: [11]
 )

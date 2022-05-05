@@ -39,6 +39,6 @@ var diving = Activity(
     ],
     link: "https://mybalitrips.com/ru/diving/53/?utm_pid=447",
     partner: "MyBaliTrips",
-    marketingText: "Безопасные погружения для новичков и опытных дайверов в подводный мир у берегов Бали",
+    priceOption: "За человека",
     highPrio: true
 )

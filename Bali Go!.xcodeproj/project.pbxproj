@@ -38,6 +38,10 @@
 		A8340CE426BA59E100B8FC6B /* Nungnung.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8340CE326BA59E100B8FC6B /* Nungnung.swift */; };
 		A8340CE726BA5DEE00B8FC6B /* Banyumala.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8340CE626BA5DEE00B8FC6B /* Banyumala.swift */; };
 		A8363CB32667C1C000A2F38F /* Tegenungan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8363CB22667C1C000A2F38F /* Tegenungan.swift */; };
+		A83909932823B2F1004F38AE /* RoyalPalaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83909922823B2F1004F38AE /* RoyalPalaces.swift */; };
+		A83909952823B921004F38AE /* Motocross.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83909942823B921004F38AE /* Motocross.swift */; };
+		A83909972823CA7B004F38AE /* UbudTourBirdPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83909962823CA7B004F38AE /* UbudTourBirdPark.swift */; };
+		A83909992823CE08004F38AE /* SafariPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83909982823CE08004F38AE /* SafariPark.swift */; };
 		A83AE56A2792C9690017AEDE /* Share Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83AE5692792C9690017AEDE /* Share Link.swift */; };
 		A83AE56E2792D0BA0017AEDE /* bali-go-cover-1024px.png in Resources */ = {isa = PBXBuildFile; fileRef = A83AE56D2792D0BA0017AEDE /* bali-go-cover-1024px.png */; };
 		A83B7974276DC0DF008EE9FE /* northTour647.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B7973276DC0DF008EE9FE /* northTour647.swift */; };
@@ -112,6 +116,7 @@
 		A87361CC278BEDBC0018DF3A /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87361CB278BEDBC0018DF3A /* Buttons.swift */; };
 		A87666272817CDC9003C3345 /* ActivityLandmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87666262817CDC9003C3345 /* ActivityLandmarkView.swift */; };
 		A879CEFB272BDF0B0033887B /* Tours in Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879CEFA272BDF0B0033887B /* Tours in Landmark.swift */; };
+		A8803D612823A81B0072F806 /* TicketsToNusaPenida.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8803D602823A81B0072F806 /* TicketsToNusaPenida.swift */; };
 		A881ADE82809BE7B0051851E /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881ADE72809BE7B0051851E /* HapticManager.swift */; };
 		A89873F126DCD99600E78ECD /* Detail Map View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89873F026DCD99600E78ECD /* Detail Map View.swift */; };
 		A89B9AB526C39EE90022642F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9AB426C39EE90022642F /* MapView.swift */; };
@@ -143,7 +148,7 @@
 		A8AC89CD281DBBE7007133D7 /* Diving.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC89CC281DBBE7007133D7 /* Diving.swift */; };
 		A8B62DDB281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B62DDA281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift */; };
 		A8B62DDD281EC2A200ECF344 /* Paraplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B62DDC281EC2A200ECF344 /* Paraplan.swift */; };
-		A8B680AB2822A50900A5DD78 /* Batur.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B680AA2822A50800A5DD78 /* Batur.swift */; };
+		A8B680AB2822A50900A5DD78 /* BaturClimbing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B680AA2822A50800A5DD78 /* BaturClimbing.swift */; };
 		A8B680AD2822A51300A5DD78 /* BaturSprings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B680AC2822A51300A5DD78 /* BaturSprings.swift */; };
 		A8B87E222732685400E0D9B9 /* UserPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */; };
 		A8B87E2627326E7B00E0D9B9 /* Setting Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */; };
@@ -219,6 +224,10 @@
 		A8340CE326BA59E100B8FC6B /* Nungnung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nungnung.swift; sourceTree = "<group>"; };
 		A8340CE626BA5DEE00B8FC6B /* Banyumala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banyumala.swift; sourceTree = "<group>"; };
 		A8363CB22667C1C000A2F38F /* Tegenungan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tegenungan.swift; sourceTree = "<group>"; };
+		A83909922823B2F1004F38AE /* RoyalPalaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoyalPalaces.swift; sourceTree = "<group>"; };
+		A83909942823B921004F38AE /* Motocross.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motocross.swift; sourceTree = "<group>"; };
+		A83909962823CA7B004F38AE /* UbudTourBirdPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbudTourBirdPark.swift; sourceTree = "<group>"; };
+		A83909982823CE08004F38AE /* SafariPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariPark.swift; sourceTree = "<group>"; };
 		A83AE5692792C9690017AEDE /* Share Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Share Link.swift"; sourceTree = "<group>"; };
 		A83AE56D2792D0BA0017AEDE /* bali-go-cover-1024px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bali-go-cover-1024px.png"; sourceTree = "<group>"; };
 		A83B7973276DC0DF008EE9FE /* northTour647.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = northTour647.swift; sourceTree = "<group>"; };
@@ -293,6 +302,7 @@
 		A87361CB278BEDBC0018DF3A /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		A87666262817CDC9003C3345 /* ActivityLandmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLandmarkView.swift; sourceTree = "<group>"; };
 		A879CEFA272BDF0B0033887B /* Tours in Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tours in Landmark.swift"; sourceTree = "<group>"; };
+		A8803D602823A81B0072F806 /* TicketsToNusaPenida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsToNusaPenida.swift; sourceTree = "<group>"; };
 		A881ADE72809BE7B0051851E /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		A89873F026DCD99600E78ECD /* Detail Map View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Detail Map View.swift"; sourceTree = "<group>"; };
 		A89B9AB426C39EE90022642F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -326,7 +336,7 @@
 		A8AC89CC281DBBE7007133D7 /* Diving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diving.swift; sourceTree = "<group>"; };
 		A8B62DDA281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KintamaniTourHideCanyon.swift; sourceTree = "<group>"; };
 		A8B62DDC281EC2A200ECF344 /* Paraplan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paraplan.swift; sourceTree = "<group>"; };
-		A8B680AA2822A50800A5DD78 /* Batur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Batur.swift; sourceTree = "<group>"; };
+		A8B680AA2822A50800A5DD78 /* BaturClimbing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaturClimbing.swift; sourceTree = "<group>"; };
 		A8B680AC2822A51300A5DD78 /* BaturSprings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaturSprings.swift; sourceTree = "<group>"; };
 		A8B87E212732685400E0D9B9 /* UserPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewModel.swift; sourceTree = "<group>"; };
 		A8B87E2527326E7B00E0D9B9 /* Setting Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting Screen.swift"; sourceTree = "<group>"; };
@@ -586,6 +596,15 @@
 			path = Cards;
 			sourceTree = "<group>";
 		};
+		A8803D622823A8360072F806 /* Not Using */ = {
+			isa = PBXGroup;
+			children = (
+				A8296390281E4A6F009303B8 /* Snorkeling.swift */,
+				A8296392281E51BB009303B8 /* Ijen.swift */,
+			);
+			path = "Not Using";
+			sourceTree = "<group>";
+		};
 		A881ADE52809B8AE0051851E /* _Events */ = {
 			isa = PBXGroup;
 			children = (
@@ -784,15 +803,19 @@
 		A8DD4D9B28131ED300E61BF5 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
-				A8DD4D9C2813272000E61BF5 /* TicketsToGili.swift */,
+				A8B680AA2822A50800A5DD78 /* BaturClimbing.swift */,
+				A8B680AC2822A51300A5DD78 /* BaturSprings.swift */,
+				A8AC89CC281DBBE7007133D7 /* Diving.swift */,
 				A8AC89CA281DB2CB007133D7 /* InstagramTour.swift */,
 				A8B62DDA281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift */,
-				A8AC89CC281DBBE7007133D7 /* Diving.swift */,
-				A8296390281E4A6F009303B8 /* Snorkeling.swift */,
-				A8296392281E51BB009303B8 /* Ijen.swift */,
 				A8B62DDC281EC2A200ECF344 /* Paraplan.swift */,
-				A8B680AA2822A50800A5DD78 /* Batur.swift */,
-				A8B680AC2822A51300A5DD78 /* BaturSprings.swift */,
+				A8DD4D9C2813272000E61BF5 /* TicketsToGili.swift */,
+				A8803D602823A81B0072F806 /* TicketsToNusaPenida.swift */,
+				A83909922823B2F1004F38AE /* RoyalPalaces.swift */,
+				A83909942823B921004F38AE /* Motocross.swift */,
+				A83909962823CA7B004F38AE /* UbudTourBirdPark.swift */,
+				A83909982823CE08004F38AE /* SafariPark.swift */,
+				A8803D622823A8360072F806 /* Not Using */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -1030,8 +1053,10 @@
 				A846564F27745FFC006F3FB4 /* oneDayBest7699.swift in Sources */,
 				A86816C427AA3E4A00C390E8 /* Event Screen.swift in Sources */,
 				A8568B8F26BBBB89007FA868 /* Canggu.swift in Sources */,
+				A83909992823CE08004F38AE /* SafariPark.swift in Sources */,
 				A8460BE0264CD1C100F3E9AC /* Uluwatu Temple.swift in Sources */,
 				A8BD4F0B27FB30270022A269 /* DifferenceBetweenArrays.swift in Sources */,
+				A83909932823B2F1004F38AE /* RoyalPalaces.swift in Sources */,
 				A8568B8926BBA149007FA868 /* Jemeluk.swift in Sources */,
 				A8568B7D26BB87E8007FA868 /* Pandawa.swift in Sources */,
 				A8568B8C26BBB56A007FA868 /* Legian.swift in Sources */,
@@ -1073,6 +1098,7 @@
 				A8B87E222732685400E0D9B9 /* UserPreferencesViewModel.swift in Sources */,
 				A8340CDD26BA4B3700B8FC6B /* Sekumpul.swift in Sources */,
 				A83B7982276DC85E008EE9FE /* beachTour793.swift in Sources */,
+				A8803D612823A81B0072F806 /* TicketsToNusaPenida.swift in Sources */,
 				A879CEFB272BDF0B0033887B /* Tours in Landmark.swift in Sources */,
 				A85138B9280AE0C0002B3540 /* Activity.swift in Sources */,
 				A8A5E7E927524DB6004121F0 /* waterfallsAndTerrases10198.swift in Sources */,
@@ -1090,6 +1116,7 @@
 				A8460BEF264CDFE700F3E9AC /* Botanic Garden.swift in Sources */,
 				A864C4B4266B49550005EC81 /* Category Card.swift in Sources */,
 				A8BD4F1127FB326F0022A269 /* TimeConventer.swift in Sources */,
+				A83909952823B921004F38AE /* Motocross.swift in Sources */,
 				A849A806280D7E32008665E9 /* _tempList.swift in Sources */,
 				A86ED854266F090E0070173F /* Distance View.swift in Sources */,
 				A8BD4F0827FB2E5B0022A269 /* UsableData.swift in Sources */,
@@ -1109,10 +1136,11 @@
 				A86A281026B8E613003E56C8 /* Kuta.swift in Sources */,
 				A8340CE126BA50D800B8FC6B /* GitGit.swift in Sources */,
 				A84E4B762727DB1F003870C0 /* climbingToBatur1008.swift in Sources */,
+				A83909972823CA7B004F38AE /* UbudTourBirdPark.swift in Sources */,
 				A8E9873B263806F0009401BF /* LandmarkDetail.swift in Sources */,
 				A8AAD1E72811400500016E27 /* ContentTableView.swift in Sources */,
 				A8340CE726BA5DEE00B8FC6B /* Banyumala.swift in Sources */,
-				A8B680AB2822A50900A5DD78 /* Batur.swift in Sources */,
+				A8B680AB2822A50900A5DD78 /* BaturClimbing.swift in Sources */,
 				A846565527746E5A006F3FB4 /* ubud10492.swift in Sources */,
 				A8AC89CD281DBBE7007133D7 /* Diving.swift in Sources */,
 				A8460BE7264CD93200F3E9AC /* Agung.swift in Sources */,

@@ -45,5 +45,5 @@ var instagramTour = Activity(
     ],
     link: "https://mybalitrips.com/ru/instagram-tour/693/?utm_pid=447",
     partner: "MyBaliTrips",
-    marketingText: "Качели в джунглях, водопады, традиционные храмы, лес обезьян и рисовые террасы"
+    priceOption: "За человека"
 )

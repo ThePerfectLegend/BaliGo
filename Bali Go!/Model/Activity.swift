@@ -23,7 +23,7 @@ struct Activity: Codable, Identifiable, Hashable {
     let milestoneContent: [[String: String]]
     let link: String
     let partner: String
-    let marketingText: String
+    let priceOption: String
     var highPrio = false
 }
 

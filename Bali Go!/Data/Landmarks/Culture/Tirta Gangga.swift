@@ -24,5 +24,5 @@ var tirtaGangga = Landmark(
     longitude: 115.58742777912917,
     internalRate: 1,
     internalSubRate: 0.95,
-    activitiesOnLandmark: []
+    activitiesOnLandmark: [11]
 )

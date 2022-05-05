@@ -9,7 +9,7 @@ import Foundation
 
 var ticketsToGili = Activity(
     id: 2,
-    name: "Билеты туда и обратно с Бали на острова Гили",
+    name: "Билеты на острова Гили",
     type: "Трансфер",
     numberOfReviews: 22,
     rating: 4.9,
@@ -33,6 +33,6 @@ var ticketsToGili = Activity(
     ],
     link: "https://mybalitrips.com/ru/tickets-to-gili-islands/1523/?utm_pid=447",
     partner: "MyBaliTrips",
-    marketingText: "Райский отдых без хлопот, регги, бирюзовые лагуны и коктейли с зонтиками",
+    priceOption: "Туда и обратно",
     highPrio: true
 )

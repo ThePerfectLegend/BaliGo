@@ -11,7 +11,7 @@ var paraplan = Activity(
     id: 8,
     name: "Полёт на параплане с инструктором",
     type: "Параглайдинг",
-    numberOfReviews: 66,
+    numberOfReviews: 65,
     rating: 4.7,
     price: [.USD: 60, .RUB: 4028, .IDR: 850000],
     image: "temp",
@@ -32,6 +32,6 @@ var paraplan = Activity(
     ],
     link: "https://mybalitrips.com/ru/paraplan-na-bali/795/?utm_pid=447",
     partner: "MyBaliTrips",
-    marketingText: "Ощути свободу контролируемого полета",
+    priceOption: "За человека",
     highPrio: true
 )

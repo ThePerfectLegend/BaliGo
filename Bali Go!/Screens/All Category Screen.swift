@@ -16,8 +16,9 @@ struct All_Category_Screen: View {
     var category: String
 
     var filteredLandmarks: [Landmark] {
-        modelData.categories[category]!
-    }
+        let _index = modelData.arrayOfSortedCategories.firstIndex(of: category)
+        return modelData.arrayOfSortedLandmarks[_index!]
+      }
 
     var numberOfLandmarks: Int {
         filteredLandmarks.count

@@ -10,11 +10,19 @@ import SwiftUI
 struct Category_Home: View {
     
     @EnvironmentObject var modelData: LandmarkViewModel
+    private var numberOfcategoriyes: Int {
+        modelData.arrayOfSortedCategories.count
+    }
     
     var body: some View {
-        ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-            Small_Cards_Category_View(categoryName: key, items: modelData.categories[key]!)
+        ForEach(0..<numberOfcategoriyes, id:\.self) { index in
+            Small_Cards_Category_View(categoryName: modelData.arrayOfSortedCategories[index], items: modelData.arrayOfSortedLandmarks[index])
         }
         .padding(.bottom, 4)
     }
 }
+
+
+
+
+

@@ -17,11 +17,21 @@ final class LandmarkViewModel: ObservableObject {
     @Published var selectedLandmarks = [Landmark]()
     @Published var likedLandmarksId = Set<Int>()
     
-    var categories: [String: [Landmark]] {
-        Dictionary(
+    let arrayOfSortedCategories = ["Культура", "Природа", "Пляжи"]
+    var arrayOfSortedLandmarks: [[Landmark]] {
+        var _arrayOfSortedLandmarks: [[Landmark]] = []
+        let _dictionary = Dictionary(
             grouping: landmarks.sorted {$0.internalSubRate > $1.internalSubRate},
             by: {$0.uponCategory.rawValue}
         )
+        
+        for category in arrayOfSortedCategories {
+            if _dictionary.keys.contains(category) {
+                _arrayOfSortedLandmarks.append(_dictionary[category]!)
+            }
+        }
+        
+        return _arrayOfSortedLandmarks
     }
     
     init() {

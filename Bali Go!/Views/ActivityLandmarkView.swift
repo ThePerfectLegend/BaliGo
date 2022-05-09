@@ -48,6 +48,7 @@ struct ActivityLandmarkView: View {
                 ActivitySecondaryCard(activity: activityForLandmark.first!, widthInfinity: true)
             }
             .buttonStyle(PlainButtonStyle())
+            .contentShape(Rectangle())
             Divider()
         }
         .padding(.horizontal, 12)

@@ -14,7 +14,7 @@ struct ActivitySecondaryCard: View {
     
     private var widthSize: CGFloat {
         if widthInfinity {
-            return (UIScreen.main.bounds.width - 24)
+            return .infinity
         } else {
             return CGFloat(335)
         }
@@ -26,7 +26,8 @@ struct ActivitySecondaryCard: View {
                 Image(activity.image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: widthSize, height: 160)
+                    .frame(height: 160)
+                    .frame(idealWidth: widthSize, maxWidth: widthSize)
                     .clipped()
                     .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
                 VStack(alignment: .leading) {
@@ -43,9 +44,8 @@ struct ActivitySecondaryCard: View {
                         ActivityPriceView(activity: activity)
                     }
                 }
-                .frame(width: widthSize)
             }
-            .frame(width: widthSize)
         }
+        .frame(idealWidth: widthSize, maxWidth: widthSize)
     }
 }

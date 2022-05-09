@@ -23,7 +23,8 @@ struct ActivityMainCard: View {
                 Image(activity.image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: (UIScreen.main.bounds.width - 36), height: 160) // 240
+                    .frame(height: 160)
+                    .frame(maxWidth: .infinity)
                     .clipped()
                     .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
                 VStack(alignment: .leading) {
@@ -37,9 +38,7 @@ struct ActivityMainCard: View {
                         ActivityPriceView(activity: activity)
                     }
                 }
-                .frame(width: UIScreen.main.bounds.width - 36)
             }
-            .frame(width: UIScreen.main.bounds.width - 36)
             
             LikeButtonActivityCard(activity: $viewModel.activities[activityIndex])
                 .font(.title)

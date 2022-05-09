@@ -12,7 +12,7 @@ import StoreKit
 struct Setting_Screen: View {
     
     @EnvironmentObject var userPreferencesVM: UserPreferencesViewModel
-        
+    
     var body: some View {
         NavigationView {
             Form {
@@ -25,7 +25,7 @@ struct Setting_Screen: View {
                             } else { Text(maps.rawValue) }
                         }
                     }
-                                        
+                    
                     Picker("Строить маршрут в", selection: $userPreferencesVM.routeApp) {
                         ForEach(UserPreferencesViewModel.RouteApp.allCases) { apps in
                             if apps != userPreferencesVM.routeApp {
@@ -43,11 +43,19 @@ struct Setting_Screen: View {
                             } else {  Text(apps.rawValue) }
                         }
                     }
+                }
+                
+                Section(header: Text("Оценка и рекомендации")) {
+                    Button {
+                        writeReview()
+                    } label: {
+                        PickerLineDesign(systemName: "star.fill", title: "Оценить BaliGo!")
+                    }
                     
                     Button {
                         showAppShareSheet()
                     } label: {
-                        Text("Поделиться BaliGo!")
+                        PickerLineDesign(systemName: "square.and.arrow.up", title: "Поделиться BaliGo!")
                     }
                 }
             }
@@ -62,10 +70,10 @@ struct Setting_Screen: View {
     func writeReview() {
         /// поставить оценку приложению без отзыва. По гайдлайну дергать этот метот при нажатии кнопки нельзя
         if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
-                    SKStoreReviewController.requestReview(in: scene)
-                }
+            SKStoreReviewController.requestReview(in: scene)
+        }
         /// написать отзыв
-//            do { UIApplication.shared.open(URL(string: "https://apps.apple.com/app/id1580667720?action=write-review")!) }
+        //            do { UIApplication.shared.open(URL(string: "https://apps.apple.com/app/id1580667720?action=write-review")!) }
     }
     
     struct PickerLineDesign: View {
@@ -75,9 +83,9 @@ struct Setting_Screen: View {
         
         var body: some View {
             HStack {
-                Image(systemName: systemName).font(.body.weight(.medium))
+                Image(systemName: systemName)
                     .frame(width: 20, height: 20, alignment: .center)
-                Text(title).font(.body.weight(.medium))
+                Text(title)
             }
         }
     }

@@ -24,7 +24,7 @@ var garudaWisnu = Landmark(
     latitude: -8.80680972111593,
     longitude: 115.16538406804636,
     internalRate: 0,
-    internalSubRate: 0.95,
+    internalSubRate: 0.93,
     activitiesOnLandmark: []
 )
 

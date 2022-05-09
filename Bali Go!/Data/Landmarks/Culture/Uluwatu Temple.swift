@@ -24,7 +24,7 @@ var  uluwatuTemple = Landmark(
     latitude: -8.828027390201907,
     longitude: 115.08650704039736,
     internalRate: 1,
-    internalSubRate: 0.97,
-    activitiesOnLandmark: []
+    internalSubRate: 0.944,
+    activitiesOnLandmark: [17]
 )
 

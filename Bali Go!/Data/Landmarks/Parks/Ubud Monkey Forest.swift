@@ -24,7 +24,7 @@ var ubudMonkeyForest = Landmark(
     latitude: -8.518745639453792,
     longitude: 115.26116681608413,
     internalRate: 0,
-    internalSubRate: 0.98,
+    internalSubRate: 0.96,
     activitiesOnLandmark: [3, 7]
 )
 

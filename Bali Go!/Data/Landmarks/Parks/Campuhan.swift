@@ -24,5 +24,5 @@ var campuhan = Landmark(
     latitude: -8.503598831358174,
     longitude: 115.25470618692854,
     internalRate: 0,
-    internalSubRate: 0.91
+    internalSubRate: 0.82
     )

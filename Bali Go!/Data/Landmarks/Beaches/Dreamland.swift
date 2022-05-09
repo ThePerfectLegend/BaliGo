@@ -24,7 +24,7 @@ var dreamland = Landmark(
     latitude: -8.799500411237624,
     longitude: 115.1180158588256,
     internalRate: 1,
-    internalSubRate: 0.85,
-    activitiesOnLandmark: []
+    internalSubRate: 0.985,
+    activitiesOnLandmark: [16]
 )
 

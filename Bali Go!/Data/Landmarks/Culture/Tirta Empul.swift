@@ -25,7 +25,7 @@ var tirtaEmpul = Landmark(
     latitude: -8.415764302562863,
     longitude: 115.31499670711572,
     internalRate: 0,
-    internalSubRate: 0.9
+    internalSubRate: 0.88
 )
 
 //Jl. Tirta, Manukaya, Tampaksiring, Kabupaten Gianyar, Bali 80552

@@ -24,7 +24,7 @@ var nungnung = Landmark(
     latitude: -8.331612542039165,
     longitude: 115.22825542825564,
     internalRate: 0,
-    internalSubRate: 0.93
+    internalSubRate: 0.85
 )
 
 //Belok/Sidan, Petang, Kabupaten Badung, Bali

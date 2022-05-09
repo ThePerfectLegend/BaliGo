@@ -25,5 +25,5 @@ var tanahLot = Landmark(
     longitude: 115.08754645889555,
     internalRate: 1,
     internalSubRate: 0.98,
-    activitiesOnLandmark: []
+    activitiesOnLandmark: [20]
 )

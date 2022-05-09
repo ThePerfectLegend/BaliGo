@@ -24,6 +24,6 @@ var alingAling = Landmark(
     latitude: -8.172446597474655,
     longitude: 115.10449257542372,
     internalRate: 1,
-    internalSubRate: 0.96,
-    activitiesOnLandmark: []
+    internalSubRate: 0.87,
+    activitiesOnLandmark: [22]
 )

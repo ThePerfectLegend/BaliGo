@@ -24,6 +24,6 @@ var jatiluwih = Landmark(
     latitude: -8.370270096056135,
     longitude: 115.13115976951366,
     internalRate: 1,
-    internalSubRate: 0.985,
-    activitiesOnLandmark: []
+    internalSubRate: 0.93,
+    activitiesOnLandmark: [19]
 )

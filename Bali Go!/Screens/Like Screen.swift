@@ -20,7 +20,9 @@ struct Like_Screen: View {
     }
     
     private var likedLandmarks: [Landmark] {
-        modelData.landmarks.filter { landmark in landmark.isLiked }
+        modelData.landmarks
+            .filter { landmark in landmark.isLiked }
+            .sorted { $0.internalSubRate > $1.internalSubRate }
     }
     
     private var likedActivities: [Activity] {

@@ -43,8 +43,9 @@ struct ActivityLandmarkView: View {
     private var oneActivity: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Активность").font(.title3.weight(.semibold))
-            NavigationLink(destination: ActivityDetailView(activity: activityForLandmark[0], utm_campaign: "&utm_campaign=landmark")) {
-                ActivitySecondaryCard(activity: activityForLandmark[0], widthInfinity: true)
+            
+            NavigationLink(destination: ActivityDetailView(activity: activityForLandmark.first!, utm_campaign: "&utm_campaign=landmark")) {
+                ActivitySecondaryCard(activity: activityForLandmark.first!, widthInfinity: true)
             }
             .buttonStyle(PlainButtonStyle())
             Divider()

@@ -24,7 +24,7 @@ var ticketsToNusaPenida = Activity(
          "Image": "clock"],
 
         ["Primary": "Детям до трех лет бесплатно",
-         "Secondary": "Детский билет от 3-х до 10 лет",
+         "Secondary": "Для детей от 3 до 12 лет приобретается детский билет",
          "Image": "face.smiling"],
     ],
     link: "https://mybalitrips.com/ru/bilety-na-nusa-penida/365/?utm_pid=447",

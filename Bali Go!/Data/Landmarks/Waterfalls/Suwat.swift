@@ -24,7 +24,7 @@ var suwat = Landmark(
     latitude: -8.487512351440367,
     longitude: 115.3180676291764,
     internalRate: 0,
-    internalSubRate: 0.75
+    internalSubRate: 0.80
 )
 
 

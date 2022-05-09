@@ -188,6 +188,14 @@
 		A8F4F48527B0F5CD00EBDD86 /* TestingCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F4F48427B0F5CD00EBDD86 /* TestingCloudKit.swift */; };
 		A8F4F48827B0F6DE00EBDD86 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F4F48727B0F6DE00EBDD86 /* CloudKit.framework */; };
 		A8FBC1D2263AEAA800D26935 /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBC1D1263AEAA800D26935 /* ExpandableText.swift */; };
+		A8FD5E24282907CE007A3CFE /* NorthTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD5E23282907CE007A3CFE /* NorthTour.swift */; };
+		A8FD5E2628290D20007A3CFE /* BeachTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD5E2528290D20007A3CFE /* BeachTour.swift */; };
+		A8FD5E2828291214007A3CFE /* UluwatuKecak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD5E2728291214007A3CFE /* UluwatuKecak.swift */; };
+		A8FD5E2A2829147D007A3CFE /* AgungClimbing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD5E292829147D007A3CFE /* AgungClimbing.swift */; };
+		A8FD5E2C28291DDF007A3CFE /* MagicNorth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD5E2B28291DDF007A3CFE /* MagicNorth.swift */; };
+		A8FD5E2E282922CB007A3CFE /* NorthWestTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD5E2D282922CB007A3CFE /* NorthWestTour.swift */; };
+		A8FD5E30282927A9007A3CFE /* UbudWaterfalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD5E2F282927A9007A3CFE /* UbudWaterfalls.swift */; };
+		A8FD5E3228292C23007A3CFE /* NorthWaterfalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD5E3128292C23007A3CFE /* NorthWaterfalls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -377,6 +385,14 @@
 		A8F4F48627B0F6A200EBDD86 /* Bali Go!.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bali Go!.entitlements"; sourceTree = "<group>"; };
 		A8F4F48727B0F6DE00EBDD86 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		A8FBC1D1263AEAA800D26935 /* ExpandableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
+		A8FD5E23282907CE007A3CFE /* NorthTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthTour.swift; sourceTree = "<group>"; };
+		A8FD5E2528290D20007A3CFE /* BeachTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachTour.swift; sourceTree = "<group>"; };
+		A8FD5E2728291214007A3CFE /* UluwatuKecak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UluwatuKecak.swift; sourceTree = "<group>"; };
+		A8FD5E292829147D007A3CFE /* AgungClimbing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgungClimbing.swift; sourceTree = "<group>"; };
+		A8FD5E2B28291DDF007A3CFE /* MagicNorth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicNorth.swift; sourceTree = "<group>"; };
+		A8FD5E2D282922CB007A3CFE /* NorthWestTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthWestTour.swift; sourceTree = "<group>"; };
+		A8FD5E2F282927A9007A3CFE /* UbudWaterfalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbudWaterfalls.swift; sourceTree = "<group>"; };
+		A8FD5E3128292C23007A3CFE /* NorthWaterfalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthWaterfalls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -815,6 +831,14 @@
 				A83909942823B921004F38AE /* Motocross.swift */,
 				A83909962823CA7B004F38AE /* UbudTourBirdPark.swift */,
 				A83909982823CE08004F38AE /* SafariPark.swift */,
+				A8FD5E23282907CE007A3CFE /* NorthTour.swift */,
+				A8FD5E2528290D20007A3CFE /* BeachTour.swift */,
+				A8FD5E2728291214007A3CFE /* UluwatuKecak.swift */,
+				A8FD5E292829147D007A3CFE /* AgungClimbing.swift */,
+				A8FD5E2B28291DDF007A3CFE /* MagicNorth.swift */,
+				A8FD5E2D282922CB007A3CFE /* NorthWestTour.swift */,
+				A8FD5E2F282927A9007A3CFE /* UbudWaterfalls.swift */,
+				A8FD5E3128292C23007A3CFE /* NorthWaterfalls.swift */,
 				A8803D622823A8360072F806 /* Not Using */,
 			);
 			path = Activities;
@@ -975,6 +999,7 @@
 				A846564D277459A6006F3FB4 /* realBali11237.swift in Sources */,
 				A8C40E0927A3C1B100CC2FAE /* Event.swift in Sources */,
 				A84E4B722727D591003870C0 /* Tour.swift in Sources */,
+				A8FD5E2A2829147D007A3CFE /* AgungClimbing.swift in Sources */,
 				A806619B264644A700612F4F /* Campuhan.swift in Sources */,
 				A8A8C5AE2618F9E200C5724A /* ContentView.swift in Sources */,
 				A8D063FE26633D28004FDED2 /* All Buttom.swift in Sources */,
@@ -1033,6 +1058,7 @@
 				A8187F7B26B7C64700DCCC36 /* Ulun Danu Beratan.swift in Sources */,
 				A868A90227B790B9000F681F /* GO.swift in Sources */,
 				A8568B9526BBC580007FA868 /* Batukaru.swift in Sources */,
+				A8FD5E3228292C23007A3CFE /* NorthWaterfalls.swift in Sources */,
 				A86816C727AA3E8D00C390E8 /* EventsSample.swift in Sources */,
 				A819D2F028169CF5009400EA /* ShareButton.swift in Sources */,
 				A81B65532759EDA100C383A8 /* Bingin.swift in Sources */,
@@ -1041,6 +1067,7 @@
 				A8A5E7DD27523333004121F0 /* divingAmed940.swift in Sources */,
 				A8C1911126806A7B00FB800C /* Custom Corners.swift in Sources */,
 				A85E08D82812965300F98C4E /* Likeable.swift in Sources */,
+				A8FD5E24282907CE007A3CFE /* NorthTour.swift in Sources */,
 				A8B87E2627326E7B00E0D9B9 /* Setting Screen.swift in Sources */,
 				A83B7980276DC660008EE9FE /* ubudTourBirdPark690.swift in Sources */,
 				A8BD4F0F27FB30B70022A269 /* RandomSelection.swift in Sources */,
@@ -1058,6 +1085,7 @@
 				A8BD4F0B27FB30270022A269 /* DifferenceBetweenArrays.swift in Sources */,
 				A83909932823B2F1004F38AE /* RoyalPalaces.swift in Sources */,
 				A8568B8926BBA149007FA868 /* Jemeluk.swift in Sources */,
+				A8FD5E2628290D20007A3CFE /* BeachTour.swift in Sources */,
 				A8568B7D26BB87E8007FA868 /* Pandawa.swift in Sources */,
 				A8568B8C26BBB56A007FA868 /* Legian.swift in Sources */,
 				A81B65512759EBE100C383A8 /* Padang-Padang.swift in Sources */,
@@ -1067,6 +1095,7 @@
 				A8EE95CB27758B1500A6FB7B /* helicopterVulcano.swift in Sources */,
 				A85138B3280ADF2E002B3540 /* ActivityMainCard.swift in Sources */,
 				A864126B2662243800F288DF /* Ubud Monkey Forest.swift in Sources */,
+				A8FD5E2828291214007A3CFE /* UluwatuKecak.swift in Sources */,
 				A8460BDD264CCCC000F3E9AC /* Tirta Gangga.swift in Sources */,
 				A86A281626B8F1B3003E56C8 /* Sangeh.swift in Sources */,
 				A8340CE426BA59E100B8FC6B /* Nungnung.swift in Sources */,
@@ -1134,6 +1163,8 @@
 				A8B62DDB281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift in Sources */,
 				A83AE56A2792C9690017AEDE /* Share Link.swift in Sources */,
 				A86A281026B8E613003E56C8 /* Kuta.swift in Sources */,
+				A8FD5E2E282922CB007A3CFE /* NorthWestTour.swift in Sources */,
+				A8FD5E2C28291DDF007A3CFE /* MagicNorth.swift in Sources */,
 				A8340CE126BA50D800B8FC6B /* GitGit.swift in Sources */,
 				A84E4B762727DB1F003870C0 /* climbingToBatur1008.swift in Sources */,
 				A83909972823CA7B004F38AE /* UbudTourBirdPark.swift in Sources */,
@@ -1143,6 +1174,7 @@
 				A8B680AB2822A50900A5DD78 /* BaturClimbing.swift in Sources */,
 				A846565527746E5A006F3FB4 /* ubud10492.swift in Sources */,
 				A8AC89CD281DBBE7007133D7 /* Diving.swift in Sources */,
+				A8FD5E30282927A9007A3CFE /* UbudWaterfalls.swift in Sources */,
 				A8460BE7264CD93200F3E9AC /* Agung.swift in Sources */,
 				A83B797E276DC5C5008EE9FE /* instagramTour693.swift in Sources */,
 				A8FBC1D2263AEAA800D26935 /* ExpandableText.swift in Sources */,

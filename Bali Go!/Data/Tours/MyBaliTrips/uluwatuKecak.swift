@@ -7,11 +7,11 @@
 
 import Foundation
 
-var uluwatuKecak = Tour(
-    id: 24,
-    name: "Улувату и огненный танец Кечак",
-    link: "https://mybalitrips.com/ru/uluwatu-kecak/?utm_pid=447",
-    image: "uluwatuKecak",
-    tag: nil,
-    partner: .myBaliTrips
-)
+//var uluwatuKecak = Tour(
+//    id: 24,
+//    name: "Улувату и огненный танец Кечак",
+//    link: "https://mybalitrips.com/ru/uluwatu-kecak/?utm_pid=447",
+//    image: "uluwatuKecak",
+//    tag: nil,
+//    partner: .myBaliTrips
+//)

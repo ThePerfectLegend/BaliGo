@@ -28,7 +28,7 @@ var ticketsToGili = Activity(
          "Image": "ferry.fill"],
 
         ["Primary": "Комфортно для путешествий с детьми и большим количеством багажа",
-         "Secondary": "Детям до 3 лет билет не требуется",
+         "Secondary": "Детям до 3 лет билет не требуется. Для детей от 3 до 12 лет приобретается детский билет",
          "Image": "face.smiling"]
     ],
     link: "https://mybalitrips.com/ru/tickets-to-gili-islands/1523/?utm_pid=447",

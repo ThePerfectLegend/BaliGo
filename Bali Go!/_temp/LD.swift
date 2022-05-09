@@ -58,7 +58,7 @@ struct LD: View {
                         }
                         .padding(.horizontal, 12)
                     
-                    Tours_in_Landmark(landmark: landmark)
+//                    Tours_in_Landmark(landmark: landmark)
                     
                     Group {
                         Text("Расположение")

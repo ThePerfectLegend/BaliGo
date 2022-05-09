@@ -24,7 +24,7 @@ var batucaru = Landmark(
     latitude: -8.373092654442065,
     longitude: 115.10299039103909,
     internalRate: 0,
-    internalSubRate: 0.97
+    internalSubRate: 0.83
 )
 
 //Jl. Penatahan - Wongayagede, Wongaya Gede, Penebel, Kabupaten Tabanan, Bali 85125

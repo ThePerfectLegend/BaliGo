@@ -24,6 +24,6 @@ var tukad = Landmark(
     latitude: -8.440876023778998,
     longitude: 115.38691977223608,
     internalRate: 0,
-    internalSubRate: 0.95,
-    activitiesOnLandmark: [7]
+    internalSubRate: 0.975,
+    activitiesOnLandmark: [7, 21]
 )

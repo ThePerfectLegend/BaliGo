@@ -24,5 +24,5 @@ var sangeh = Landmark(
     latitude: -8.481790373861974,
     longitude: 115.20674088539484,
     internalRate: 0,
-    internalSubRate: 0.93
+    internalSubRate: 0.825
 )

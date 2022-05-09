@@ -25,7 +25,7 @@ var gunungKawi = Landmark(
     latitude: -8.4236850682151,
     longitude: 115.3105034010225,
     internalRate: 0,
-    internalSubRate: 0.92
+    internalSubRate: 0.90
 )
 
 //Sungai Pakerisan, Dusun Penaka, Tampaksiring, Kabupaten Gianyar, Bali 80552

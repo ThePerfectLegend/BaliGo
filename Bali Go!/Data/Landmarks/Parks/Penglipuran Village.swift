@@ -25,7 +25,7 @@ var penglipuran = Landmark(
     latitude: -8.422304186821837,
     longitude: 115.3593386410708,
     internalRate: 0,
-    internalSubRate: 0.92)
+    internalSubRate: 0.925)
 
 //Jl. Penglipuran, Kubu, Kec. Bangli, Kabupaten Bangli, Bali 80661
 

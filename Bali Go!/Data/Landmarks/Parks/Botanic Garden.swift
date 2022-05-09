@@ -24,5 +24,5 @@ var botanicGarden = Landmark(
     latitude: -8.281563309721566,
     longitude: 115.15642709267738,
     internalRate: 0,
-    internalSubRate: 0.94
+    internalSubRate: 0.81
 )

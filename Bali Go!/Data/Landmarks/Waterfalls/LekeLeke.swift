@@ -24,7 +24,7 @@ var lekeleke = Landmark(
     latitude: -8.364451,
     longitude: 115.196899,
     internalRate: 0,
-    internalSubRate: 0.94,
-    activitiesOnLandmark: []
+    internalSubRate: 0.86,
+    activitiesOnLandmark: [22]
 )
 

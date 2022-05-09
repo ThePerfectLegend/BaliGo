@@ -25,6 +25,6 @@ var melasti = Landmark(
     longitude: 115.15830820221808,
     internalRate: 1,
     internalSubRate: 0.99,
-    activitiesOnLandmark: []
+    activitiesOnLandmark: [16]
 )
 

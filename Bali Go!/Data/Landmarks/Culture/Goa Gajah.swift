@@ -25,7 +25,7 @@ var goaGajah = Landmark(
     latitude: -8.522880729936007,
     longitude: 115.28761166083063,
     internalRate: 0,
-    internalSubRate: 0.91
+    internalSubRate: 0.89
     )
 
 

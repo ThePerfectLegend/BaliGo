@@ -11,7 +11,8 @@ final class ActivityViewModel: ObservableObject {
     
     static let instance = ActivityViewModel()
     
-    @Published var activities = [Activity]()
+    @Published var activities: [Activity] = []
+    @Published var topActivities: [Activity] = []
     @Published var likedActivitiesId = Set<Int>()
     
     init() {
@@ -28,12 +29,12 @@ final class ActivityViewModel: ObservableObject {
                         activities.append(item)
                     }
                 }
+                self.topActivities = activities.filter { $0.highPrio == true }.shuffled()
                 return
             }
         }
         self.activities = activitiesData
-        print("loaded by defaults")
-        
+        self.topActivities = activities.filter { $0.highPrio == true }.shuffled()
     }
     
     func save(object: Activity) {

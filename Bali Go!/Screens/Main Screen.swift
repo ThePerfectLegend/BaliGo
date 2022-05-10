@@ -17,7 +17,7 @@ struct Main_Screen: View {
         NavigationView {
             VStack{
                 ScrollView(showsIndicators: true) {
-                    ActivityMainView(activities: viewModel.activities)
+                    ActivityMainView(activities: viewModel.topActivities)
                     Category_Home()
                 }
             }

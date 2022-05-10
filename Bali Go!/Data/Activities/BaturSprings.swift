@@ -1,5 +1,5 @@
 //
-//  temp_02.swift
+//  BaturSprings.swift
 //  Bali Go!
 //
 //  Created by Nizami Tagiyev on 04.05.2022.
@@ -14,7 +14,7 @@ var climbingToBaturVolcanoSprings = Activity(
     numberOfReviews: 112,
     rating: 4.7,
     price: [.USD: 51, .IDR: 730000, .RUB: 3460],
-    image: "temp",
+    image: "BaturSprings",
     description: """
 Отправляйтесь встречать незабываемый рассвет на вершину грозного вулкана Батур – вы увидите первозданную красоту острова Бали и наполнитесь его мощной энергией, а после расслабьтесь в горячих источниках с роскошным видом на озеро и горы.
 """,

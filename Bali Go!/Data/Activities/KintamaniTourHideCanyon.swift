@@ -14,7 +14,7 @@ var kintamaniTourHideCanyon = Activity(
     numberOfReviews: 134,
     rating: 4.7,
     price: [.USD: 54, .RUB: 3697, .IDR: 780000],
-    image: "kintamaniTourHideCanyon687",
+    image: "KintamaniTourHideCanyon",
     description: "Вам хочется узнать больше о церемониях и культовых местах Острова Богов? Для вас и ваших близких мы организуем однодневное путешествие к сердцу Бали — Кинтамани тур с посещением скрытого каньона.",
     milestoneContent: [
         ["Primary": "Cредняя продолжительность тура 8-10 часов",

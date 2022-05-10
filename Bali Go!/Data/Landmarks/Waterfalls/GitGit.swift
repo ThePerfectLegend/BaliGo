@@ -25,5 +25,5 @@ var gitgit = Landmark(
     longitude: 115.13601924786724,
     internalRate: 1,
     internalSubRate: 0.84,
-    activitiesOnLandmark: [20, 22]
+    activitiesOnLandmark: [22, 20]
 )

@@ -1,5 +1,5 @@
 //
-//  temp_01.swift
+//  BaturClimbing.swift
 //  Bali Go!
 //
 //  Created by Nizami Tagiyev on 04.05.2022.
@@ -14,7 +14,7 @@ var climbingToBaturVolcano = Activity(
     numberOfReviews: 102,
     rating: 4.6,
     price: [.USD : 37, .RUB : 2512, .IDR : 530000],
-    image: "climbingToBatur1008",
+    image: "BaturClimbing",
     description: """
     Отправляйтесь встречать рассвет на вершину грозного вулкана Батур – вы увидите первозданную красоту острова Бали и наполнитесь его мощной энергией, а в мягком рассеянном свете получатся невероятные фотографии!
     """,

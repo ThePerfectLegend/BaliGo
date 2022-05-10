@@ -14,7 +14,7 @@ var northWaterfalls = Activity(
     numberOfReviews: 3,
     rating: 5.0,
     price: [.USD: 35, .RUB: 2248, .IDR: 500000],
-    image: "temp",
+    image: "NorthWaterfalls",
     description: """
 
 """,

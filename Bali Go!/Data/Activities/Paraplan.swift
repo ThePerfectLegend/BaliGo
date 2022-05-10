@@ -1,5 +1,5 @@
 //
-//  ClimbingToRinjaniVolcano.swift
+//  Paraplan.swift
 //  Bali Go!
 //
 //  Created by Nizami Tagiyev on 01.05.2022.
@@ -14,7 +14,7 @@ var paraplan = Activity(
     numberOfReviews: 65,
     rating: 4.7,
     price: [.USD: 60, .RUB: 4028, .IDR: 850000],
-    image: "temp",
+    image: "Paraplan",
     description: "Вы летали во сне? Тогда вы помните это чувство свободы, необыкновенной лёгкости и тишины, несравнимое ни с одним земным удовольствием. Теперь мы предлагаем вам полетать наяву - параплан на Бали!",
     milestoneContent: [
         ["Primary": "Полет на параплане с инструктором",

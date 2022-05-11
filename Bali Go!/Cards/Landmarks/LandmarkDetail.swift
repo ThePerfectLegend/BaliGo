@@ -71,7 +71,8 @@ struct LandmarkDetailView: View {
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .leading)
             HStack {
-                Text(landmark.type).font(.callout.weight(.semibold))
+                Text(landmark.type)
+                    .font(.callout.weight(.semibold))
                     .foregroundColor(.secondary)
                 Spacer()
                 Distance_View(ladnmark: landmark, showMark: true)

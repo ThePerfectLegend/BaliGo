@@ -42,7 +42,12 @@ struct ActivityLandmarkView: View {
     
     private var oneActivity: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Активность").font(.title3.weight(.semibold))
+            VStack(alignment: .leading) {
+                Text("Активности").font(.title3.weight(.semibold))
+                Text("Посетите \(landmark.name) в составе тура или экскурсии")
+                    .font(.callout.weight(.semibold))
+                    .foregroundColor(.secondary)
+            }
             
             NavigationLink(destination: ActivityDetailView(activity: activityForLandmark.first!, utm_campaign: "&utm_campaign=landmark")) {
                 ActivitySecondaryCard(activity: activityForLandmark.first!, widthInfinity: true)
@@ -57,7 +62,13 @@ struct ActivityLandmarkView: View {
     private var fewActivity: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
-                Text("Активности").font(.title3.weight(.semibold))
+                VStack(alignment: .leading) {
+                    Text("Активности").font(.title3.weight(.semibold))
+                    Text("Посетите \(landmark.name) в составе тура или экскурсии")
+                        .font(.callout.weight(.semibold))
+                        .foregroundColor(.secondary)
+                }
+                
                 //                Spacer()
                 //                Text("Показать все").font(.body)
                 //                    .foregroundColor(.baliGo)

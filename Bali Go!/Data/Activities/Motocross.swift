@@ -9,7 +9,7 @@ import Foundation
 
 var motocross = Activity(
     id: 12,
-    name: "Мотокросс по джунглям, пляжам и застывшей лаве",
+    name: "Мотокросс по пляжам, джунглям и застывшей лаве",
     type: "Мотокросс",
     numberOfReviews: 51,
     rating: 4.9,

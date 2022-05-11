@@ -9,7 +9,7 @@ import Foundation
 
 var romanticNorth = Activity(
     id: 15,
-    name: "Романтичный Север",
+    name: "Тур: Романтичный Север",
     type: "Экскурсия",
     numberOfReviews: 30,
     rating: 5.0,

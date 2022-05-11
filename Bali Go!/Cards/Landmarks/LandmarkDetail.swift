@@ -39,7 +39,7 @@ struct LandmarkDetailView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Group {
                         header
-                        SmallDescView(description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te.")
+                        SmallDescView(description: landmark.shortDescription)
                         readMoreButton
                         Divider()
                     }

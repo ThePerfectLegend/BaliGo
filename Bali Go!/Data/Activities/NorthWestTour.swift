@@ -9,7 +9,7 @@ import Foundation
 
 var northWestTour = Activity(
     id: 20,
-    name: "Священные жемчужины Бали",
+    name: "Тур: Священные жемчужины Бали",
     type: "Экскурсия",
     numberOfReviews: 44,
     rating: 4.7,

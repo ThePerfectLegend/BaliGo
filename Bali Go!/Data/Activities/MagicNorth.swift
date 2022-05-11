@@ -9,7 +9,7 @@ import Foundation
 
 var magicNorth = Activity(
     id: 19,
-    name: "Магия Северного Бали",
+    name: "Тур: Магия Северного Бали",
     type: "Экскурсия",
     numberOfReviews: 59,
     rating: 4.7,

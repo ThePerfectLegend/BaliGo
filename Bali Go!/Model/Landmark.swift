@@ -18,6 +18,7 @@ struct Landmark: Codable, Identifiable, Hashable {
     var id: Int
     var name: String
     var description: String
+    var shortDescription: String = ""
     var isLiked: Bool = false
     
     let island: Island

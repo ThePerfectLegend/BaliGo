@@ -9,7 +9,7 @@ import Foundation
 
 var beachTour = Activity(
     id: 16,
-    name: "Лучшие пляжи Бали",
+    name: "Тур по лучшим пляжам Бали",
     type: "Экскурсия",
     numberOfReviews: 14,
     rating: 4.8,

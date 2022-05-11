@@ -18,7 +18,7 @@ struct Category_Home: View {
         ForEach(0..<numberOfcategoriyes, id:\.self) { index in
             Small_Cards_Category_View(categoryName: modelData.arrayOfSortedCategories[index], items: modelData.arrayOfSortedLandmarks[index])
         }
-        .padding(.bottom, 4)
+        .padding(.bottom, 12)
     }
 }
 

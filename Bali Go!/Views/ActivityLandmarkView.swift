@@ -44,9 +44,9 @@ struct ActivityLandmarkView: View {
         VStack(alignment: .leading, spacing: 12) {
             VStack(alignment: .leading) {
                 Text("Активности").font(.title3.weight(.semibold))
-                Text("Посетите \(landmark.name) в составе тура или экскурсии")
-                    .font(.callout.weight(.semibold))
-                    .foregroundColor(.secondary)
+//                Text("Посетите \(landmark.name) в составе тура или экскурсии")
+//                    .font(.callout.weight(.semibold))
+//                    .foregroundColor(.secondary)
             }
             
             NavigationLink(destination: ActivityDetailView(activity: activityForLandmark.first!, utm_campaign: "&utm_campaign=landmark")) {
@@ -64,9 +64,9 @@ struct ActivityLandmarkView: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text("Активности").font(.title3.weight(.semibold))
-                    Text("Посетите \(landmark.name) в составе тура или экскурсии")
-                        .font(.callout.weight(.semibold))
-                        .foregroundColor(.secondary)
+//                    Text("Посетите \(landmark.name) в составе тура или экскурсии")
+//                        .font(.callout.weight(.semibold))
+//                        .foregroundColor(.secondary)
                 }
                 
                 //                Spacer()

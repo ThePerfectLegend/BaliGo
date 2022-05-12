@@ -13,7 +13,7 @@ var climbingToBaturVolcanoSprings = Activity(
     type: "Трекинг",
     numberOfReviews: 112,
     rating: 4.7,
-    price: [.USD: 51, .IDR: 730000, .RUB: 3460],
+    price: [.USD: 51, .IDR: 730000, .RUB: 3600],
     image: "BaturSprings",
     description: """
 Отправляйтесь встречать незабываемый рассвет на вершину грозного вулкана Батур – вы увидите первозданную красоту острова Бали и наполнитесь его мощной энергией, а после расслабьтесь в горячих источниках с роскошным видом на озеро и горы.
@@ -23,21 +23,21 @@ var climbingToBaturVolcanoSprings = Activity(
          "Secondary": "Восхождение начнется около 4 утра",
          "Image": "clock"],
         
-        ["Primary": "Трансфер",
-         "Secondary": "Из отеля или виллы и обратно",
-         "Image": "car.fill"],
+        ["Primary": "Подъем с гидом-проводником",
+         "Secondary": "До 5 человек в группе",
+         "Image": "person.2.fill"],
         
         ["Primary": "Легкий завтрак",
          "Secondary": "Перед началом подъема и на вершине",
          "Image": "takeoutbag.and.cup.and.straw.fill"],
         
-        ["Primary": "Подъем с гидом-проводником",
-         "Secondary": "До 5 человек в группе",
-         "Image": "person.2.fill"],
-        
         ["Primary": "Входные билеты включены в стоимость",
          "Secondary": "На горячие источники",
          "Image": "wallet.pass"],
+        
+        ["Primary": "Трансфер",
+         "Secondary": "Из отеля или виллы и обратно",
+         "Image": "car.fill"],
         
         ["Primary": "Для людей со средней физической подготовкой",
          "Secondary": "Cреднее время восхождения и спуска около 4 - 5 часов",

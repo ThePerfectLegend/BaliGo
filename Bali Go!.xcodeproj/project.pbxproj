@@ -615,6 +615,7 @@
 		A8803D622823A8360072F806 /* Not Using */ = {
 			isa = PBXGroup;
 			children = (
+				A8B62DDC281EC2A200ECF344 /* Paraplan.swift */,
 				A8296390281E4A6F009303B8 /* Snorkeling.swift */,
 				A8296392281E51BB009303B8 /* Ijen.swift */,
 			);
@@ -824,7 +825,6 @@
 				A8AC89CC281DBBE7007133D7 /* DivingTulambane.swift */,
 				A8AC89CA281DB2CB007133D7 /* InstagramTour.swift */,
 				A8B62DDA281EAF0B00ECF344 /* KintamaniTourHideCanyon.swift */,
-				A8B62DDC281EC2A200ECF344 /* Paraplan.swift */,
 				A8DD4D9C2813272000E61BF5 /* TicketsToGili.swift */,
 				A8803D602823A81B0072F806 /* TicketsToNusaPenida.swift */,
 				A83909922823B2F1004F38AE /* RoyalPalaces.swift */,
@@ -1311,7 +1311,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Bali Go!/Bali Go!.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"Bali Go!/Preview Content\"";
 				DEVELOPMENT_TEAM = WV8G99LA38;
 				ENABLE_PREVIEWS = YES;
@@ -1338,7 +1338,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Bali Go!/Bali Go!.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"Bali Go!/Preview Content\"";
 				DEVELOPMENT_TEAM = WV8G99LA38;
 				ENABLE_PREVIEWS = YES;

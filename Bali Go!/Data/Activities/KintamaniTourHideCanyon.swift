@@ -13,7 +13,7 @@ var kintamaniTourHideCanyon = Activity(
     type: "Экскурсия",
     numberOfReviews: 134,
     rating: 4.7,
-    price: [.USD: 54, .RUB: 3697, .IDR: 780000],
+    price: [.USD: 63, .RUB: 4500, .IDR: 910000],
     image: "KintamaniTourHideCanyon",
     description: "Вам хочется узнать больше о церемониях и культовых местах Острова Богов? Для вас и ваших близких мы организуем однодневное путешествие к сердцу Бали — Кинтамани тур с посещением скрытого каньона.",
     milestoneContent: [
@@ -43,6 +43,5 @@ var kintamaniTourHideCanyon = Activity(
     ],
     link: "https://mybalitrips.com/ru/kintamani-tour-hide-canyon/687/?utm_pid=447",
     partner: "MyBaliTrips",
-    priceOption: "За человека",
-    highPrio: true
+    priceOption: "За человека"
 )

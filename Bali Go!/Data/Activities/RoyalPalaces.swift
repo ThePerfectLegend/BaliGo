@@ -13,7 +13,7 @@ var royalPalaces = Activity(
     type: "Экскурсия",
     numberOfReviews: 104,
     rating: 4.8,
-    price: [.USD: 49, .RUB: 3217, .IDR: 700000],
+    price: [.USD: 61, .RUB: 4400, .IDR: 8800000],
     image: "RoyalPalaces",
     description: """
 Если вы хотите почувствовать аутентичность Бали, встретить подлинных балийцев далёких от суеты западной цивилизации, познакомиться с основами культуры Хинду и узнать, зачем им столько церемоний и отчего местные жители всегда улыбаются  — отправляйтесь в путешествие по востоку Острова Богов.
@@ -41,5 +41,6 @@ var royalPalaces = Activity(
     ],
     link: "https://mybalitrips.com/ru/east-tour/375/?utm_pid=447",
     partner: "MyBaliTrips",
-    priceOption: "За человека"
+    priceOption: "За человека",
+    highPrio: true
 )

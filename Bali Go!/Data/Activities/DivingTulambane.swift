@@ -13,7 +13,7 @@ var diving = Activity(
     type: "Дайвинг",
     numberOfReviews: 97,
     rating: 4.9,
-    price: [.USD: 110, .IDR: 1650000, .RUB: 7820],
+    price: [.USD: 110, .IDR: 1650000, .RUB: 8000],
     image: "DivingTulambane",
     description: "Начните свою дайвинг-историю на острове Бали. Это безопасное, увлекательное приключение. Его оценят и новички, и опытные дайверы.",
     milestoneContent: [

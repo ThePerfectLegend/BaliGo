@@ -13,7 +13,7 @@ var climbingToBaturVolcano = Activity(
     type: "Трекинг",
     numberOfReviews: 102,
     rating: 4.6,
-    price: [.USD : 37, .RUB : 2512, .IDR : 530000],
+    price: [.USD : 37, .RUB : 2600, .IDR : 530000],
     image: "BaturClimbing",
     description: """
     Отправляйтесь встречать рассвет на вершину грозного вулкана Батур – вы увидите первозданную красоту острова Бали и наполнитесь его мощной энергией, а в мягком рассеянном свете получатся невероятные фотографии!
@@ -23,17 +23,17 @@ var climbingToBaturVolcano = Activity(
          "Secondary": "Восхождение начнется около 4 утра",
          "Image": "clock"],
         
-        ["Primary": "Трансфер",
-         "Secondary": "Из отеля или виллы и обратно",
-         "Image": "car.fill"],
+        ["Primary": "Подъем с гидом-проводником",
+         "Secondary": "До 5 человек в группе",
+         "Image": "person.2.fill"],
         
         ["Primary": "Легкий завтрак",
          "Secondary": "Перед началом подъема и на вершине",
          "Image": "takeoutbag.and.cup.and.straw.fill"],
         
-        ["Primary": "Подъем с гидом-проводником",
-         "Secondary": "До 5 человек в группе",
-         "Image": "person.2.fill"],
+        ["Primary": "Трансфер",
+         "Secondary": "Из отеля или виллы и обратно",
+         "Image": "car.fill"],
         
         ["Primary": "Для людей со средней физической подготовкой",
          "Secondary": "Cреднее время восхождения и спуска около 4 - 5 часов",

@@ -21,6 +21,7 @@ SwiftUI Travel Guide app uses MVVM Architecture, MapKit, CoreLocation. BaliGo pr
 
 ## Road Map
 
+- Refactoring (part of the code base is not satisfying production quality code)
 - English localization
 - Change activity provider and start to use API requests to get info
 - Gamification and connection to the Game Center
